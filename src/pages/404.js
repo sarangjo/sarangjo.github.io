@@ -14,7 +14,7 @@ class NotFoundPage extends React.Component {
 }
 
 NotFoundPage.propTypes = {
-  location: PropTypes.obj,
+  location: PropTypes.object,
 };
 
 export default NotFoundPage;

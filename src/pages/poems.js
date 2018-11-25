@@ -54,6 +54,8 @@ BlogIndex.propTypes = {
 
 export default BlogIndex;
 
+// The query we want is all pages where the frontmatter tag
+
 export const pageQuery = graphql`
   query {
     site {
@@ -62,7 +64,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { category: { eq: "poetry" } } }
+    ) {
       edges {
         node {
           excerpt

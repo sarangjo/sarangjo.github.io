@@ -1,10 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Link,graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import get from "lodash/get";
 import PropTypes from "prop-types";
 
-import Bio from "../components/Bio";
 import Layout from "../components/Layout";
 import { rhythm, scale } from "../utils/typography";
 
@@ -16,7 +15,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: "en" }}
           meta={[{ name: "description", content: siteDescription }]}
@@ -32,6 +31,8 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date}
+          &nbsp;&mdash;&nbsp;
+          <i>{post.frontmatter.category}</i>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -39,8 +40,6 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
-
         <ul
           style={{
             display: "flex",
@@ -51,20 +50,18 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <li>
-            {
-              previous &&
+            {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            }
+            )}
           </li>
           <li>
-            {
-              next &&
+            {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            }
+            )}
           </li>
         </ul>
       </Layout>
@@ -73,9 +70,9 @@ class BlogPostTemplate extends React.Component {
 }
 
 BlogPostTemplate.propTypes = {
-  data: PropTypes.obj,
-  pageContext: PropTypes.obj,
-  location: PropTypes.obj,
+  data: PropTypes.object,
+  pageContext: PropTypes.object,
+  location: PropTypes.object,
 };
 
 export default BlogPostTemplate;
@@ -94,6 +91,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        category
         date(formatString: "MMMM DD, YYYY")
       }
     }
