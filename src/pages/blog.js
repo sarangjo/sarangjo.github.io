@@ -38,7 +38,11 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {node.frontmatter.date}
+                &nbsp;&mdash;&nbsp;
+                {node.frontmatter.category}
+              </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           );
@@ -54,6 +58,9 @@ BlogIndex.propTypes = {
 
 export default BlogIndex;
 
+// TODO I feel like allMarkdownRemark can be replaced by markdownRemark? Because
+// we only want certain blog posts. The key thing to figure out is the best
+// place in the code to actually make the throttling
 export const pageQuery = graphql`
   query {
     site {
@@ -72,6 +79,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            category
           }
         }
       }
