@@ -4,16 +4,16 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 
-import Subtitle from "../components/Subtitle";
-import Layout from "../components/Layout";
-import { rhythm } from "../utils/typography";
+import Subtitle from "../../components/Subtitle";
+import Layout from "../../components/Layout";
+import { rhythm } from "../../utils/typography";
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title");
+    const siteTitle = get(this, "props.data.site.siteMetadata.blogTitle");
     const siteDescription = get(
       this,
-      "props.data.site.siteMetadata.description"
+      "props.data.site.siteMetadata.blogDescription"
     );
     const posts = get(this, "props.data.allMarkdownRemark.edges");
 
@@ -65,8 +65,8 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title
-        description
+        blogTitle
+        blogDescription
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

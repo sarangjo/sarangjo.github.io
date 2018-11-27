@@ -1,36 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./Header";
 import { rhythm } from "../utils/typography";
 import * as pt from "../utils/proptypes";
 
-const Layout = ({ location, children }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <div
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: rhythm(30),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <Header title={data.site.siteMetadata.title} location={location} />
-        {children}
-      </div>
-    )}
-  />
+const Layout = ({ location, title, children }) => (
+  <div
+    style={{
+      marginLeft: "auto",
+      marginRight: "auto",
+      maxWidth: rhythm(30),
+      padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+    }}
+  >
+    <Header title={title} location={location} />
+    {children}
+  </div>
 );
 
 Layout.propTypes = {

@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Sarang Joshi's Website",
+    title: "sarangjo.github.io",
     author: "Sarang Joshi",
     description: "Sarang Joshi's Website",
     siteUrl: "https://sarangjo.github.io",
+    blogTitle: "Life Enthusiasm",
+    blogDescription: "Because OC is overrated.",
   },
   pathPrefix: "/",
   plugins: [

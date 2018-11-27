@@ -20,6 +20,7 @@ class Header extends React.Component {
   render() {
     const { location, title } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
+    const blogPath = `${__PATH_PREFIX__}/blog/`;
 
     const homeLink = (
       <Link
@@ -37,7 +38,7 @@ class Header extends React.Component {
     // Top of header
     let top;
     // TODO: not just home, but any category page
-    if (location.pathname === rootPath) {
+    if (location.pathname === rootPath || location.pathname === blogPath) {
       top = (
         <h1
           style={{
