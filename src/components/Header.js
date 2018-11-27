@@ -69,7 +69,7 @@ class Header extends React.Component {
         <header style={{ marginBottom: "1.5rem" }}>
           <ul style={{ listStyle: "none", float: "right" }}>
             <ListLink to="/">Home</ListLink>
-            <ListLink to="/poems/">Poems</ListLink>
+            <ListLink to="/blog/">Blog</ListLink>
           </ul>
         </header>
       </div>

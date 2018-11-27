@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Life Enthusiasm",
+    title: "Sarang Joshi's Website",
     author: "Sarang Joshi",
-    description: "Because OC is overrated.",
+    description: "Sarang Joshi's Website",
     siteUrl: "https://sarangjo.github.io",
   },
   pathPrefix: "/",
