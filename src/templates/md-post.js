@@ -1,35 +1,22 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import get from "lodash/get";
 import PropTypes from "prop-types";
 
 import Layout from "../components/Layout";
-import { rhythm, scale } from "../utils/typography";
-
-const BLOG_TYPE = "blog";
-const OTHER_TYPE = "other";
+import { rhythm } from "../utils/typography";
 
 export default class MarkdownPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
 
-    let siteTitle;
-    switch (this.props.type) {
-    case BLOG_TYPE:
-      siteTitle = get(this.props, "data.site.siteMetadata.blogTitle");
-      break;
-    case OTHER_TYPE:
-    default:
-      siteTitle = get(this.props, "data.site.siteMetadata.title");
-      break;
-    }
+    const siteTitle = get(this.props, "data.site.siteMetadata.title");
 
-    const siteDescription = post.excerpt;
+    const description = post.excerpt;
     const { previous, next } = this.props.pageContext;
 
     let prevNextLinks;
-    if (previous && next) {
+    if (previous || next) {
       prevNextLinks = (
         <ul
           style={{
@@ -59,25 +46,13 @@ export default class MarkdownPostTemplate extends React.Component {
     }
 
     return (
-      <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
-        />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: "block",
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-          &nbsp;&mdash;&nbsp;
-          <i>{post.frontmatter.category}</i>
-        </p>
+      <Layout
+        location={this.props.location}
+        helmetTitle={`${post.frontmatter.title} | ${siteTitle}`}
+        title={post.frontmatter.title}
+        helmetDescription={description}
+        description={`${post.frontmatter.date} - ${post.frontmatter.category}`}
+      >
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -94,7 +69,6 @@ MarkdownPostTemplate.propTypes = {
   data: PropTypes.object,
   pageContext: PropTypes.object,
   location: PropTypes.object,
-  type: PropTypes.string,
 };
 
 export const pageQuery = graphql`

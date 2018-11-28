@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
+import _ from "lodash";
 
 import { rhythm, scale } from "../utils/typography";
 import * as pt from "../utils/proptypes";
@@ -18,62 +19,46 @@ ListLink.propTypes = {
 
 class Header extends React.Component {
   render() {
-    const { location, title } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    const blogPath = `${__PATH_PREFIX__}/blog/`;
+    const { location, title, description } = this.props;
 
-    const homeLink = (
-      <Link
-        style={{
-          boxShadow: "none",
-          textDecoration: "none",
-          color: "inherit",
-        }}
-        to={"/"}
-      >
-        {title}
+    const superTop = [];
+    const parts = location.pathname.split("/").filter(x => !!x.trim().length);
+
+    let link = "/";
+    superTop.push(
+      <Link to={link} key={link}>
+        home
       </Link>
     );
-
-    // Top of header
-    let top;
-    // TODO: not just home, but any category page
-    if (location.pathname === rootPath || location.pathname === blogPath) {
-      top = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          {homeLink}
-        </h1>
+    _.each(parts, part => {
+      link += `${part}/`;
+      superTop.push(
+        <span key={link}>
+          &nbsp;&gt;&nbsp;
+          <Link to={link}>{part}</Link>
+        </span>
       );
-    } else {
-      top = (
-        <h3
-          style={{
-            fontFamily: "Montserrat, sans-serif",
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          {homeLink}
-        </h3>
-      );
-    }
+    });
 
     return (
-      <div>
-        {top}
-        <header style={{ marginBottom: "1.5rem" }}>
-          <ul style={{ listStyle: "none", float: "right" }}>
+      <header
+        style={{
+          marginBottom: rhythm(0.4),
+        }}
+      >
+        <i style={{ ...scale(-1 / 4) }}>{superTop}</i>
+        <h1 style={{ ...scale(1.5), marginTop: 0, marginBottom: rhythm(0.75) }}>
+          {title}
+        </h1>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <p>{description}</p>
+          <ul style={{ listStyle: "none", flexShrink: 0 }}>
             <ListLink to="/">Home</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
+            <ListLink to="/poetry/">Poetry</ListLink>
           </ul>
-        </header>
-      </div>
+        </div>
+      </header>
     );
   }
 }
@@ -81,6 +66,7 @@ class Header extends React.Component {
 Header.propTypes = {
   location: PropTypes.object,
   title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default Header;

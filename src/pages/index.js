@@ -1,10 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import get from "lodash/get";
-import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 
-import Subtitle from "../components/Subtitle";
 import Layout from "../components/Layout";
 
 class Index extends React.Component {
@@ -16,15 +14,13 @@ class Index extends React.Component {
     );
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: siteDescription }]}
-          title={siteTitle}
-        />
-        <Subtitle description={siteDescription} />
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        description={siteDescription}
+      >
         <p>
-          This is still construction, and will become less horrendous in
+          This is still under construction, and will become less horrendous in
           upcoming weeks. Stay tuned!
         </p>
       </Layout>

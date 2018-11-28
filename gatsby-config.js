@@ -4,8 +4,6 @@ module.exports = {
     author: "Sarang Joshi",
     description: "Sarang Joshi's Website",
     siteUrl: "https://sarangjo.github.io",
-    blogTitle: "Life Enthusiasm",
-    blogDescription: "Because OC is overrated.",
   },
   pathPrefix: "/",
   plugins: [
@@ -46,7 +44,6 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    "gatsby-plugin-feed",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

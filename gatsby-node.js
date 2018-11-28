@@ -3,30 +3,6 @@ const Promise = require("bluebird");
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
-function query(isBlog) {
-  return;
-  `
-  {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 1000
-      ${isBlog ? 'filter: { fields: { slug: { regex: "//blog/.*/" } } }' : ""}
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  }
-  `;
-}
-
 // This function generates pages from static files. We want to use this to
 // separately create *blog pages*, linked together and sorted, and miscellaneous
 // markdown pages
@@ -35,49 +11,63 @@ exports.createPages = ({ graphql, actions }) => {
 
   const mdPost = path.resolve("./src/templates/md-post.js");
 
-  const blogPromise = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     resolve(
-      graphql(query(true)).then(result => {
+      graphql(
+        `
+          {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
+              edges {
+                node {
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                  }
+                }
+              }
+            }
+          }
+        `
+      ).then(result => {
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);
         }
 
-        // Create blog posts pages.
+        // Create markdown pages.
         const posts = result.data.allMarkdownRemark.edges;
 
-        _.each(posts, (post, index) => {
-          const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
+        let next = null;
+        let temp = null;
 
-          createPage({
-            path: post.node.fields.slug,
-            component: mdPost,
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          });
-        });
-      })
-    );
-  });
-  const otherPromise = new Promise((resolve, reject) => {
-    resolve(
-      graphql(query(true)).then(result => {
-        if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
-        }
+        // previous is at the end, next is at index 0
+        _.each(posts, post => {
+          if (post.node.fields.slug.startsWith("/blog")) {
+            if (temp) {
+              // Attach self as temp's previous
+              temp.context.previous = post.node;
+              createPage(temp);
+            }
 
-        // Create other posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
-
-        _.each(
-          _.filter(posts, post => !post.node.fields.slug.startsWith("/blog")),
-          post => {
+            // If the current node is a blog post, we need to hold off on creating
+            // the page until we have next and previous
+            temp = {
+              path: post.node.fields.slug,
+              component: mdPost,
+              context: {
+                slug: post.node.fields.slug,
+                previous: null,
+                next,
+              },
+            };
+            next = post.node;
+          } else {
+            // simple markdown
             createPage({
               path: post.node.fields.slug,
               component: mdPost,
@@ -86,12 +76,15 @@ exports.createPages = ({ graphql, actions }) => {
               },
             });
           }
-        );
+        });
+
+        // fencepost
+        if (temp) {
+          createPage(temp);
+        }
       })
     );
   });
-
-  return Promise.all([blogPromise, otherPromise]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

@@ -6,10 +6,11 @@ import PropTypes from "prop-types";
 import Layout from "../../components/Layout";
 import { rhythm } from "../../utils/typography";
 
-const BLOG_TITLE = "Life Enthusiasm";
-const BLOG_DESCRIPTION = "Because OC is overrated.";
+const POETRY_TITLE = "Poetry";
+const POETRY_DESCRIPTION =
+  "It needs to rhyme, but it also needs to sound not cheesy. H'm.";
 
-class BlogIndex extends React.Component {
+class PoetryIndex extends React.Component {
   render() {
     const title = get(this, "props.data.site.siteMetadata.title");
     const posts = get(this, "props.data.allMarkdownRemark.edges");
@@ -17,9 +18,9 @@ class BlogIndex extends React.Component {
     return (
       <Layout
         location={this.props.location}
-        title={BLOG_TITLE}
-        description={BLOG_DESCRIPTION}
-        helmetTitle={`${BLOG_TITLE} | ${title}`}
+        title={POETRY_TITLE}
+        description={POETRY_DESCRIPTION}
+        helmetTitle={`${POETRY_TITLE} | ${title}`}
       >
         {posts.map(({ node }) => {
           const title = get(node, "frontmatter.title") || node.fields.slug;
@@ -34,11 +35,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>
-                {node.frontmatter.date}
-                &nbsp;&mdash;&nbsp;
-                {node.frontmatter.category}
-              </small>
+              <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           );
@@ -48,23 +45,25 @@ class BlogIndex extends React.Component {
   }
 }
 
-BlogIndex.propTypes = {
+PoetryIndex.propTypes = {
   location: PropTypes.object,
 };
 
-export default BlogIndex;
+export default PoetryIndex;
 
 // filter by blog slug
 export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
+        poetryTitle
+        poetryDescription
         title
       }
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { slug: { regex: "/.*/blog/.*/" } } }
+      filter: { fields: { slug: { regex: "/.*/poetry/.*/" } } }
     ) {
       edges {
         node {
