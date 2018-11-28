@@ -8,9 +8,7 @@
 
 ## Blog
 
-actual articles, not poetry or stories or other random crap
-
-needs to be categorized
+actual articles, not poetry or stories or other random crap. needs to be categorized.
 
 - 54-minute adventure
 - Picotech

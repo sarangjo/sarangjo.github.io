@@ -7,12 +7,56 @@ import PropTypes from "prop-types";
 import Layout from "../components/Layout";
 import { rhythm, scale } from "../utils/typography";
 
-class BlogPostTemplate extends React.Component {
+const BLOG_TYPE = "blog";
+const OTHER_TYPE = "other";
+
+export default class MarkdownPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
-    const siteTitle = get(this.props, "data.site.siteMetadata.title");
+
+    let siteTitle;
+    switch (this.props.type) {
+    case BLOG_TYPE:
+      siteTitle = get(this.props, "data.site.siteMetadata.blogTitle");
+      break;
+    case OTHER_TYPE:
+    default:
+      siteTitle = get(this.props, "data.site.siteMetadata.title");
+      break;
+    }
+
     const siteDescription = post.excerpt;
     const { previous, next } = this.props.pageContext;
+
+    let prevNextLinks;
+    if (previous && next) {
+      prevNextLinks = (
+        <ul
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            listStyle: "none",
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      );
+    }
 
     return (
       <Layout location={this.props.location}>
@@ -40,42 +84,18 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <ul
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            listStyle: "none",
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        {prevNextLinks}
       </Layout>
     );
   }
 }
 
-BlogPostTemplate.propTypes = {
+MarkdownPostTemplate.propTypes = {
   data: PropTypes.object,
   pageContext: PropTypes.object,
   location: PropTypes.object,
+  type: PropTypes.string,
 };
-
-export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

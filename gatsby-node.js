@@ -3,34 +3,41 @@ const Promise = require("bluebird");
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
-// TODO we only want to create blog pages for the pages under /blog/
+function query(isBlog) {
+  return;
+  `
+  {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 1000
+      ${isBlog ? 'filter: { fields: { slug: { regex: "//blog/.*/" } } }' : ""}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+  `;
+}
+
+// This function generates pages from static files. We want to use this to
+// separately create *blog pages*, linked together and sorted, and miscellaneous
+// markdown pages
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    const blogPost = path.resolve("./src/templates/blog-post.js");
+  const mdPost = path.resolve("./src/templates/md-post.js");
+
+  const blogPromise = new Promise((resolve, reject) => {
     resolve(
-      graphql(
-        `
-          {
-            allMarkdownRemark(
-              sort: { fields: [frontmatter___date], order: DESC }
-              limit: 1000
-            ) {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                  }
-                }
-              }
-            }
-          }
-        `
-      ).then(result => {
+      graphql(query(true)).then(result => {
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);
@@ -46,7 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: post.node.fields.slug,
-            component: blogPost,
+            component: mdPost,
             context: {
               slug: post.node.fields.slug,
               previous,
@@ -57,6 +64,34 @@ exports.createPages = ({ graphql, actions }) => {
       })
     );
   });
+  const otherPromise = new Promise((resolve, reject) => {
+    resolve(
+      graphql(query(true)).then(result => {
+        if (result.errors) {
+          console.log(result.errors);
+          reject(result.errors);
+        }
+
+        // Create other posts pages.
+        const posts = result.data.allMarkdownRemark.edges;
+
+        _.each(
+          _.filter(posts, post => !post.node.fields.slug.startsWith("/blog")),
+          post => {
+            createPage({
+              path: post.node.fields.slug,
+              component: mdPost,
+              context: {
+                slug: post.node.fields.slug,
+              },
+            });
+          }
+        );
+      })
+    );
+  });
+
+  return Promise.all([blogPromise, otherPromise]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

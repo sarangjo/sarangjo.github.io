@@ -58,9 +58,7 @@ BlogIndex.propTypes = {
 
 export default BlogIndex;
 
-// TODO I feel like allMarkdownRemark can be replaced by markdownRemark? Because
-// we only want certain blog posts. The key thing to figure out is the best
-// place in the code to actually make the throttling
+// filter by blog slug
 export const pageQuery = graphql`
   query {
     site {
@@ -69,7 +67,10 @@ export const pageQuery = graphql`
         blogDescription
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { slug: { regex: "/.*/blog/.*/" } } }
+    ) {
       edges {
         node {
           excerpt

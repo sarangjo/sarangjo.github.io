@@ -1,6 +1,6 @@
 ---
 title: My 54-minute Adventure
-date: '2014-01-16'
+date: 2014-01-16
 category: story
 ---
 

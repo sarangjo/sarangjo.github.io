@@ -1,7 +1,6 @@
 ---
 title: Glasses
-date: '2012-06-28'
-category: poetry
+date: "2012-06-28"
 ---
 
 Inspired, as always, by the one and only Aboli Joshi. <3
