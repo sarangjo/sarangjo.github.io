@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import get from "lodash/get";
+import map from "lodash/map";
 import PropTypes from "prop-types";
 
 import Layout from "../components/Layout";
@@ -36,8 +37,8 @@ class Index extends React.Component {
       "props.data.site.siteMetadata.description"
     );
 
-    const classes = _.map(CLASSES, (c, i) => {
-      const items = _.map(c.quarters, (q, j) => (
+    const classes = map(CLASSES, (c, i) => {
+      const items = map(c.quarters, (q, j) => (
         <span key={j}>
           <a
             href={`https://courses.cs.washington.edu/courses/cse${c.num}/${q}/`}

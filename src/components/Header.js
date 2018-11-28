@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import _ from "lodash";
+import each from "lodash/each";
 
 import { rhythm, scale } from "../utils/typography";
 import * as pt from "../utils/proptypes";
@@ -30,7 +30,7 @@ class Header extends React.Component {
         home
       </Link>
     );
-    _.each(parts, part => {
+    each(parts, part => {
       link += `${part}/`;
       superTop.push(
         <span key={link}>
