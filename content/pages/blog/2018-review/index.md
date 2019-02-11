@@ -26,7 +26,7 @@ With slow, cold February really giving me an opportunity to stop caring about sc
 
 <figure>
     <img src="./february.jpg" title="Winter 2018 Grade Report (2018) (COLORIZED)">
-    <figcaption style="text-align: center; padding-top: 2px; font-size: 85%;">Don't really have any picture to go with this, but I'm glad we can all share a good laugh</figcaption>
+    <figcaption style="text-align: center; padding-top: 2px; font-size: 85%;">Don't really have any picture to go with this, but I'm glad we can all laugh about this now</figcaption>
 </figure>
 
 # March
