@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 
-import Header from "./Header";
+import Header from "./header";
 import { rhythm } from "../utils/typography";
 import * as pt from "../utils/proptypes";
 
@@ -19,6 +19,7 @@ export default class Layout extends React.Component {
       helmetTitle,
       helmetDescription,
       children,
+      showBio,
     } = this.props;
 
     return (
@@ -37,7 +38,7 @@ export default class Layout extends React.Component {
           ]}
           title={helmetTitle || title}
         />
-        <Header title={title} description={description} location={location} />
+        <Header title={title} description={description} location={location} showBio={showBio}/>
         {children}
       </div>
     );
@@ -51,4 +52,5 @@ Layout.propTypes = {
   helmetTitle: PropTypes.string,
   helmetDescription: PropTypes.string,
   children: pt.children,
+  showBio: PropTypes.boolean,
 };

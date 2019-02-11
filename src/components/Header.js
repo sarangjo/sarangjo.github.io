@@ -1,10 +1,10 @@
-import React from "react";
+import * as React from "react";
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import each from "lodash/each";
+import PropTypes from "prop-types";
 
+import Bio from "./bio";
 import { rhythm, scale } from "../utils/typography";
-import * as pt from "../utils/proptypes";
 
 const ListLink = props => (
   <li style={{ display: "inline-block", marginRight: "1rem" }}>
@@ -12,14 +12,9 @@ const ListLink = props => (
   </li>
 );
 
-ListLink.propTypes = {
-  to: PropTypes.string,
-  children: pt.children,
-};
-
 class Header extends React.Component {
   render() {
-    const { location, title, description } = this.props;
+    const { location, title, description, showBio } = this.props;
 
     const superTop = [];
     const parts = location.pathname.split("/").filter(x => !!x.trim().length);
@@ -51,11 +46,15 @@ class Header extends React.Component {
           {title}
         </h1>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <p>{description}</p>
+          {
+            showBio
+            ? <Bio />
+            : <i>{description}</i>
+          }
           <ul style={{ listStyle: "none", flexShrink: 0 }}>
             <ListLink to="/">Home</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
-            <ListLink to="/poetry/">Poetry</ListLink>
+            {/*<ListLink to="/poetry/">Poetry</ListLink>*/}
           </ul>
         </div>
       </header>

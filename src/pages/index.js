@@ -4,7 +4,7 @@ import get from "lodash/get";
 import map from "lodash/map";
 import PropTypes from "prop-types";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 
 const CLASSES = [
   {
@@ -68,7 +68,7 @@ class Index extends React.Component {
         description={siteDescription}
       >
         <p>
-          This is still somewhat under construction, and will become less
+          This is still under construction, and will become less
           horrendous in upcoming weeks. Stay tuned!
         </p>
         <h2>Web projects:</h2>
@@ -123,7 +123,7 @@ class Index extends React.Component {
         </ul>
         <h2>
           Other projects can be found on my{" "}
-          <a href="http://github.com/sarangjo">GitHub page</a>!
+          <a href="https://github.com/sarangjo">GitHub page</a>!
         </h2>
         <h2>Philanthropy</h2>
         <ul>
@@ -131,10 +131,10 @@ class Index extends React.Component {
             Kinspire - Vice President
             <ul>
               <li>
-                <a href="http://kinspire.org/">Website Developer</a>
+                <a href="https://kinspire.org/">Website Developer</a>
               </li>
               <li>
-                <a href="http://github.com/kinspire/kinspire-portal">
+                <a href="https://github.com/kinspire/kinspire-portal">
                   Kinspire Portal
                 </a>
               </li>

@@ -1,17 +1,14 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import get from "lodash/get";
-import PropTypes from "prop-types";
+import React from "react"
+import { Link, graphql } from "gatsby"
 
-import Layout from "../components/Layout";
-import { rhythm } from "../utils/typography";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { rhythm, } from "../utils/typography"
 
-export default class MarkdownPostTemplate extends React.Component {
+class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
-
-    const siteTitle = get(this.props, "data.site.siteMetadata.title");
-
+    const siteTitle = this.props.data.site.siteMetadata.title;
     const description = post.excerpt;
     const { previous, next } = this.props.pageContext;
 
@@ -51,8 +48,9 @@ export default class MarkdownPostTemplate extends React.Component {
         helmetTitle={`${post.frontmatter.title} | ${siteTitle}`}
         title={post.frontmatter.title}
         helmetDescription={description}
-        description={`${post.frontmatter.date} - ${post.frontmatter.category}`}
+        description={`${post.frontmatter.date} - ${post.fields.readingTime.text}`}
       >
+        <SEO title={post.frontmatter.title} description={post.excerpt} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -65,11 +63,7 @@ export default class MarkdownPostTemplate extends React.Component {
   }
 }
 
-MarkdownPostTemplate.propTypes = {
-  data: PropTypes.object,
-  pageContext: PropTypes.object,
-  location: PropTypes.object,
-};
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -81,13 +75,17 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt
+      excerpt(pruneLength: 160)
       html
+      fields {
+        readingTime {
+          text
+        }
+      }
       frontmatter {
         title
-        category
         date(formatString: "MMMM DD, YYYY")
       }
     }
   }
-`;
+`
