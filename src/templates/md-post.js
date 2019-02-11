@@ -1,11 +1,12 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import PropTypes from "prop-types";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, } from "../utils/typography"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { rhythm } from "../utils/typography";
 
-class BlogPostTemplate extends React.Component {
+class MdPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
@@ -48,7 +49,9 @@ class BlogPostTemplate extends React.Component {
         helmetTitle={`${post.frontmatter.title} | ${siteTitle}`}
         title={post.frontmatter.title}
         helmetDescription={description}
-        description={`${post.frontmatter.date} - ${post.fields.readingTime.text}`}
+        description={`${post.frontmatter.date} - ${
+          post.fields.readingTime.text
+        }`}
       >
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -63,7 +66,13 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+MdPostTemplate.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object,
+  location: PropTypes.object,
+};
+
+export default MdPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -88,4 +97,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

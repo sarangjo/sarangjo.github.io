@@ -5,12 +5,18 @@ import PropTypes from "prop-types";
 
 import Bio from "./bio";
 import { rhythm, scale } from "../utils/typography";
+import * as pt from "../utils/proptypes";
 
 const ListLink = props => (
   <li style={{ display: "inline-block", marginRight: "1rem" }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 );
+
+ListLink.propTypes = {
+  to: PropTypes.string,
+  children: pt.children,
+};
 
 class Header extends React.Component {
   render() {
@@ -46,11 +52,7 @@ class Header extends React.Component {
           {title}
         </h1>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          {
-            showBio
-            ? <Bio />
-            : <i>{description}</i>
-          }
+          {showBio ? <Bio /> : <i>{description}</i>}
           <ul style={{ listStyle: "none", flexShrink: 0 }}>
             <ListLink to="/">Home</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
@@ -66,6 +68,7 @@ Header.propTypes = {
   location: PropTypes.object,
   title: PropTypes.string,
   description: PropTypes.string,
+  showBio: PropTypes.boolean,
 };
 
 export default Header;
