@@ -34,7 +34,7 @@ With slow, cold February really giving me an opportunity to stop caring about sc
 March marked the culmination of probably the most impactful experience of my time at UW. This would be my very last quarter being a teaching assistant for the undergrad UW CSE courses. From barely making it as a 143 TA off the waitlist 3 years ago (to the person who opened up a spot for me that fateful day: I am eternally grateful) to TA'ing Distributed Systems in my final quarter, being a TA more than anything else made me feel like I was doing what I was meant to do in life. One of my favorite moments of my 4 years at UW was giving a substitute lecture for CSE 351 when Prof. Ceze was out of town. I don't quite know what the next few (or many) years have in store for me, but I know that I'll carry the giddy rush that I would get right before the start of weekly quiz sections with me forever.
 
 <figure style="display: flex; flex-direction: column;">
-    <video width="400" controls style="margin: auto;" title="10 seconds are enough to figure out that what I'm saying is completely unintelligible">
+    <video width="400" controls style="margin: auto; width: 400px; max-width: 100%" title="10 seconds are enough to figure out that what I'm saying is completely unintelligible">
         <source src="march.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
