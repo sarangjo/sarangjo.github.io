@@ -21,7 +21,8 @@ function Bio() {
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
-                marginBottom: 0,
+                marginTop: "auto",
+                marginBottom: "auto",
                 minWidth: 50,
                 borderRadius: `100%`,
               }}
@@ -29,7 +30,7 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
+            <p style={{ margin: "auto 0" }}>
               Written by <strong>{author}</strong>.
             </p>
           </div>

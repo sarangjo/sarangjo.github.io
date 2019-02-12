@@ -51,9 +51,26 @@ class Header extends React.Component {
         <h1 style={{ ...scale(1.5), marginTop: 0, marginBottom: rhythm(0.75) }}>
           {title}
         </h1>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          {showBio ? <Bio /> : <i>{description}</i>}
-          <ul style={{ listStyle: "none", flexShrink: 0 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: rhythm(0.6),
+          }}
+        >
+          {showBio ? (
+            <Bio />
+          ) : (
+            <i style={{ margin: "auto 0" }}>{description}</i>
+          )}
+          <ul
+            style={{
+              listStyle: "none",
+              flexShrink: 0,
+              marginBottom: "auto",
+              marginTop: "auto",
+            }}
+          >
             <ListLink to="/">Home</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
             {/*<ListLink to="/poetry/">Poetry</ListLink>*/}
