@@ -164,8 +164,8 @@ December brought with it the true holiday season (although the American capitali
 
 All in all the wedding was a spectacular event, and I wish the happy couple all the best!! And before you ask,
 
-1. Yes, I did [sing](./dec-singing.jpg),
-2. Yes, I did [dance](./dec-dancing.jpg),
+1. Yes, I did [sing](/blog/dec-singing.jpg),
+2. Yes, I did [dance](/blog/dec-dancing.jpg),
 3. Of course I stole the stage, and
 4. [Here is a video of both](https://youtu.be/dQw4w9WgXcQ).
 
