@@ -10,7 +10,7 @@ Me: "Yeah, you know, I'm kind of an early worm..."
 
 Exactly. It doesn't really make sense, and I'd get eaten by the early bird.
 
-Anyway, while I have a chronic disorder
+Now, while I have a chronic "disorder" that doesn't let me wake up at proper hours most days, certain weekend mornings stand out in my memory like tall skyscrapers built by real estate magnates amidst a sea of slums.
 
 1. Cartoons in the morning
 2. Summer trip from India to the USA
