@@ -21,8 +21,15 @@ class Index extends React.Component {
         showBio={true}
       >
         <p>
-          This is still under construction, and will become less empty in
-          upcoming weeks. Stay tuned!
+          Hi there! I&apos;m Sarang Joshi, a software developer working at&nbsp;
+          <a
+            href="https://illumio.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Illumio
+          </a>
+          .
         </p>
       </Layout>
     );

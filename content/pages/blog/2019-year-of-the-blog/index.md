@@ -1,8 +1,7 @@
 ---
 title: 2019 - Year of the Blog?
-date: 2019-01-02
+date: "2019-01-02"
 ---
-
 
 I’ve tried multiple times over the past few (many) years to get into a consistent writing habit. My dad always pushed me when I was in middle school to just write about anything — and write about anything I did, with a strong emphasis on “anything.” Looking at my “Creative Works” folder on OneDrive, I marvel at the amazing range of uninteresting topics I managed to spew some bland words about. I wasn’t a very imaginative child, to say the least, but I suppose I tried my best at the time.
 

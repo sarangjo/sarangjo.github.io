@@ -31,7 +31,7 @@ function Bio() {
               }}
             />
             <p style={{ margin: "auto 0" }}>
-              Written by <strong>{author}</strong>.
+              <strong>{author}</strong>&apos;s personal website.
             </p>
           </div>
         );
