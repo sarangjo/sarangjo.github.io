@@ -1,0 +1,3 @@
+.visible-autolink > svg {
+  visibility: visible !important;
+}

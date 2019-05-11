@@ -6,6 +6,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm } from "../utils/typography";
 
+import "./md-post.css";
+
 class MdPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
