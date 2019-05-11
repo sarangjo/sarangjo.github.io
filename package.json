@@ -51,7 +51,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
