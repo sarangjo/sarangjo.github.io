@@ -37,6 +37,8 @@ Conversation is sporadic, but I like it that way. I walk a few paces ahead of th
 
 We hurriedly pile back into the Santro, and head over to the Joshi family's signature breakfast place, Wadeshwar. Baba hadn't told us this before now, but we are apparently meeting some family friends there, which made me a lot more excited for the upcoming breakfast. The expected 10-15 minute wait for the table feels more like an eternity, but when they finally call Baba's name, we've already decided our orders. To be honest, mine is always the same, so I really had my order ready before we'd even arrived at the restaurant. Once the food is served and I fill my mouth with the biggest bite I can manage, I lean back in my chair, satisfied at last. Uttappas never tasted so good.
 
+![Wadeshwar photo](./wadeshwar.jpg "If you're wondering, this is still how I smile for photos")
+
 ### High school "morning", c. 2012
 
 I groggily open my eyes as my mom knocks on my bedroom door. I make sure it is my mom, because if it's my sister I'm going to me mad. I roughly make out what she's saying: "It's 11:30, we need to be at a lunch by 12!" I groan internally, fully aware that "waking up late" wouldn't really count as an excuse for being late at a lunch scheduled for noon. For the 2000th time, I regret staying up beyond 3am the previous night for really no reason whatsoever. While I did get around 8 hours of sleep, it sure as hell doesn't feel like it, which makes sense considering that I'd slept for less than 5 every day the preceding week. I'm grumpy, I'm tired, I'm hungry, but most of all I feel gross. I sit up and check my messages on my trusty Nokia Lumia 700, when there's another knocking on the door. This time it is my sister, and the second I realize it is her, I shout "Calm down, उठलोय मी!" ("Calm down, I'm already up!") Unwarranted and unnecessary, sure, but I'm annoyed. Definitely more at myself than at her, to be honest, but there you have it. It takes 20 minutes for me to get ready, my already slow pace slowed down further by my lack of interest in this lunch.
@@ -64,6 +66,8 @@ This transcendence must, however, eventually come to an end. After Kavya wraps u
 Everything around me has a different air to it. Even Kavya's boring accounts of dealing with patients seem interesting in that moment[^5]. I try to explain what my few hours were like, but I can't quite put it into words, and just end up telling her how grateful I am that she asked me to drop her off this fateful morning. She thinks I'm being sarcastic, but I'm really not. We get back in the car, and I wonder if I'll ever be in a mental place like that ever again. Most likely not.
 
 Oh well. Time to resume life on earth.
+
+<iframe src="https://open.spotify.com/embed/track/2YOEKFkS1IWFmZglZx2M3f" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 ### Last Awaaz Competition, 2018
 
