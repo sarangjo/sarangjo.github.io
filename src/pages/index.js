@@ -29,7 +29,7 @@ class Index extends React.Component {
           >
             Illumio
           </a>
-          .
+          . I graduated from the University of Washington, Seattle, with a Bachelor's of Science in Computer Science cum laude (or something like that) and a minor in Math. This website serves as a central repository for the things I've worked on and things I like.
         </p>
       </Layout>
     );
