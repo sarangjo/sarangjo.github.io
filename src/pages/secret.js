@@ -91,11 +91,7 @@ export default class Secret extends React.Component {
                   Microfluidics&#39;
                 </a>
                 , June 2018 (
-                <a
-                  href="https://docs.google.com/presentation/d/e/2PACX-1vRuce7h-qTiSWLqWiQV-dWiqu8P5Qqd48mvFM15-2wApVB8qFY9MM4blEn7iGN4xJm_u4DD4DEbJhl2/pub?start=false&loop=false&delayms=3000"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="" target="_blank" rel="noopener noreferrer">
                   Honors Presentation
                 </a>
                 )

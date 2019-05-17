@@ -1,11 +1,62 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import get from "lodash/get";
+import zipWith from "lodash/zipWith";
 import PropTypes from "prop-types";
 
 import Layout from "../components/layout";
 
+const LINKS = [
+  "https://illumio.com",
+  "https://uw.edu",
+  "https://cs.uw.edu",
+  "papers/Joshi_Senior_Thesis.pdf",
+  "https://docs.google.com/presentation/d/e/2PACX-1vRuce7h-qTiSWLqWiQV-dWiqu8P5Qqd48mvFM15-2wApVB8qFY9MM4blEn7iGN4xJm_u4DD4DEbJhl2/pub?start=false&loop=false&delayms=3000",
+  "https://misl.cs.washington.edu/",
+  "https://www.youtube.com/playlist?list=PLB0785C00EA91F358",
+  "https://www.youtube.com/playlist?list=PLHGainiu-yeQDDL-MlGiJxLC_ayim-aEg",
+];
+
+const L = ({ i, to, children }) => (
+  <a href={to ? to : LINKS[i]} target="_blank" rel="noopener noreferrer">
+    {children}
+  </a>
+);
+L.propTypes = {
+  i: PropTypes.number,
+  to: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
+
+const CLASSES = [
+  { c: 143, q: "15sp" },
+  { c: 143, q: "15au" },
+  { c: 351, q: "16wi" },
+  { c: 351, q: "16sp" },
+  { c: 311, q: "16au" },
+  { c: 351, q: "17wi" },
+  { c: 451, q: "17sp" },
+  { c: 451, q: "17au" },
+  { c: 451, q: "18wi" },
+  { c: 452, q: "18sp" },
+];
+
 class Index extends React.Component {
+  classes(sentence) {
+    const words = sentence.split(" ");
+
+    return zipWith(CLASSES, words, (c, w) => ({ ...c, w })).map(
+      ({ c, q, w }, i) => (
+        <React.Fragment key={i}>
+          {" "}
+          <L to={`https://courses.cs.washington.edu/courses/cse${c}/${q}/`}>
+            {w}
+          </L>
+        </React.Fragment>
+      )
+    );
+  }
+
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
     const siteDescription = get(
@@ -21,18 +72,25 @@ class Index extends React.Component {
         showBio={true}
       >
         <p>
-          Hi there! I&apos;m Sarang Joshi, a software developer working at&nbsp;
-          <a
-            href="https://illumio.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Illumio
-          </a>
-          . I graduated from the University of Washington, Seattle, with a
-          Bachelor&apos;s of Science in Computer Science cum laude (or something
-          like that) and a minor in Math. This website serves as a central
-          repository for the things I&apos;ve worked on and things I like.
+          Hi there! I&apos;m Sarang Joshi is a software developer, singer, and
+          life enthusiast working at <L i={0}>Illumio</L> in Sunnyvale, CA. I
+          graduated cum laude from the{" "}
+          <L i={1}>University of Washington, Seattle</L>, with a B.S. in{" "}
+          <L i={2}>Computer Science</L> with Honors and a minor in Math. During
+          undergrad, I was a Teaching Assistant for
+          {this.classes(
+            "various undergraduate classes in the Computer Science and Engineering department"
+          )}
+          , and completed my Senior Departmental Honors research on{" "}
+          <L i={3}>
+            Multi-Location Droplet Management for Digital Microfluidics
+          </L>{" "}
+          (<L i={4}>presentation</L>) with the UW{" "}
+          <L i={5}>Molecular Information Systems Lab</L>. Besides work, I like
+          to <L i={6}>sing</L>, <Link to="/blog">write</Link>,{" "}
+          <L i={7}>play video games</L>, program, and travel when I can.
+          You&apos;ll find most of my work on this website, so feel free to
+          explore!
         </p>
       </Layout>
     );
