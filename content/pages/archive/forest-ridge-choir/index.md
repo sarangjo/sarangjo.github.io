@@ -1,0 +1,12 @@
+---
+title: The Forest Ridge Choir Festival
+date: "2010-05-20"
+---
+
+A choir festival was held by the Forest Ridge Choir authorities on 1 and 2 May 2010. I went to both of them, and it was an amazing experience for me – I had never seen or heard anything like it!
+
+On Saturday, 1 May 2010, I had gone to Nivu’s house. At 6:25 p.m., we left her house for Forest Ridge school with her parents. Nikita was in the choir and had been in the school since morning. We went in their Land Rover and I enjoyed watching the GPS. We went to Somerset, where the school was. It was on a hill, and the view was simply outrageously beautiful. We could see the whole of Seattle and Bellevue, with Downtown and the Space Needle in the evening light. The school was awesome as well, with newly refurbished buildings and campus. We went to the Sacred Heart Chapel, where the program was. That day, only the Forest Ridge School Choir was singing. A world-famous composer and conductor, Mr Stephen Hatfield was going to conduct the choir. The performance was fantastic! They sang songs from all over the world – Celtic, Slovak, Ukrainian, and many more. Mr Hatfield was the pick of the show – he was just so crazy and hyperactive. He composed most of the songs in 5 to 6 pieces and it was very well coordinated. At the end, Mr Stephen Hatfield collapsed on the floor and everyone in the audience stood up and laughed and clapped riotously for the choir. We had some cookies too, after the choir.
+
+The next day, all 6 of us – Aai, Baba, Ajji, Ajoba, Sanika, and I – were going to see the choir perform. This time, 6 more schools were coming with their choirs to perform and Forest Ridge was only going to sing one or two songs. Mr Hatfield was there the day as well, and he had worked with the individual choirs the whole day long. The Forest Ridge Choir sang three of the same songs as the night before. The other schools came up and staged their performances with great vigor, and the crowd responded with applause of equal, if not greater, vigor. Finally, all the students came together to sing two mass items. Even though there were 180 or so students, the binge was a great success, and, like the previous day, the spectators gave a standing ovation to the singers, and they bowed – once – twice – to the great smattering of applause.
+
+I enjoyed the whole program to the fullest and hope that I will get to see (and hear) it once more.
