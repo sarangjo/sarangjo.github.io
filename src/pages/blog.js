@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 import { rhythm } from "../utils/typography";
 
 const BLOG_TITLE = "Life Enthusiasm";
-const BLOG_DESCRIPTION = "Because OC is overrated.";
+const BLOG_DESCRIPTION = "The world is a beautiful place.";
 
 class BlogIndex extends React.Component {
   render() {

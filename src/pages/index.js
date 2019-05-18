@@ -15,8 +15,10 @@ const LINKS = [
   "https://misl.cs.washington.edu/",
   "https://www.youtube.com/playlist?list=PLB0785C00EA91F358",
   "https://www.youtube.com/playlist?list=PLHGainiu-yeQDDL-MlGiJxLC_ayim-aEg",
+  "https://sarangjo.github.io",
 ];
 
+// Helper component for a link out of the home page in a new tab
 const L = ({ i, to, children }) => (
   <a href={to ? to : LINKS[i]} target="_blank" rel="noopener noreferrer">
     {children}
@@ -28,6 +30,7 @@ L.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
+// TA classes/quarters list
 const CLASSES = [
   { c: 143, q: "15sp" },
   { c: 143, q: "15au" },
@@ -41,22 +44,19 @@ const CLASSES = [
   { c: 452, q: "18sp" },
 ];
 
+const classes = sentence =>
+  zipWith(CLASSES, sentence.split(" "), (c, w) => ({ ...c, w })).map(
+    ({ c, q, w }, i) => (
+      <React.Fragment key={i}>
+        {" "}
+        <L to={`https://courses.cs.washington.edu/courses/cse${c}/${q}/`}>
+          {w}
+        </L>
+      </React.Fragment>
+    )
+  );
+
 class Index extends React.Component {
-  classes(sentence) {
-    const words = sentence.split(" ");
-
-    return zipWith(CLASSES, words, (c, w) => ({ ...c, w })).map(
-      ({ c, q, w }, i) => (
-        <React.Fragment key={i}>
-          {" "}
-          <L to={`https://courses.cs.washington.edu/courses/cse${c}/${q}/`}>
-            {w}
-          </L>
-        </React.Fragment>
-      )
-    );
-  }
-
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
     const siteDescription = get(
@@ -72,13 +72,13 @@ class Index extends React.Component {
         showBio={true}
       >
         <p>
-          Hi there! I&apos;m Sarang Joshi is a software developer, singer, and
+          Hi there! I&apos;m Sarang Joshi, a software developer, singer, and
           life enthusiast working at <L i={0}>Illumio</L> in Sunnyvale, CA. I
           graduated cum laude from the{" "}
           <L i={1}>University of Washington, Seattle</L>, with a B.S. in{" "}
           <L i={2}>Computer Science</L> with Honors and a minor in Math. During
           undergrad, I was a Teaching Assistant for
-          {this.classes(
+          {classes(
             "various undergraduate classes in the Computer Science and Engineering department"
           )}
           , and completed my Senior Departmental Honors research on{" "}
@@ -86,11 +86,13 @@ class Index extends React.Component {
             Multi-Location Droplet Management for Digital Microfluidics
           </L>{" "}
           (<L i={4}>presentation</L>) with the UW{" "}
-          <L i={5}>Molecular Information Systems Lab</L>. Besides work, I like
-          to <L i={6}>sing</L>, <Link to="/blog">write</Link>,{" "}
-          <L i={7}>play video games</L>, program, and travel when I can.
-          You&apos;ll find most of my work on this website, so feel free to
-          explore!
+          <L i={5}>Molecular Information Systems Lab</L>.
+        </p>
+        <p>
+          Outside of work, I like to <L i={6}>sing</L>,{" "}
+          <Link to="/blog">write</Link>, <L i={7}>play video games</L>,{" "}
+          <L i={8}>program</L>, and travel when I can. You&apos;ll find most of
+          my work on this website, so feel free to explore!
         </p>
       </Layout>
     );
