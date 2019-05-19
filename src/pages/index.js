@@ -15,7 +15,7 @@ const LINKS = [
   "https://misl.cs.washington.edu/",
   "https://www.youtube.com/playlist?list=PLB0785C00EA91F358",
   "https://www.youtube.com/playlist?list=PLHGainiu-yeQDDL-MlGiJxLC_ayim-aEg",
-  "https://sarangjo.github.io",
+  "https://github.com/sarangjo",
 ];
 
 // Helper component for a link out of the home page in a new tab
