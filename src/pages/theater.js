@@ -6,25 +6,27 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm } from "../utils/typography";
 
-const BLOG_TITLE = "Life Enthusiasm";
-const BLOG_DESCRIPTION = "The world is a beautiful place.";
+const TITLE = "Theater";
+const DESCRIPTION =
+  "All the world's a stage, And all the men and women merely players.";
 
-class BlogIndex extends React.Component {
+class TheaterIndex extends React.Component {
   render() {
     const { data } = this.props;
     const title = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
+    const posts = data.allFountain.edges;
 
     return (
       <Layout
         location={this.props.location}
-        title={BLOG_TITLE}
-        description={BLOG_DESCRIPTION}
-        helmetTitle={`${BLOG_TITLE} | ${title}`}
+        title={TITLE}
+        description={DESCRIPTION}
+        helmetTitle={`${TITLE} | ${title}`}
+        showBio={false}
       >
         <SEO
-          title="Blog"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title={TITLE}
+          keywords={[`theater`, `gatsby`, `javascript`, `react`]}
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
@@ -39,11 +41,8 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>
-                {node.frontmatter.date}
-                {/* TODO add category */}
-              </small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <small>{node.frontmatter.date}</small>
+              <p>{node.frontmatter.source}</p>
             </div>
           );
         })}
@@ -52,12 +51,12 @@ class BlogIndex extends React.Component {
   }
 }
 
-BlogIndex.propTypes = {
+TheaterIndex.propTypes = {
   location: PropTypes.object,
   data: PropTypes.object,
 };
 
-export default BlogIndex;
+export default TheaterIndex;
 
 export const pageQuery = graphql`
   query {
@@ -66,19 +65,16 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { slug: { regex: "//blog/.*/" } } }
-    ) {
+    allFountain(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
           fields {
             slug
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            source
           }
         }
       }
