@@ -1,0 +1,82 @@
+/*
+  Based on Scrippet by John August (johnaugust.com)
+*/
+
+div.script {
+  background: #fffffc;
+  color: #000000;
+  border: 1px solid #333;
+  padding: 8px 20px 10px 20px !important;
+}
+
+@media only screen and (max-width: 800px) {
+  div.script {
+    padding: 5px 14px 15px 14px !important;
+  }
+}
+
+.script * {
+  font: 16px "Courier Final Draft", Courier, "Courier New", monospace !important;
+}
+
+.script h2 {
+  margin: 1em 0;
+}
+
+.script h4 {
+  margin-top: 1.33em !important;
+  margin-bottom: 0 !important;
+  margin-left: 23% !important;
+  letter-spacing: 0 !important;
+}
+
+.script p {
+  text-align: left !important;
+  letter-spacing: 0 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.sceneheader,
+.action,
+.character {
+  padding-top: 1.5ex !important;
+}
+
+.action {
+  padding-right: 5% !important;
+  line-height: 14px !important;
+}
+
+.character {
+  padding-left: 40% !important;
+}
+
+.dialogue {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  padding-left: 20% !important;
+  padding-right: 20% !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .dialogue {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+}
+
+.parenthetical {
+  padding-left: 11% !important;
+  padding-right: 11% !important;
+}
+
+.dialogue + .parenthetical {
+  padding-bottom: 0 !important;
+}
+
+.transition {
+  padding-top: 3ex !important;
+  padding-left: 65% !important;
+  padding-bottom: 1.5ex !important;
+}

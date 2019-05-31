@@ -38,7 +38,12 @@ export default class Layout extends React.Component {
           ]}
           title={helmetTitle || title}
         />
-        <Header title={title} description={description} location={location} showBio={showBio}/>
+        <Header
+          title={title}
+          description={description}
+          location={location}
+          showBio={showBio}
+        />
         {children}
       </div>
     );
@@ -52,5 +57,5 @@ Layout.propTypes = {
   helmetTitle: PropTypes.string,
   helmetDescription: PropTypes.string,
   children: pt.children,
-  showBio: PropTypes.boolean,
+  showBio: PropTypes.bool,
 };

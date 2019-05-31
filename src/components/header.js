@@ -8,7 +8,7 @@ import { rhythm, scale } from "../utils/typography";
 import * as pt from "../utils/proptypes";
 
 const ListLink = props => (
-  <li style={{ display: "inline-block", marginRight: "1rem" }}>
+  <li style={{ display: "inline-block", marginLeft: "1rem" }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 );
@@ -73,6 +73,7 @@ class Header extends React.Component {
           >
             <ListLink to="/">Home</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
+            <ListLink to="/theater/">Theater</ListLink>
             {/*<ListLink to="/poetry/">Poetry</ListLink>*/}
           </ul>
         </div>
@@ -85,7 +86,7 @@ Header.propTypes = {
   location: PropTypes.object,
   title: PropTypes.string,
   description: PropTypes.string,
-  showBio: PropTypes.boolean,
+  showBio: PropTypes.bool,
 };
 
 export default Header;

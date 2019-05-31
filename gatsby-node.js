@@ -1,11 +1,11 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-
+async function createBlogPages(createPage, graphql) {
   const blogPost = path.resolve(`./src/templates/md-post.js`);
-  return graphql(
+
+  // Blog
+  const result = await graphql(
     `
       {
         allMarkdownRemark(
@@ -25,37 +25,89 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors;
-    }
+  );
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges;
+  if (result.errors) {
+    throw result.errors;
+  }
 
-    // TODO this is broken
-    posts.forEach((post, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1].node;
-      const next = index === 0 ? null : posts[index - 1].node;
+  // Create blog posts pages.
+  const posts = result.data.allMarkdownRemark.edges;
 
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      });
+  // TODO this is broken
+  posts.forEach((post, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+    const next = index === 0 ? null : posts[index - 1].node;
+
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next,
+      },
     });
   });
+}
+
+async function createTheaterPages(createPage, graphql) {
+  const theaterPost = path.resolve(`./src/templates/fountain-post.js`);
+
+  // Theater
+  const result = await graphql(
+    `
+      {
+        allFountain {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  if (result.errors) {
+    throw result.errors;
+  }
+
+  // Create blog posts pages.
+  const posts = result.data.allFountain.edges;
+
+  // TODO this is broken
+  posts.forEach(post => {
+    createPage({
+      path: post.node.fields.slug,
+      component: theaterPost,
+      context: {
+        slug: post.node.fields.slug,
+      },
+    });
+  });
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+
+  await createBlogPages(createPage, graphql);
+  await createTheaterPages(createPage, graphql);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
+  // TODO make these shared constants
+  if (
+    node.internal.type === `MarkdownRemark` ||
+    node.internal.type === `Fountain`
+  ) {
     const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
