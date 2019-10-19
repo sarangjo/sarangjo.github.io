@@ -1,0 +1,20 @@
+.label {
+  border-radius: 4px;
+  font-size: 80%;
+  margin: 4px;
+  padding: 2px;
+
+  color: white;
+}
+
+.kinspire {
+  background-color: blue;
+}
+
+.asa {
+  background-color: crimson;
+}
+
+.uw {
+  background-color: purple;
+}
