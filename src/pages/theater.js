@@ -8,7 +8,7 @@ import { rhythm } from "../utils/typography";
 
 const TITLE = "Theater";
 const DESCRIPTION =
-  "All the world's a stage, And all the men and women merely players.";
+  "All the world's a stage, and all the men and women merely players.";
 
 class TheaterIndex extends React.Component {
   render() {
@@ -16,6 +16,7 @@ class TheaterIndex extends React.Component {
     const title = data.site.siteMetadata.title;
     const posts = data.allFountain.edges;
 
+    // TODO factor out redundant code about helmetTitle
     return (
       <Layout
         location={this.props.location}
