@@ -86,7 +86,8 @@ class ProjectsPage extends React.Component {
         <ul>
           <li>
             <L to="https://sarangjo.github.io/rlesports-viz">
-              Rocket League eSports visualization
+              Rocket League eSports visualization (
+              <L to="https://github.com/sarangjo/rlesports-viz">source code</L>)
             </L>
           </li>
           <li>
@@ -121,7 +122,12 @@ class ProjectsPage extends React.Component {
         title="Projects"
         description="What else would companies look at to hire me?"
       >
-        <h2>Projects</h2>
+        <h2>
+          Projects{" "}
+          <L to="https://github.com/sarangjo">
+            <img className="github-logo" src="/images/github.png" />
+          </L>
+        </h2>
         {this.completed()}
         {this.inProgress()}
         <h2>Open source contributions</h2>
