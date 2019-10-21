@@ -5181,6 +5181,11 @@ forwarded@~0.1.2:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
   integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
 
+fountain-js@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/fountain-js/-/fountain-js-0.0.1.tgz#6437a8e79f7ea0457888388100bab9ba8107aec3"
+  integrity sha1-ZDeo559+oEV4iDiBALq5uoEHrsM=
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -5604,6 +5609,14 @@ gatsby-telemetry@^1.1.33:
     stack-trace "^0.0.10"
     stack-utils "1.0.2"
     uuid "3.3.3"
+
+gatsby-transformer-fountain@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-fountain/-/gatsby-transformer-fountain-0.0.1.tgz#f01ca3cb6e016ec2943b9f1c63286228529afccd"
+  integrity sha512-Uf4CId9NMo+yJ+3krk8D/zkhINoJ0m4NhIHdMvm3uVzoFM29eVnk8axhlt7HUk/iw67M/aQNkLE5BcpL0aND/g==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    fountain-js "^0.0.1"
 
 gatsby-transformer-remark@^2.2.4:
   version "2.6.30"
