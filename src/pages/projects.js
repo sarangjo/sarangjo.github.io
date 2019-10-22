@@ -33,6 +33,13 @@ class ProjectsPage extends React.Component {
         <h3>Minimum Viable Product</h3>
         <ul>
           <li>
+            Full-stack single-page Typescript app (
+            <L to="https://github.com/sarangjo/full-stack-typescript-app">
+              source code
+            </L>
+            )
+          </li>
+          <li>
             <L to="https://sarangjo.github.io/cse351-heap/">
               CSE 351 Heap Simulator
             </L>
@@ -64,15 +71,15 @@ class ProjectsPage extends React.Component {
           <li>Doc Scheduler</li>
           <li>LightRunner</li>
           <li>Radio Transceiver</li>
-          <li>IonoWumpus</li>
         </ul>
-        <h3>Early Exploration</h3>
+        <h3>From My Early Days</h3>
         <ul>
           <li>
             YahtzeePC (
             <L to="https://github.com/sarangjo/yahtzeepc/">source code</L>)
           </li>
           <li>LOGO projects</li>
+          <li>IonoWumpus</li>
         </ul>
       </>
     );
