@@ -93,9 +93,9 @@ class ProjectsPage extends React.Component {
         <ul>
           <li>
             <L to="https://sarangjo.github.io/rlesports-viz">
-              Rocket League eSports visualization (
-              <L to="https://github.com/sarangjo/rlesports-viz">source code</L>)
-            </L>
+              Rocket League eSports visualization
+            </L>{" "}
+            (<L to="https://github.com/sarangjo/rlesports-viz">source code</L>)
           </li>
           <li>
             Kinspire Portal (
