@@ -30,7 +30,7 @@ class ProjectsPage extends React.Component {
   completed() {
     return (
       <>
-        <h3>Minimum Viable Product</h3>
+        <h3>Completed Projects</h3>
         <ul>
           <li>
             Full-stack single-page Typescript app (
