@@ -39,3 +39,14 @@ $ ./install.sh
    2. Size: `14pt`
    3. Cursor: `Block`, not blinking
 5. Install Vundle and `vim` packages
+
+# Dev tools
+
+## Windows native
+
+- [Nodejs]
+- [Yarn]
+
+## WSL
+
+-
