@@ -1,9 +1,9 @@
 ---
-title: Windows
+title: Developing Software on Windows
 date: "2018-11-16"
 ---
 
-Windows shell development is a mess. Here are some of my notes to explain how it all works together as part of my crusade to not use a Mac at work.
+Windows development is a mess. Here are some of my notes to explain how it all works together as part of my crusade to not use a Mac as a software developer at Illumio.
 
 # Shells
 

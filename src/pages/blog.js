@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
+import PostExcerpt from "../components/postExcerpt";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { rhythm } from "../utils/typography";
 
 const BLOG_TITLE = "Life Enthusiasm";
 const BLOG_DESCRIPTION = "The world is a beautiful place.";
@@ -12,7 +12,7 @@ const BLOG_DESCRIPTION = "The world is a beautiful place.";
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
-    const title = data.site.siteMetadata.title;
+    const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
 
     return (
@@ -20,33 +20,15 @@ class BlogIndex extends React.Component {
         location={this.props.location}
         title={BLOG_TITLE}
         description={BLOG_DESCRIPTION}
-        helmetTitle={`${BLOG_TITLE} | ${title}`}
+        helmetTitle={`${BLOG_TITLE} | ${siteTitle}`}
       >
         <SEO
           title="Blog"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>
-                {node.frontmatter.date}
-                {/* TODO add category */}
-              </small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          );
-        })}
+        {posts.map(({ node }, i) => (
+          <PostExcerpt key={i} node={node} />
+        ))}
       </Layout>
     );
   }
