@@ -34,11 +34,16 @@ Restore backup for Atom with `sync-settings`, with a new `Personal Access Token`
 ## WSL
 
 - Turn off password for `sudo` access:
-  - `sudo visudo`
-  - Add line at the bottom: `sarang ALL=(ALL) NOPASSWD: ALL`
+  - `$ sudo visudo`
+  - Add line at the bottom: `sarang ALL=(ALL) NOPASSWD: ALL` (beware the fearful editor, Nano!)
 - Move home directory:
-  - Edit `/etc/passwd` and change `/home/sarangj` in my line (most likely at the bottom) to `/mnt/c/Users/<USERNAME>`
-- Turn off command not found: `sudo apt remove command-not-found command-not-found-data`
+  - Edit `/etc/passwd` and change `/home/sarangj` in the current user's line (most likely at the bottom) to `/mnt/c/Users/<USERNAME>`
+- Turn off `command-not-found`
+
+```
+$ sudo apt remove command-not-found command-not-found-data
+```
+
 - Clone and install dotfiles:
 
 ```
