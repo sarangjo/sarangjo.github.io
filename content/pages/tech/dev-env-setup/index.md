@@ -44,6 +44,7 @@ Restore backup for Atom with `sync-settings`, with a new `Personal Access Token`
 $ sudo apt remove command-not-found command-not-found-data
 ```
 
+- Turn on metadata for `/mnt/c`: https://devblogs.microsoft.com/commandline/chmod-chown-wsl-improvements/
 - Clone and install dotfiles:
 
 ```
