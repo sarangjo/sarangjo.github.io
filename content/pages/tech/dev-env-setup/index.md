@@ -44,7 +44,13 @@ Restore backup for Atom with `sync-settings`, with a new `Personal Access Token`
 $ sudo apt remove command-not-found command-not-found-data
 ```
 
-- Turn on metadata for `/mnt/c`: https://devblogs.microsoft.com/commandline/chmod-chown-wsl-improvements/
+- Set up `/etc/wsl.conf` file:
+
+```
+[automount]
+options = "metadata,umask=0033"
+```
+
 - Clone and install dotfiles:
 
 ```
@@ -65,17 +71,16 @@ $ vim
 :VundleInstall
 ```
 
-## NodeJS
+## NodeJS and Yarn
 
-This is a bit convoluted, since you want the baseline `nodejs` to install `yarn`, to install `n`, after which you can get rid of the baseline `nodejs`.
+1. [NodeJS](https://nodejs.org)
 
-1. Baseline [nodejs](https://nodejs.org)
-
-- Windows: https://nodejs.org/en/download/
-- WSL:
+- Windows: https://nodejs.org/en/
+- WSL (using [n](https://github.com/tj/n))
 
 ```
-$ sudo apt install -y nodejs
+$ sudo apt install -y make
+$ curl -L https://git.io/n-install | bash
 ```
 
 2. [Yarn](https://yarnpkg.com)
@@ -89,18 +94,10 @@ $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sour
 $ sudo apt update && sudo apt install -y yarn
 ```
 
-3. [n](https://github.com/tj/n) for nodejs version management
-
-```
-$ yarn global add n
-$ n latest
-$ sudo apt remove nodejs
-```
-
 ## Python 2.7 and 3.7
 
 ```
-$ sudo apt install -y python2.7 python3.7 python3.7-venv`
+$ sudo apt install -y python2.7 python3.7 python3.7-venv
 ```
 
 ## Misc
