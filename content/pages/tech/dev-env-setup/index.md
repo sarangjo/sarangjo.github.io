@@ -75,6 +75,8 @@ $ vim
 
 1. [NodeJS](https://nodejs.org)
 
+Do the WSL installation first, so that `n` doesn't get confused by node in PATH.
+
 - Windows: https://nodejs.org/en/
 - WSL (using [n](https://github.com/tj/n))
 
