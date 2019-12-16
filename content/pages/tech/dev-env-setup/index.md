@@ -14,6 +14,14 @@ So I recently built a PC, and had to get my full development environment set up 
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 - [Git for Windows](https://git-scm.com)
 
+# TODO
+
+- MSYS2
+  - Modify the Mingw x64 start menu shortcut to have `-full-path`
+  - Set `%HOME%` to home directory
+- PHP
+- ConEmu/Cmder?
+
 # Setup
 
 ## Atom
