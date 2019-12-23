@@ -30,6 +30,22 @@ Restore backup for Atom with `sync-settings`, with a new `Personal Access Token`
 
 I use vim mode in Atom. VS Code has (had?) an issue where scrolling past a closed (folded) code block would cause it to open. So I got used to Atom. I believe it's been fixed, so at some point I need to give VS Code a serious try.
 
+# VS Code
+
+Giving it a try now! Let's see how this goes.
+
+## Issues
+
+- Settings sync doesn't sync WSL settings very cleanly. Current extensions:
+
+| Name                | Package name                              |
+| ------------------- | ----------------------------------------- |
+| GitLens             | eamodio.gitlens                           |
+| Markdown All in One | yzhang.markdown-all-in-one                |
+| Prettier            | esbenp.prettier-vscode                    |
+| Python              | ms-python.python                          |
+| TSLint              | ms-vscode.vscode-typescript-tslint-plugin |
+
 # WSLtty
 
 - Set `wsltty` settings
