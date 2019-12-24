@@ -40,6 +40,7 @@ Giving it a try now! Let's see how this goes.
 
 | Name                | Package name                              |
 | ------------------- | ----------------------------------------- |
+| Atom Keymap         | ms-vscode.atom-keybindings                |
 | GitLens             | eamodio.gitlens                           |
 | Markdown All in One | yzhang.markdown-all-in-one                |
 | Prettier            | esbenp.prettier-vscode                    |
@@ -119,6 +120,10 @@ Do the WSL installation first, so that `n` doesn't get confused by node in PATH.
 ```
 $ sudo apt install -y python2.7 python3.7 python3.7-venv
 ```
+
+# MongoDB
+
+- WSL installation: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
 # Misc
 
