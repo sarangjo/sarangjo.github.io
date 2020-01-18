@@ -14,14 +14,6 @@ So I recently built a PC, and had to get my full development environment set up 
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 - [Git for Windows](https://git-scm.com)
 
-# TODO
-
-- MSYS2
-  - Modify the Mingw x64 start menu shortcut to have `-full-path`
-  - Set `%HOME%` to home directory
-- PHP
-- ConEmu/Cmder?
-
 # Atom
 
 Restore backup for Atom with `sync-settings`, with a new `Personal Access Token` with `gist` access: https://github.com/settings/tokens/new
@@ -130,3 +122,11 @@ $ sudo apt install -y python2.7 python3.7 python3.7-venv
 ```
 $ sudo apt install -y exuberant-ctags
 ```
+
+# WIP
+
+- MSYS2
+  - Modify the Mingw x64 start menu shortcut to have `-full-path`
+  - Set `%HOME%` to home directory
+- PHP
+- ConEmu/Cmder?

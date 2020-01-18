@@ -37,7 +37,7 @@ async function onCreateNode({
     },
   };
 
-  // Needs to be last for a proper digest
+  // Needs to be last for a proper digest of the fountainNode object
   fountainNode.internal.contentDigest = createContentDigest(fountainNode);
 
   createNode(fountainNode);
