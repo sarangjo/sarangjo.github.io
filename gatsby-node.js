@@ -1,7 +1,9 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const { reduce, has, forEach } = require(`lodash`);
 
-async function createBlogPages(createPage, graphql) {
+// Helper function to run graphql query to collect Markdown pages, and build up nodes.
+async function createMdPages(createPage, graphql) {
   const blogPost = path.resolve(`./src/templates/md-post.js`);
 
   // Blog
@@ -32,21 +34,38 @@ async function createBlogPages(createPage, graphql) {
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges;
+  const allPosts = result.data.allMarkdownRemark.edges;
 
-  // TODO this is broken
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
+  // Split up by category: blog, tech
+  const postMap = reduce(
+    allPosts,
+    (acc, cur) => {
+      const key = cur.node.fields.slug.split("/")[1];
+      if (!has(acc, key)) {
+        acc[key] = [];
+      }
+      acc[key].push(cur);
+      return acc;
+    },
+    {}
+  );
 
-    createPage({
-      path: post.node.fields.slug,
-      component: blogPost,
-      context: {
-        slug: post.node.fields.slug,
-        previous,
-        next,
-      },
+  forEach(postMap, (posts, key) => {
+    console.log("Generating", key);
+    posts.forEach((post, index) => {
+      const previous =
+        index === posts.length - 1 ? null : posts[index + 1].node;
+      const next = index === 0 ? null : posts[index - 1].node;
+
+      createPage({
+        path: post.node.fields.slug,
+        component: blogPost,
+        context: {
+          slug: post.node.fields.slug,
+          previous,
+          next,
+        },
+      });
     });
   });
 }
@@ -78,7 +97,6 @@ async function createTheaterPages(createPage, graphql) {
     throw result.errors;
   }
 
-  // Create blog posts pages.
   const posts = result.data.allFountain.edges;
 
   // TODO this is broken
@@ -96,9 +114,9 @@ async function createTheaterPages(createPage, graphql) {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  await createBlogPages(createPage, graphql);
+  await createMdPages(createPage, graphql);
   await createTheaterPages(createPage, graphql);
-};
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -115,7 +133,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     });
   }
-};
+}
 
 /*
 Old code that separates secret blog from blog
@@ -130,10 +148,10 @@ const { createFilePath } = require("gatsby-source-filesystem");
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const mdPost = path.resolve("./src/templates/md-post.tsx");
+  const mdPost = path.path.resolve("./src/templates/md-post.tsx");
 
-  return new Promise((resolve, reject) => {
-    resolve(
+  return new Promise((path.resolve, reject) => {
+    path.resolve(
       graphql(
         `
           {

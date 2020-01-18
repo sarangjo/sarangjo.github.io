@@ -6,43 +6,41 @@ import PostExcerpt from "../components/postExcerpt";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const TITLE = "Theater";
-const DESCRIPTION =
-  "All the world's a stage, and all the men and women merely players.";
+const TECH_TITLE = "Tech Notes";
+const TECH_DESCRIPTION =
+  "A small contribution to the massive collection of information about the tech world.";
 
-class TheaterIndex extends React.Component {
+class TechIndex extends React.Component {
   render() {
     const { data } = this.props;
-    const title = data.site.siteMetadata.title;
-    const posts = data.allFountain.edges;
+    const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
-    // TODO factor out redundant code about helmetTitle
     return (
       <Layout
         location={this.props.location}
-        title={TITLE}
-        description={DESCRIPTION}
-        helmetTitle={`${TITLE} | ${title}`}
-        showBio={false}
+        title={TECH_TITLE}
+        description={TECH_DESCRIPTION}
+        helmetTitle={`${TECH_TITLE} | ${siteTitle}`}
       >
         <SEO
-          title={TITLE}
-          keywords={[`theater`, `gatsby`, `javascript`, `react`]}
+          title="Tech"
+          keywords={[`tech`, `gatsby`, `javascript`, `react`]}
         />
         {posts.map(({ node }, i) => (
-          <PostExcerpt key={i} node={node} type="theater" />
+          <PostExcerpt key={i} node={node} />
         ))}
       </Layout>
     );
   }
 }
 
-TheaterIndex.propTypes = {
+TechIndex.propTypes = {
   location: PropTypes.object,
   data: PropTypes.object,
 };
 
-export default TheaterIndex;
+export default TechIndex;
 
 export const pageQuery = graphql`
   query {
@@ -51,16 +49,19 @@ export const pageQuery = graphql`
         title
       }
     }
-    allFountain(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { slug: { regex: "//tech/.*/" } } }
+    ) {
       edges {
         node {
+          excerpt
           fields {
             slug
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            source
           }
         }
       }
