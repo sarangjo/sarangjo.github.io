@@ -147,8 +147,11 @@ class ProjectsPage extends React.Component {
         location={this.props.location}
         title="Projects"
         titleIcon={
-          <L className="github-link" to="https://github.com/sarangjo">
-            <img className="github-logo" src="/images/github.png" />
+          <L style={{ boxShadow: "none" }} to="https://github.com/sarangjo">
+            <img
+              style={{ marginBottom: 0, maxHeight: 60 }}
+              src="/images/github.png"
+            />
           </L>
         }
         description="What else would companies look at to hire me?"

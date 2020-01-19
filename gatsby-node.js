@@ -11,7 +11,7 @@ async function createMdPages(createPage, graphql) {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
           edges {
@@ -116,7 +116,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   await createMdPages(createPage, graphql);
   await createTheaterPages(createPage, graphql);
-}
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -133,7 +133,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     });
   }
-}
+};
 
 /*
 Old code that separates secret blog from blog
