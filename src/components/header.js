@@ -75,6 +75,7 @@ class Header extends React.Component {
             <ListLink to="/blog/">Blog</ListLink>
             <ListLink to="/theater/">Theater</ListLink>
             <ListLink to="/tech/">Tech</ListLink>
+            <ListLink to="/music/">Music</ListLink>
             <ListLink to="/projects/">Projects</ListLink>
           </ul>
         </div>
