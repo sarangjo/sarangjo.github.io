@@ -32,8 +32,8 @@ class Index extends React.Component {
       >
         <p>
           Hi there! I&apos;m Sarang Joshi, a software developer, singer, and
-          life enthusiast working at <L to={LINKS[0]}>Illumio</L> in Sunnyvale,
-          CA. I graduated cum laude from the{" "}
+          life enthusiast working at <L to={LINKS[0]}>Illumio</L> in Bellevue,
+          WA. I graduated cum laude from the{" "}
           <L to={LINKS[1]}>University of Washington, Seattle</L>, with a B.S. in{" "}
           <L to={LINKS[2]}>Computer Science</L> with Honors.
         </p>

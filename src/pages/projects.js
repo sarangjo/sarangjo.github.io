@@ -32,7 +32,7 @@ class ProjectsPage extends React.Component {
   completed() {
     return (
       <>
-        <h3>Completed Projects</h3>
+        <h2>Completed Projects</h2>
         <ul>
           <li>
             Full-stack single-page Typescript app template (
@@ -72,7 +72,7 @@ class ProjectsPage extends React.Component {
             (<L to="https://github.com/sarangjo/formations">source code</L>)
           </li>
         </ul>
-        <h3>From My Early Days</h3>
+        <h2>From My Early Days</h2>
         <ul>
           <li>
             LightRunner &mdash; a summer project from StudentRND Labs (
@@ -108,7 +108,7 @@ class ProjectsPage extends React.Component {
     return (
       <>
         {" "}
-        <h3>In progress</h3>
+        <h2>In progress</h2>
         <ul>
           <li>
             <L to="https://sarangjo.github.io/rlesports-viz">
@@ -153,7 +153,6 @@ class ProjectsPage extends React.Component {
         }
         description="What else would companies look at to hire me?"
       >
-        <h2>Projects </h2>
         {this.completed()}
         {this.inProgress()}
         <h2>Open source contributions</h2>

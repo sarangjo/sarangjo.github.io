@@ -183,7 +183,7 @@ class MusicPage extends React.Component {
       <Layout
         location={this.props.location}
         title="Music"
-        description="My earliest and longest-living passion"
+        description="My earliest and longest-living passion."
       >
         {this.postUndergrad()}
         {this.joshiShow()}

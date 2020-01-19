@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Grid } from "@material-ui/core";
 import { Link } from "gatsby";
 import each from "lodash/each";
 import PropTypes from "prop-types";
@@ -8,9 +9,9 @@ import { rhythm, scale } from "../utils/typography";
 import * as pt from "../utils/proptypes";
 
 const ListLink = props => (
-  <li style={{ display: "inline-block", marginLeft: "1rem" }}>
+  <span style={{ display: "inline-block", marginLeft: "1rem" }}>
     <Link to={props.to}>{props.children}</Link>
-  </li>
+  </span>
 );
 
 ListLink.propTypes = {
@@ -51,34 +52,38 @@ class Header extends React.Component {
         <h1 style={{ ...scale(1.5), marginTop: 0, marginBottom: rhythm(0.75) }}>
           {title} {titleIcon}
         </h1>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginBottom: rhythm(0.6),
-          }}
+        <Grid
+          container
+          style={{ marginBottom: rhythm(0.6) }}
+          justify="space-between"
+          spacing={1}
+          alignItems="center"
         >
-          {showBio ? (
-            <Bio />
-          ) : (
-            <i style={{ margin: "auto 0" }}>{description}</i>
-          )}
-          <ul
-            style={{
-              listStyle: "none",
-              flexShrink: 0,
-              marginBottom: "auto",
-              marginTop: "auto",
-            }}
-          >
-            <ListLink to="/">Home</ListLink>
-            <ListLink to="/blog/">Blog</ListLink>
-            <ListLink to="/theater/">Theater</ListLink>
-            <ListLink to="/tech/">Tech</ListLink>
-            <ListLink to="/music/">Music</ListLink>
-            <ListLink to="/projects/">Projects</ListLink>
-          </ul>
-        </div>
+          <Grid item>
+            {showBio ? (
+              <Bio />
+            ) : (
+              <i style={{ margin: "auto 0" }}>{description}</i>
+            )}
+          </Grid>
+          <Grid item>
+            <span
+              style={{
+                listStyle: "none",
+                flexShrink: 0,
+                marginBottom: "auto",
+                marginTop: "auto",
+              }}
+            >
+              <ListLink to="/">Home</ListLink>
+              <ListLink to="/blog/">Blog</ListLink>
+              <ListLink to="/theater/">Theater</ListLink>
+              <ListLink to="/tech/">Tech</ListLink>
+              <ListLink to="/music/">Music</ListLink>
+              <ListLink to="/projects/">Projects</ListLink>
+            </span>
+          </Grid>
+        </Grid>
       </header>
     );
   }
