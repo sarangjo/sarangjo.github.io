@@ -8,14 +8,16 @@ import "./projects.css";
 
 const labelToTitle = type => {
   switch (type) {
-  case "uw":
-    return "UW";
-  case "asa":
-    return "ASA";
-  case "kinspire":
-    return "Kinspire";
-  default:
-    return "";
+    case "uw":
+      return "UW";
+    case "asa":
+      return "ASA";
+    case "kinspire":
+      return "Kinspire";
+    case "rhs":
+      return "RHS";
+    default:
+      return "";
   }
 };
 
@@ -33,7 +35,7 @@ class ProjectsPage extends React.Component {
         <h3>Completed Projects</h3>
         <ul>
           <li>
-            Full-stack single-page Typescript app (
+            Full-stack single-page Typescript app template (
             <L to="https://github.com/sarangjo/full-stack-typescript-app">
               source code
             </L>
@@ -66,20 +68,37 @@ class ProjectsPage extends React.Component {
             <Label type="asa" />
           </li>
           <li>
-            <L to="https://sarangjo.github.io/formations/public/">Formations</L>
+            <L to="https://sarangjo.github.io/formations/public/">Formations</L>{" "}
+            (<L to="https://github.com/sarangjo/formations">source code</L>)
           </li>
-          <li>Doc Scheduler</li>
-          <li>LightRunner</li>
-          <li>Radio Transceiver</li>
         </ul>
         <h3>From My Early Days</h3>
         <ul>
           <li>
+            LightRunner &mdash; a summer project from StudentRND Labs (
+            <L to="https://github.com/sarangjo/lightrunner">source code</L>)
+          </li>
+          <li>Doc Scheduler</li>
+          <li>
+            Radio Transceiver &mdash; my final project for Computer Science and
+            Engineering at RHS (
+            <L to="https://github.com/sarangjo/radiotransceiver">source code</L>
+            ) <Label type="rhs" />
+          </li>
+          <li>
+            IonoWumpus &mdash; winner of the Unlimited Category at Hunt the
+            Wumpus 2012 (
+            <L to="https://github.com/sarangjo/IonoWumpus">source code</L>){" "}
+            <Label type="rhs" />
+          </li>
+          <li>
             YahtzeePC (
             <L to="https://github.com/sarangjo/yahtzeepc/">source code</L>)
           </li>
-          <li>LOGO projects</li>
-          <li>IonoWumpus</li>
+          <li>
+            LOGO projects (
+            <L to="https://github.com/sarangjo/logo-projects">source code</L>)
+          </li>
         </ul>
       </>
     );
@@ -127,14 +146,14 @@ class ProjectsPage extends React.Component {
       <Layout
         location={this.props.location}
         title="Projects"
-        description="What else would companies look at to hire me?"
-      >
-        <h2>
-          Projects{" "}
-          <L to="https://github.com/sarangjo">
+        titleIcon={
+          <L className="github-link" to="https://github.com/sarangjo">
             <img className="github-logo" src="/images/github.png" />
           </L>
-        </h2>
+        }
+        description="What else would companies look at to hire me?"
+      >
+        <h2>Projects </h2>
         {this.completed()}
         {this.inProgress()}
         <h2>Open source contributions</h2>

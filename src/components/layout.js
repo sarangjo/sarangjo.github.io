@@ -15,6 +15,7 @@ export default class Layout extends React.Component {
     const {
       location,
       title,
+      titleIcon,
       description,
       helmetTitle,
       helmetDescription,
@@ -40,6 +41,7 @@ export default class Layout extends React.Component {
         />
         <Header
           title={title}
+          titleIcon={titleIcon}
           description={description}
           location={location}
           showBio={showBio}
@@ -53,6 +55,7 @@ export default class Layout extends React.Component {
 Layout.propTypes = {
   location: PropTypes.object,
   title: PropTypes.string,
+  titleIcon: PropTypes.node,
   description: PropTypes.string,
   helmetTitle: PropTypes.string,
   helmetDescription: PropTypes.string,

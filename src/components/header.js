@@ -20,7 +20,7 @@ ListLink.propTypes = {
 
 class Header extends React.Component {
   render() {
-    const { location, title, description, showBio } = this.props;
+    const { location, title, description, showBio, titleIcon } = this.props;
 
     const superTop = [];
     const parts = location.pathname.split("/").filter(x => !!x.trim().length);
@@ -49,7 +49,7 @@ class Header extends React.Component {
       >
         <i style={{ ...scale(-1 / 4) }}>{superTop}</i>
         <h1 style={{ ...scale(1.5), marginTop: 0, marginBottom: rhythm(0.75) }}>
-          {title}
+          {title} {titleIcon}
         </h1>
         <div
           style={{
@@ -87,6 +87,7 @@ class Header extends React.Component {
 Header.propTypes = {
   location: PropTypes.object,
   title: PropTypes.string,
+  titleIcon: PropTypes.node,
   description: PropTypes.string,
   showBio: PropTypes.bool,
 };

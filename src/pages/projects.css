@@ -19,7 +19,14 @@
   background-color: purple;
 }
 
+.rhs {
+  background-color: green;
+}
+
 .github-logo {
   margin-bottom: 0px;
-  max-width: 30px;
+}
+
+.github-link {
+  box-shadow: none;
 }
