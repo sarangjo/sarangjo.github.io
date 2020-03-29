@@ -72,6 +72,13 @@ class ProjectsPage extends React.Component {
             (<L to="https://github.com/sarangjo/formations">source code</L>)
           </li>
         </ul>
+      </>
+    );
+  }
+
+  earlyDays() {
+    return (
+      <>
         <h2>From My Early Days</h2>
         <ul>
           <li>
@@ -107,7 +114,6 @@ class ProjectsPage extends React.Component {
   inProgress() {
     return (
       <>
-        {" "}
         <h2>In progress</h2>
         <ul>
           <li>
@@ -158,6 +164,7 @@ class ProjectsPage extends React.Component {
       >
         {this.completed()}
         {this.inProgress()}
+        {this.earlyDays()}
         <h2>Open source contributions</h2>
         <ul>
           <li>

@@ -138,7 +138,11 @@ class MusicPage extends React.Component {
           Joshi Show".
         </p>
         <ul>
-          <li>Episode 4. Lovely by Billie Eilish (Raag Asavari)</li>
+          <li>
+            Episode 4.{" "}
+            <L to="https://www.instagram.com/p/B7hAi-HlPVP/">Lovely</L> by
+            Billie Eilish (Raag Asavari)
+          </li>
           <li>
             Episode 3.{" "}
             <L to="https://www.instagram.com/p/B2UlUnWlfFT/">Skyfall</L> by
