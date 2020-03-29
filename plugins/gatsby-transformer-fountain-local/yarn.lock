@@ -1236,11 +1236,6 @@ for-in@^1.0.2:
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
   integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
 
-fountain-js@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/fountain-js/-/fountain-js-0.0.1.tgz#6437a8e79f7ea0457888388100bab9ba8107aec3"
-  integrity sha1-ZDeo559+oEV4iDiBALq5uoEHrsM=
-
 fountain.ts@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/fountain.ts/-/fountain.ts-0.1.0.tgz#41c48cd8a6704df327f36d13ea1c41da1be63cc3"

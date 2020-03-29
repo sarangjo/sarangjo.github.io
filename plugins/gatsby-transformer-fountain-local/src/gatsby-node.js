@@ -1,5 +1,4 @@
 const { Fountain } = require(`fountain.ts`);
-const fountain = require(`fountain-js`);
 
 async function onCreateNode({
   node,
@@ -16,8 +15,14 @@ async function onCreateNode({
   }
 
   const content = await loadNodeContent(node);
-  const parsedMetadata = fountain.parse(content);
-  const parsedContent = new Fountain().parse(content);
+  const parsedContent = new Fountain().parse(content, true);
+
+  const dateToken = parsedContent.tokens.find(
+    tok => tok.is_title && tok.type === "date"
+  );
+  const sourceToken = parsedContent.tokens.find(
+    tok => tok.is_title && tok.type === "source"
+  );
 
   const fountainNode = {
     id: createNodeId(`${node.id} >>> Fountain`),
@@ -29,8 +34,8 @@ async function onCreateNode({
     },
     frontmatter: {
       title: parsedContent.title,
-      date: parsedMetadata.date,
-      source: parsedMetadata.source,
+      date: dateToken.text,
+      source: sourceToken.text,
     },
     fileAbsolutePath: node.absolutePath,
     html: {
