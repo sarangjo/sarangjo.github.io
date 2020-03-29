@@ -1,3 +1,4 @@
+const { Fountain } = require(`fountain.ts`);
 const fountain = require(`fountain-js`);
 
 async function onCreateNode({
@@ -15,7 +16,8 @@ async function onCreateNode({
   }
 
   const content = await loadNodeContent(node);
-  const parsedContent = fountain.parse(content);
+  const parsedMetadata = fountain.parse(content);
+  const parsedContent = new Fountain().parse(content);
 
   const fountainNode = {
     id: createNodeId(`${node.id} >>> Fountain`),
@@ -27,13 +29,13 @@ async function onCreateNode({
     },
     frontmatter: {
       title: parsedContent.title,
-      date: parsedContent.date,
-      source: parsedContent.source,
+      date: parsedMetadata.date,
+      source: parsedMetadata.source,
     },
     fileAbsolutePath: node.absolutePath,
     html: {
-      script: parsedContent.script_html,
-      title: parsedContent.title_page_html,
+      script: parsedContent.html.script,
+      title: parsedContent.html.title_page,
     },
   };
 
