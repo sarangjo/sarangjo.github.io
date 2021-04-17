@@ -6,13 +6,6 @@ import { L } from "../utils";
 
 import "./projects.css";
 
-const Label = ({ type }) => (
-  <span className={`label ${type}`}>{labelToTitle(type)}</span>
-);
-Label.propTypes = {
-  type: PropTypes.string.required,
-};
-
 class MusicPage extends React.Component {
   highSchool() {
     return (
@@ -48,8 +41,8 @@ class MusicPage extends React.Component {
             <L to="https://www.youtube.com/watch?v=oZjD6p00NQA&list=PLB0785C00EA91F358">
               Part of a Painting
             </L>
-            , <i>Edges</i>. December 2012. Nominated for "Outstanding
-            Performance by an Actor in a Featured Ensemble Role" at the{" "}
+            , <i>Edges</i>. December 2012. Nominated for &quot;Outstanding
+            Performance by an Actor in a Featured Ensemble Role&quot; at the{" "}
             <L to="https://www.5thavenue.org/images/pdfs/1213_5thAveAwards_Nominees_and_Recipients.pdf">
               2013 5th Avenue Awards
             </L>
@@ -134,8 +127,8 @@ class MusicPage extends React.Component {
         </h2>
         <p>
           This is a little pet project of mine, where I cover Western pop songs
-          in Indian classical style. Some love it, most hate it. I call it, "The
-          Joshi Show".
+          in Indian classical style. Some love it, most hate it. I call it,
+          &quot;The Joshi Show&quot;.
         </p>
         <ul>
           <li>
@@ -187,7 +180,7 @@ class MusicPage extends React.Component {
             <L to="https://www.youtube.com/watch?v=h9WfWdRy_tE&list=PLB0785C00EA91F358">
               Yeh Jo Des (ft. Kavya Magham)
             </L>
-            , <i>Swades</i>. January 26, 2019. In celebration of India's
+            , <i>Swades</i>. January 26, 2019. In celebration of India&apos;s
             Republic Day 2019.
           </li>
         </ul>

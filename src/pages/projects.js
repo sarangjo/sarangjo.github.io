@@ -6,7 +6,7 @@ import { L } from "../utils";
 
 import "./projects.css";
 
-const labelToTitle = type => {
+const labelToTitle = (type) => {
   switch (type) {
     case "uw":
       return "UW";
@@ -35,16 +35,21 @@ class ProjectsPage extends React.Component {
         <h2>Completed Projects</h2>
         <ul>
           <li>
+            <L to="https://ekta.app/">Ekta: The Desi Common Portal</L> (active
+            development)
+          </li>
+          <li>
+            <L to="https://courses.cs.washington.edu/courses/cse351/heapsim/">
+              CSE 351 Heap Simulator
+            </L>{" "}
+            <Label type="uw" />
+          </li>
+          <li>
             Full-stack single-page Typescript app template (
             <L to="https://github.com/sarangjo/full-stack-typescript-app">
               source code
             </L>
             )
-          </li>
-          <li>
-            <L to="https://sarangjo.github.io/cse351-heap/">
-              CSE 351 Heap Simulator
-            </L>
           </li>
           <li>
             Paper Telephone (
@@ -126,10 +131,6 @@ class ProjectsPage extends React.Component {
             Kinspire Portal (
             <L to="https://github.com/kinspire/kinspire-portal">source code</L>)
             <Label type="kinspire" />
-          </li>
-          <li>
-            <L to="https://ekta.app/">Ekta: The Desi Common Portal</L>
-            <Label type="asa" />
           </li>
           <li>SS Soundboard</li>
           <li>Couch game simulation</li>
