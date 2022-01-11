@@ -43,6 +43,7 @@ const config: GatsbyConfig = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-reading-time`,
+          `gatsby-remark-katex`,
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
