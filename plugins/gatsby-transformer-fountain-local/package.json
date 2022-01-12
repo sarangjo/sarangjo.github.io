@@ -4,14 +4,14 @@
   "version": "0.0.1",
   "author": "Sarang Joshi <sarangj@msn.com>",
   "dependencies": {
-    "@babel/runtime": "^7.0.0",
-    "fountain.ts": "^0.1.0"
+    "@babel/runtime": "^7.16.7",
+    "fountain.ts": "^0.1.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "babel-preset-gatsby-package": "^0.1.4",
-    "cross-env": "^5.1.4"
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "babel-preset-gatsby-package": "^2.5.0",
+    "cross-env": "^7.0.3"
   },
   "keywords": [
     "gatsby",
