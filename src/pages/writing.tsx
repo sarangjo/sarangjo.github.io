@@ -5,8 +5,9 @@ import Layout from "../components/layout";
 import { L } from "../utils";
 
 import "./projects.css";
+import { PageProps } from "gatsby";
 
-function WritingPage({ location }) {
+export default function WritingPage({ location }: PageProps<any>) {
   return (
     <Layout
       location={location}
@@ -24,9 +25,3 @@ function WritingPage({ location }) {
     </Layout>
   );
 }
-
-WritingPage.propTypes = {
-  location: PropTypes.object,
-};
-
-export default WritingPage;

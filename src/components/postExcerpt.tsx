@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { rhythm } from "../utils/typography";
 
@@ -10,7 +9,13 @@ const content = (node, type) =>
     <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
   );
 
-const PostExcerpt = ({ node, type }) => {
+export default function PostExcerpt({
+  node,
+  type,
+}: {
+  node: any;
+  type?: string;
+}) {
   const title = node.frontmatter.title || node.fields.slug;
   return (
     <div key={node.fields.slug}>
@@ -27,11 +32,4 @@ const PostExcerpt = ({ node, type }) => {
       {content(node, type)}
     </div>
   );
-};
-
-PostExcerpt.propTypes = {
-  node: PropTypes.object,
-  type: PropTypes.string,
-};
-
-export default PostExcerpt;
+}

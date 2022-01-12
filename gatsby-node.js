@@ -3,7 +3,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // Helper function to run graphql query to collect Markdown pages, and build up nodes.
 async function createMdPages(createPage, graphql) {
-  const blogPost = path.resolve(`./src/templates/md-post.js`);
+  const blogPost = path.resolve(`./src/templates/md-post.tsx`);
 
   // Blog
   const result = await graphql(
@@ -66,7 +66,7 @@ async function createMdPages(createPage, graphql) {
 }
 
 async function createTheaterPages(createPage, graphql) {
-  const theaterPost = path.resolve(`./src/templates/fountain-post.js`);
+  const theaterPost = path.resolve(`./src/templates/fountain-post.tsx`);
 
   // Theater
   const result = await graphql(

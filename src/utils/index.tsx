@@ -1,13 +1,15 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 
 // Helper component for a link out of the home page in a new tab
-export const L = ({ to, style, children }) => (
+export const L = ({
+  to,
+  style,
+  children,
+}: React.PropsWithChildren<{
+  to: string;
+  style?: Record<string, any>;
+}>) => (
   <a style={style} href={to} target="_blank" rel="noopener noreferrer">
     {children}
   </a>
 );
-L.propTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
