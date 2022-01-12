@@ -60,6 +60,8 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.5",
+    "@types/typography": "^0.16.4",
     "eslint": "5.16.0",
     "eslint-plugin-react": "^7.16.0",
     "gh-pages": "^2.0.1"
