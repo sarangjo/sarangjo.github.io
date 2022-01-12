@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import get from "lodash/get";
 import { L } from "../utils";
 import PropTypes from "prop-types";
 
@@ -19,11 +18,8 @@ const Links = {
 
 class Index extends React.Component {
   render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const siteDescription = get(
-      this,
-      "props.data.site.siteMetadata.description"
-    );
+    const siteTitle = this?.props?.data?.site?.siteMetadata?.title;
+    const siteDescription = this?.props?.data?.site?.siteMetadata?.description;
 
     return (
       <Layout

@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
 
 import Layout from "../components/layout";
@@ -155,9 +156,10 @@ class ProjectsPage extends React.Component {
         title="Projects"
         titleIcon={
           <L style={{ boxShadow: "none" }} to="https://github.com/sarangjo">
-            <img
+            <StaticImage
               style={{ marginBottom: 0, maxHeight: 60 }}
-              src="/images/github.png"
+              src="../images/github.png"
+              height={60}
             />
           </L>
         }

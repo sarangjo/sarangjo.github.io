@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import { L } from "../utils";
 
 import "./projects.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 class MusicPage extends React.Component {
   highSchool() {
@@ -119,9 +120,10 @@ class MusicPage extends React.Component {
             style={{ boxShadow: "none" }}
             to="https://instagram.com/thejoshishow"
           >
-            <img
+            <StaticImage
               style={{ marginBottom: 0, maxHeight: 30 }}
-              src="/images/instagram.png"
+              src="../images/instagram.png"
+              height={30}
             />
           </L>
         </h2>

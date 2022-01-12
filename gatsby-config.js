@@ -50,6 +50,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-fountain-local`,
     `gatsby-plugin-sharp`,

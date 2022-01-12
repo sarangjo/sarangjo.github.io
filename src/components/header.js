@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import { Link } from "gatsby";
-import each from "lodash/each";
 import PropTypes from "prop-types";
 
 import Bio from "./bio";
@@ -32,7 +31,7 @@ class Header extends React.Component {
         home
       </Link>
     );
-    each(parts, (part) => {
+    parts.forEach((part) => {
       link += `${part}/`;
       superTop.push(
         <span key={link}>

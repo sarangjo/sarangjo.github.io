@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { rhythm } from "../utils/typography";
 
@@ -16,8 +16,8 @@ function Bio() {
               display: `flex`,
             }}
           >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
+            <GatsbyImage
+              image={data.avatar.childImageSharp.gatsbyImageData}
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
@@ -28,8 +28,7 @@ function Bio() {
               }}
               imgStyle={{
                 borderRadius: `50%`,
-              }}
-            />
+              }} />
             <p style={{ margin: "auto 0" }}>
               <strong>{author}</strong>&apos;s personal website.
             </p>
@@ -40,21 +39,18 @@ function Bio() {
   );
 }
 
-const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-      }
+const bioQuery = graphql`query BioQuery {
+  avatar: file(absolutePath: {regex: "/profile-pic.jpg/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 50, height: 50, layout: FIXED)
     }
   }
+  site {
+    siteMetadata {
+      author
+    }
+  }
+}
 `;
 
 export default Bio;

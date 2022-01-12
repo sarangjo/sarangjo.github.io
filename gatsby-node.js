@@ -1,6 +1,5 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
-const { reduce, has, forEach } = require(`lodash`);
 
 // Helper function to run graphql query to collect Markdown pages, and build up nodes.
 async function createMdPages(createPage, graphql) {
@@ -37,20 +36,16 @@ async function createMdPages(createPage, graphql) {
   const allPosts = result.data.allMarkdownRemark.edges;
 
   // Split up by category: blog, tech
-  const postMap = reduce(
-    allPosts,
-    (acc, cur) => {
-      const key = cur.node.fields.slug.split("/")[1];
-      if (!has(acc, key)) {
-        acc[key] = [];
-      }
-      acc[key].push(cur);
-      return acc;
-    },
-    {}
-  );
+  const postMap = allPosts.reduce((acc, cur) => {
+    const key = cur.node.fields.slug.split("/")[1];
+    if (!(key in acc)) {
+      acc[key] = [];
+    }
+    acc[key].push(cur);
+    return acc;
+  }, {});
 
-  forEach(postMap, (posts, key) => {
+  Object.entries(postMap).forEach(([key, posts]) => {
     console.log("Generating", key);
     posts.forEach((post, index) => {
       const previous =
@@ -100,7 +95,7 @@ async function createTheaterPages(createPage, graphql) {
   const posts = result.data.allFountain.edges;
 
   // TODO this is broken
-  posts.forEach(post => {
+  posts.forEach((post) => {
     createPage({
       path: post.node.fields.slug,
       component: theaterPost,

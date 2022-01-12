@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": "^2.0.15"
+    "gatsby": "^4.5.2"
   },
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
