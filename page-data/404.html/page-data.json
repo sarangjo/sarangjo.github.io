@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-404-js","path":"/404.html","result":{"data":{"site":{"siteMetadata":{"title":"Sarang Joshi's Website"}}},"pageContext":{}},"staticQueryHashes":["3128451518","4211413508"]}
+{
+    "componentChunkName": "component---src-pages-404-js",
+    "path": "/404.html",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Sarang Joshi's Website"}}},"pageContext":{}},
+    "staticQueryHashes": ["1732276557","3128451518"]}
