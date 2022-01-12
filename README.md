@@ -4,8 +4,8 @@ Personal website based on the Gatsby starter blog.
 
 ## Branches
 
-- `master` - the deployed website
-- `gatsby` - production-ready "dev" branch
+- `deploy` - the deployed website
+- `main` - production-ready "dev" branch
 - all other branches are working branches
 
 ## Setup
