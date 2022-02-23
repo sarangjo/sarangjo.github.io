@@ -114,10 +114,10 @@ export default function ProjectsPage(props: PageProps) {
       <h2>In progress</h2>
       <ul>
         <li>
-          <L to="https://sarangjo.github.io/rlesports-viz">
+          <L to="https://rlesports.sarangj.com">
             Rocket League eSports visualization
           </L>{" "}
-          (<L to="https://github.com/sarangjo/rlesports-viz">source code</L>)
+          (<L to="https://github.com/sarangjo/rlesports">source code</L>)
         </li>
         <li>
           Kinspire Portal (
