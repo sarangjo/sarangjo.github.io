@@ -5,12 +5,11 @@ import Layout from "../components/layout";
 import PostExcerpt from "../components/postExcerpt";
 import SEO from "../components/seo";
 
-type CIProps = PageProps<any>;
+export default function MdIndex(props: PageProps<any>) {
+  const { data } = props;
 
-export default function ContentIndex(props: CIProps) {
-  const { data /*title, description*/ } = props;
-
-  const { title, description } = props.pageContext as any;
+  // TODO stronger typing
+  const { title, description, seo } = props.pageContext as any;
 
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
@@ -22,7 +21,7 @@ export default function ContentIndex(props: CIProps) {
       description={description}
       helmetTitle={`${title} | ${siteTitle}`}
     >
-      <SEO title="Blog" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+      <SEO title={title} keywords={seo} />
       {posts.map(({ node }, i) => (
         <PostExcerpt key={i} node={node} />
       ))}
@@ -30,8 +29,8 @@ export default function ContentIndex(props: CIProps) {
   );
 }
 
-export const CIPageQuery = graphql`
-  query ContentIndex($myPath: String) {
+export const pageQuery = graphql`
+  query MdIndex($myPath: String) {
     site {
       siteMetadata {
         title
