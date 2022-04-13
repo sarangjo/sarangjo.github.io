@@ -29,6 +29,8 @@ export default function FountainPostTemplate(props: PageProps<any>) {
   );
 }
 
+// The `$slug` parameter is passed in for each page by the page context passed into the
+// `createPage()` function in `gatsby-node.js` for fountain Gatsby objects.
 export const pageQuery = graphql`
   query TheaterPostBySlug($slug: String!) {
     site {
