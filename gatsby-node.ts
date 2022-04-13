@@ -1,8 +1,9 @@
-const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+import path from "path";
+import type { GatsbyNode, Actions } from "gatsby";
+import { createFilePath } from "gatsby-source-filesystem";
 
 // Helper function to run graphql query to collect Markdown pages, and build up nodes.
-async function createMdPages(createPage, graphql) {
+async function createMdPages(createPage: Actions["createPage"], graphql) {
   const blogPost = path.resolve(`./src/templates/md-post.tsx`);
 
   // Query for all markdown pages, sorted ascending by date
@@ -33,7 +34,7 @@ async function createMdPages(createPage, graphql) {
   }
 
   // Create blog posts pages.
-  const allPosts = result.data.allMarkdownRemark.edges;
+  const allPosts: { node: any }[] = result.data.allMarkdownRemark.edges;
 
   // Split up by category based on the folder: e.g. blog, tech, etc.
   const postMap = allPosts.reduce((acc, cur) => {
@@ -43,7 +44,7 @@ async function createMdPages(createPage, graphql) {
     }
     acc[key].push(cur);
     return acc;
-  }, {});
+  }, {} as Record<string, { node: any }[]>);
 
   // Go through all of our markdown objects and add links to previous/next to show in the footer
   Object.entries(postMap).forEach(([key, posts]) => {
@@ -147,7 +148,10 @@ async function createMdIndexPages(createPage) {
 }
 
 // Create all of our dynamic pages (i.e. outside of `src/pages`)
-exports.createPages = async ({ graphql, actions }) => {
+export const createPages: GatsbyNode["createPages"] = async ({
+  graphql,
+  actions,
+}) => {
   const { createPage } = actions;
 
   await createMdPages(createPage, graphql);
@@ -157,7 +161,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
 // For markdown and fountain pages, extend the node's fields by appending the slug. This allows us
 // to use the slug in data queries on these objects
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode: GatsbyNode["onCreateNode"] = ({
+  node,
+  actions,
+  getNode,
+}) => {
   const { createNodeField } = actions;
 
   // TODO make these shared constants
