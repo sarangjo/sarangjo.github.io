@@ -10,34 +10,9 @@ So I recently built a PC, and had to get my full development environment set up 
 - [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - [Ubuntu 18.04](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q) (the latest Ubuntu distro at the time of writing)
 - [wsltty](https://github.com/mintty/wsltty)
-- [Atom](https://atom.io)
+- [VS Code](https://code.visualstudio.com/)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 - [Git for Windows](https://git-scm.com)
-
-# Atom
-
-Restore backup for Atom with `sync-settings`, with a new `Personal Access Token` with `gist` access: https://github.com/settings/tokens/new
-
-## P.S.: Why Atom? Why not the shinier VS Code?
-
-I use vim mode in Atom. VS Code has (had?) an issue where scrolling past a closed (folded) code block would cause it to open. So I got used to Atom. I believe it's been fixed, so at some point I need to give VS Code a serious try.
-
-# VS Code
-
-Giving it a try now! Let's see how this goes.
-
-## Issues
-
-- Settings sync doesn't sync WSL settings very cleanly. Current extensions:
-
-| Name                | Package name                              |
-| ------------------- | ----------------------------------------- |
-| Atom Keymap         | ms-vscode.atom-keybindings                |
-| GitLens             | eamodio.gitlens                           |
-| Markdown All in One | yzhang.markdown-all-in-one                |
-| Prettier            | esbenp.prettier-vscode                    |
-| Python              | ms-python.python                          |
-| TSLint              | ms-vscode.vscode-typescript-tslint-plugin |
 
 # WSLtty
 
