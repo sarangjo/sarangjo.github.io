@@ -37,7 +37,6 @@ module.exports = {
             },
           },
           `gatsby-remark-external-links`,
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-reading-time`,
@@ -47,6 +46,8 @@ module.exports = {
               className: `visible-autolink`,
             },
           },
+          // needs to be after `autolink-headers` https://github.com/gatsbyjs/gatsby/issues/5764
+          `gatsby-remark-prismjs`,
         ],
       },
     },
@@ -54,20 +55,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-fountain-local`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Sarang Joshi's Website`,
+        short_name: `Sarang Joshi`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#000`,
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
       },
