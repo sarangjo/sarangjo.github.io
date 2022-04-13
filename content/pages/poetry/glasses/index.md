@@ -3,7 +3,7 @@ title: Glasses
 date: "2012-06-28"
 ---
 
-> Dedicated to all those lucky ones who can relate to this poem.
+> Dedicated to all those lucky\* ones who can relate to this poem.
 
 It just so happens, that once in a while,\
 Everything you see looks double,\

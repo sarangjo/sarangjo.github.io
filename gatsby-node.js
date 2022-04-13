@@ -5,7 +5,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 async function createMdPages(createPage, graphql) {
   const blogPost = path.resolve(`./src/templates/md-post.tsx`);
 
-  // Blog
+  // Query for all markdown pages, sorted ascending by date
   const result = await graphql(
     `
       {
@@ -35,7 +35,7 @@ async function createMdPages(createPage, graphql) {
   // Create blog posts pages.
   const allPosts = result.data.allMarkdownRemark.edges;
 
-  // Split up by category: blog, tech
+  // Split up by category based on the folder: e.g. blog, tech, etc.
   const postMap = allPosts.reduce((acc, cur) => {
     const key = cur.node.fields.slug.split("/")[1];
     if (!(key in acc)) {
@@ -45,6 +45,7 @@ async function createMdPages(createPage, graphql) {
     return acc;
   }, {});
 
+  // Go through all of our markdown objects and add links to previous/next to show in the footer
   Object.entries(postMap).forEach(([key, posts]) => {
     console.log("Generating", key);
     posts.forEach((post, index) => {
@@ -65,6 +66,7 @@ async function createMdPages(createPage, graphql) {
   });
 }
 
+// Helper function to build theater pages
 async function createTheaterPages(createPage, graphql) {
   const theaterPost = path.resolve(`./src/templates/fountain-post.tsx`);
 
@@ -94,11 +96,11 @@ async function createTheaterPages(createPage, graphql) {
 
   const posts = result.data.allFountain.edges;
 
-  // TODO this is broken
   posts.forEach((post) => {
     createPage({
       path: post.node.fields.slug,
       component: theaterPost,
+      // this context is used by the page query for each fountain-post.tsx
       context: {
         slug: post.node.fields.slug,
       },
@@ -106,13 +108,42 @@ async function createTheaterPages(createPage, graphql) {
   });
 }
 
+// Helper function to build indices (blog, theater, poetry)
+async function createIndexPages(createPage) {
+  const indices = [
+    {
+      slug: "poetry",
+      title: "Poetry",
+      description:
+        "No fancy description. Just poetry. This is serious business.",
+    },
+  ];
+
+  indices.forEach((ind) =>
+    createPage({
+      path: `/${ind.slug}/`,
+      matchPath: `/${ind.slug}`,
+      component: path.resolve(`./src/templates/contentIndex.tsx`),
+      context: {
+        myPath: `//${ind.slug}/.*/`,
+        title: ind.title,
+        description: ind.description,
+      },
+    })
+  );
+}
+
+// Create all of our dynamic pages (i.e. outside of `src/pages`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   await createMdPages(createPage, graphql);
   await createTheaterPages(createPage, graphql);
+  await createIndexPages(createPage);
 };
 
+// For markdown and fountain pages, extend the node's fields by appending the slug. This allows us
+// to use the slug in data queries on these objects
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
@@ -129,108 +160,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     });
   }
 };
-
-/*
-Old code that separates secret blog from blog
-const _ = require("lodash");
-const Promise = require("bluebird");
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
-
-// This function generates pages from static files. We want to use this to
-// separately create *blog pages*, linked together and sorted, and miscellaneous
-// markdown pages
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-
-  const mdPost = path.path.resolve("./src/templates/md-post.tsx");
-
-  return new Promise((path.resolve, reject) => {
-    path.resolve(
-      graphql(
-        `
-          {
-            allMarkdownRemark(
-              sort: { fields: [frontmatter___date], order: DESC }
-              limit: 1000
-            ) {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                  }
-                }
-              }
-            }
-          }
-        `
-      ).then(result => {
-        if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
-        }
-
-        // Create markdown pages.
-        const posts = result.data.allMarkdownRemark.edges;
-
-        let next = null;
-        let temp = null;
-
-        // previous is at the end, next is at index 0
-        _.each(posts, post => {
-          if (post.node.fields.slug.startsWith("/secret-blog")) {
-            if (temp) {
-              // Attach self as temp's previous
-              temp.context.previous = post.node;
-              createPage(temp);
-            }
-
-            // If the current node is a blog post, we need to hold off on creating
-            // the page until we have next and previous
-            temp = {
-              path: post.node.fields.slug,
-              component: mdPost,
-              context: {
-                slug: post.node.fields.slug,
-                previous: null,
-                next,
-              },
-            };
-            next = post.node;
-          } else {
-            // simple markdown
-            createPage({
-              path: post.node.fields.slug,
-              component: mdPost,
-              context: {
-                slug: post.node.fields.slug,
-              },
-            });
-          }
-        });
-
-        // fencepost
-        if (temp) {
-          createPage(temp);
-        }
-      })
-    );
-  });
-};
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === "MarkdownRemark") {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: "slug",
-      node,
-      value,
-    });
-  }
-};
-*/
