@@ -130,6 +130,11 @@ export default function MusicPage(props: PageProps) {
       </p>
       <ul>
         <li>
+          Episode 6.{" "}
+          <L to="https://www.instagram.com/p/Cg2P98IJ3x6/">Run to You</L> by
+          Pentatonix (Raag Sindh Bhairavi)
+        </li>
+        <li>
           Episode 5.{" "}
           <L to="https://www.instagram.com/p/COKIKeRhliD/">Scarborough Fair</L>{" "}
           by Simon and Garfunkel (Raag Kaafi)
