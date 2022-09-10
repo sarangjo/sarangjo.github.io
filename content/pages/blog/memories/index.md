@@ -21,7 +21,7 @@ I guess if I'm being fair to my hippocampus[^3], I do remember some important th
 
 <iframe src="https://open.spotify.com/embed/track/0e3yhVeNaTfKIWQRw9U9sY" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-As for why that memory is tied to this particular song? I have no idea. Maybe it was playing in the library at the time, or maybe my dad played it in the car on the way to/from the library? Whatever it is, that song always puts me right back in that spot at age 6. I could go on and on with many more songs (See: "Weekend Mornings", 2016 memory), but I'll save that for an 8-hour road trip when people are stuck in the car and have no choice but to listen to me ramble.[^5]
+As for why that memory is tied to this particular song? I have no idea. Maybe it was playing in the library at the time, or maybe my dad played it in the car on the way to/from the library? Whatever it is, that song always puts me right back in that spot at age 6 (or 7). I could go on and on with many more songs (See: "Weekend Mornings", 2016 memory), but I'll save that for an 8-hour road trip when people are stuck in the car and have no choice but to listen to me ramble.[^5]
 
 ---
 
