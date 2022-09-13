@@ -5,6 +5,21 @@ date: "2022-08-15"
 
 > A meandering stream of consciousness about memories, remembering things and not remembering them, with some real memories sprinkled in.
 
+# Outline
+
+- Intro
+- Immediate response
+- Remembering via Music
+- Memories and everyone else
+  - Siddhesh
+  - The world
+  - 1 second a day
+- Time
+  - The great equalizer
+  - What can we do but accept it and enjoy each moment to the fullest?
+
+---
+
 # Intro
 
 For as long as I can remember, I've had bad memory.[^1] But as I embark on year 27, every so often, I'm gripped by a soul-deep anxiety that I'm already forgetting so many important things, people, memories, places from my life. It's paralyzing, knowing that I've lived $26 \times 365$ days on this Earth and yet struggle to remember the last one. Who am I&mdash;what is my identity&mdash;if not the sum of my lived experiences? If I can't even point to those experiences and say, "I was there. I did that. I lived that," then... what has it all been about? Even without the existential questioning, it's also pretty annoying day-to-day, forgetting the basic things I shouldn't be. It makes people think I don't care about them. People say you'll always remember the things you care about... But I care about so much and remember so little. Why?
