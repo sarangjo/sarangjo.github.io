@@ -1,18 +1,28 @@
 ---
 title: Developing Software on Windows
-date: "2018-11-16"
+date: "2022-09-21"
 ---
 
-Windows development is a mess. Here are some of my notes to explain how it all works together as part of my crusade to not use a Mac as a software developer at Illumio.
+(Originally drafted on 2018-11-16 and updated with better context and perspective)
+
+Developing software on can be confusing. Here are some of my notes to explain how it all works together as part of my crusade to not use a Mac as a software developer at Illumio.
 
 # Shells
 
+**Definition**: A shell is a program that allows the user to execute commands provided by the operating system.
+
 ## Native
 
-- `cmd` – the most primitive command line application on Windows, pretty much obsolete
-- `powershell` – native MSFT improvement on CMD, still clunky and not POSIX compliant by a long shot. but is now cross-platform, so they're trying for compatibility
+- `cmd.exe` – the most primitive command line application on Windows, would like for this to be obsolete
+- `powershell.exe` – native MSFT improvement on CMD, a bit more verbose than \*nix shells and not POSIX compliant by a long shot. but is now cross-platform, so they're trying for compatibility
 
 ## Unix-like
+
+- `bash.exe` - the \*nix developer's favorite (or so I think?) shell. Not natively installed on a Windows machine, needs to be installed from a third-party source, like:
+  - Git for Windows (includes "Git bash", which is pulled from MSYS2)
+  - Windows Subsystem for Linux (see below)
+  - Cygwin (see below)
+  - MSYS2 (see below)
 
 Assists with building of native Windows applications using MinGW-w64
 
@@ -24,7 +34,7 @@ Assists with building of native Windows applications using MinGW-w64
 
 # Compiler toolchains for Windows
 
-Programs that provide native POSIX-y (need to confirm this) compilation tools, most importantly **GCC**.
+**Definition**: Programs that provide native POSIX-y (need to confirm this) compilation tools, most importantly **GCC**.
 
 - [MinGW](http://mingw.org) - stands for "minimalistic GNU for Windows", first effort, development dropped off
 - [MinGW-w64](http://mingw-w64.org) – improvements on MinGW for 64bit systems and Objective-C, de facto for GCC on Windows
