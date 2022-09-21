@@ -7,9 +7,17 @@ date: "2022-09-21"
 
 Developing software on can be confusing. Here are some of my notes to explain how it all works together as part of my crusade to not use a Mac as a software developer at Illumio.
 
-# Shells
+# Shells and shell GUI's
 
-**Definition**: A shell is a program that allows the user to execute commands provided by the operating system.
+**Definition**: 
+- A shell is a (potentially) non-graphical program that allows the user to execute commands provided by the operating system.
+- A shell GUI is a special GUI that allows the user to interact with non-graphical shells.
+
+| Category | Shell | Overview | Shell program |
+| --- | --- | --- | --- |
+| 
+
+- [ ] Question: which shells are truly graphical (I'm guessing CMD and Powershell) and which are non-graphical with an external GUI provider?
 
 ## Native
 
@@ -23,6 +31,12 @@ Developing software on can be confusing. Here are some of my notes to explain ho
   - Windows Subsystem for Linux (see below)
   - Cygwin (see below)
   - MSYS2 (see below)
+
+Note that the actual EXE for each source above may be shared.
+
+# Shell program
+
+**Definition**: A native Windows graphical program using which a 
 
 Assists with building of native Windows applications using MinGW-w64
 
