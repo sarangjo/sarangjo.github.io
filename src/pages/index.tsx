@@ -31,7 +31,8 @@ export default function Index(props: PageProps<any>) {
         enthusiast working at <L to={Links.illumio}>Illumio</L> in Bellevue, WA.
         I graduated cum laude from the{" "}
         <L to={Links.uw}>University of Washington, Seattle</L>, with a B.S. in{" "}
-        <L to={Links.cs}>Computer Science</L> with Honors.
+        <L to={Links.cs}>Computer Science</L> with Honors, where I was a{" "}
+        <Link to="/uwcse">Teaching Assistant and Research Assistant</Link>.
       </p>
       <p>
         I am also the Co-Director of <L to={Links.kinspire}>Kinspire</L>, a
