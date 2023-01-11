@@ -24,11 +24,18 @@ const Taing = [
   // senior year
   451, 451, 452,
 ];
-const start = ["sp", 15];
 const quarterMap = {
   wi: "Winter",
   sp: "Spring",
   au: "Fall",
+};
+const start = { q: 1, y: 15 };
+const classNames = {
+  143: "Intro to Computer Science II",
+  311: "Foundations of Computing I",
+  351: "Hardware/Software Interface",
+  451: "Operating Systems",
+  452: "Distributed Systems",
 };
 
 export default function UWCSEPage(props: PageProps) {
@@ -63,11 +70,32 @@ export default function UWCSEPage(props: PageProps) {
         I had the privilege of being a TA for 10 of my 12 quarters at UW CSE:
       </p>
       <ul>
-        <li>Intro to Computer Science II (2 quarters)</li>
-        <li>Hardware/Software Interface (3 quarters)</li>
-        <li>Foundations of Computing I</li>
-        <li>Operating Systems (3 quarters)</li>
-        <li>Distributed Systems</li>
+        {Taing.map((classNumber, idx) => {
+          // Calculate the current quarter
+          const thisIndex = idx + start.q;
+
+          // How much have we overflowed?
+          const overflowYears = Math.floor(thisIndex / 3);
+
+          // That gives us the current year
+          const thisYear = start.y + overflowYears;
+
+          // Finally we get the quarter
+          const thisQuarter = thisIndex % 3;
+          const quarterShort = Object.keys(quarterMap)[thisQuarter];
+          const quarterName = quarterMap[quarterShort];
+
+          return (
+            <li>
+              {quarterName} 20{thisYear}:{" "}
+              <a
+                href={`https://courses.cs.washington.edu/courses/cse${classNumber}/${thisYear}${quarterShort}`}
+              >
+                CSE {classNumber}, {classNames[classNumber]}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </Layout>
   );
