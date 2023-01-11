@@ -8,9 +8,6 @@
     "url": "https://github.com/sarangjo/sarangjo.github.io/issues"
   },
   "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/material": "^5.2.8",
     "gatsby": "4.20",
     "gatsby-plugin-image": "^2.5.1",
     "gatsby-plugin-manifest": "^4.5.1",

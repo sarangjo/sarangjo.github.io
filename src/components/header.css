@@ -1,0 +1,20 @@
+.header-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: -8px 0px 1.05rem -8px;
+    width: calc(100% + 8px);
+    align-items: center;
+}
+
+.header-space-between {
+    justify-content: space-between;
+}
+
+.header-item {
+    padding-left: 8px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    margin: 0;
+}
