@@ -132,31 +132,31 @@ export default function MusicPage(props: PageProps) {
         <li>
           Episode 6.{" "}
           <L to="https://www.instagram.com/p/Cg2P98IJ3x6/">Run to You</L> by
-          Pentatonix (Raag Sindh Bhairavi)
+          Pentatonix (Raag Sindh Bhairavi). <i>August 4, 2022</i>
         </li>
         <li>
           Episode 5.{" "}
           <L to="https://www.instagram.com/p/COKIKeRhliD/">Scarborough Fair</L>{" "}
-          by Simon and Garfunkel (Raag Kaafi)
+          by Simon and Garfunkel (Raag Kaafi). <i>April 27, 2021</i>
         </li>
         <li>
           Episode 4. <L to="https://www.instagram.com/p/B7hAi-HlPVP/">Lovely</L>{" "}
-          by Billie Eilish (Raag Asavari)
+          by Billie Eilish (Raag Asavari). <i>January 19, 2020</i>
         </li>
         <li>
           Episode 3.{" "}
           <L to="https://www.instagram.com/p/B2UlUnWlfFT/">Skyfall</L> by Adele
-          (Raag Asavari)
+          (Raag Asavari). <i>September 12, 2019</i>
         </li>
         <li>
           Episode 2.{" "}
           <L to="https://www.instagram.com/p/BzHX2Usn06P/">Yesterday</L> by The
-          Beatles (Raag Mishra Bilaaval)
+          Beatles (Raag Mishra Bilaaval). <i>June 24, 2019</i>
         </li>
         <li>
           Episode 1.{" "}
           <L to="https://www.instagram.com/p/ByBgghknRPS/">How Long</L> by
-          Charlie Puth (Raag Asavari)
+          Charlie Puth (Raag Asavari). <i>May 28, 2019</i>
         </li>
       </ul>
     </>
