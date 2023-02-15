@@ -5,7 +5,7 @@ date: "2022-08-15"
 
 > A meandering stream of consciousness about memories, remembering things and not remembering them, with some real memories sprinkled in.
 
-# Outline
+# Outline 1
 
 - Intro
 - Immediate response
@@ -17,6 +17,18 @@ date: "2022-08-15"
 - Time
   - The great equalizer
   - What can we do but accept it and enjoy each moment to the fullest?
+
+# Outline 2
+
+- Intro
+- immediate response
+- Remembering via music
+- memories -> time connection
+- time the great equalizer
+- everyone else
+  - siddhesh
+  - the world
+  - 1 sec
 
 ---
 
@@ -38,21 +50,32 @@ I guess if I'm being fair to my hippocampus[^3], I do remember some important th
 
 As for why that memory is tied to this particular song? I have no idea. Maybe it was playing in the library at the time, or maybe my dad played it in the car on the way to/from the library? Whatever it is, that song always puts me right back in that spot at age 6 (or 7). I could go on and on with many more songs (See: "Weekend Mornings", 2016 memory), but I'll save that for an 8-hour road trip when people are stuck in the car and have no choice but to listen to me ramble.[^5]
 
-# What does everyone else think?
+# Memories <-> time
+
+I'm bad at a lot of stuff - why memories specifically make me scared?
+
+Why do memories hold such power? I guess at the core of it all, it's all about time. Every key I hit (especially the Backspace, which I've probably hit the most) takes away a smidge [^6] of my time away that I can never get back. And now that I've had some time to let out my panic in the paragraphs above,
+
+what all of this comes down to is the simple human condition of the passage of time: the one resource we all share, and we all lose in equal quantities no matter what we try. So while the existential crisis I posed at the beginning of this post might just be me dramatizing as I am wont to do, the corpus of human expression is absolutely littered with people's perspective on time.
+
+If I had to pick something out there that stands out, though, it would have to be the album _The Slow Rush_ by Tame Impala. This album definitively owned my 2020 music rotation [^7] by a wide margin. An absolute masterpiece from start to finish, this album (Tame Impala's fourth) was the first one released after I started actively following him thanks to &mdash; I kid you not &mdash; a Ford Edge commercial during a football game. [^8] The theme of this album, as I see it, is time. Every song examines a different aspect of how time &mdash; the past, the present, and the future &mdash; impact the human experience. Even the title, _The Slow Rush_, captures the duality of time. The ticking of time can be slow; just listen to the wall clock (if you still have one) at night when you're trying to sleep. The interval between each `tick` and `tock` lasts an eternity. And yet some days go by in a blink of the eye, more so now I'm older. Did they really happen, or did we Daylight savings a whole day instead of just an hour? Take the track "Borderline" for example: the theme in this song directly connects to the feeling I share of trying to grab onto something to slow the passage of time, but knowing only too well that my grip is tenuous at best:
+
+> We're on the borderline / Caught between the tides of pain and rapture,
+> Then I saw the time / Watched it speedin' by like a train / Like a train.
+
+Hits me right in that vulnerable spot, every time.
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/31qVWUdRrlb8thMvts0yYL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+# What about everyone else?
 
 ## Siddhesh
-
-This complicated relationship with memories is not unique to me, however.
 
 Funnily enough, after an incredible Tame Impala concert last year in Washington, D.C., when my friend [Siddhesh](https://siddhesh.substack.com) and I got some food on the streets near Capital One Arena, it was this exact topic that we talked about. It had been a few years since we'd hung out, and just under 11 years since we had been at Gurukul together, and so much of it felt like a blur all these years later. Perhaps the concert had struck a chord in us (it was, of course, part of the _The Slow Rush_ tour), but our conversation quickly turned to reminiscing and bemoaning the fact that such an incredible and formative part of our life felt like something in our mental periphery that we could never truly and fully remember. That quote from _The Office (US)_ came to mind: "I wish there was a way to know you're in the good old days before you've actually left them." A few months later, I uncovered some audio recordings I had taken of a day in 9th ~~grade~~ standard and those low-fidelity, hard-to-understand snippets of audio elicit flashes of memories of simpler times. But no more, and surely the more time passed the more we'd forget.
 
 ## How does society feel?
 
 What do memories mean in the grand scheme of things? Dementia is one of the most feared diseases in the world. Taking photos is so easy now. Movies and TV shows consistently jump on this - look at _Memento_. Memories are such a core part of the human experience that it's immensely difficult to live in the present at times.
-
-# It's not memories, really - it's time
-
-What all of this comes down to is the simple human condition of the passage of time: the one resource we all share, and we all lose in equal quantities no matter what we try. And just as music captures my strongest memories, music also helps me vocalize my thoughts on time. In particular, one album that seems relevant at this juncture is _The Slow Rush_ by Tame Impala. This album definitively owned my 2020 music rotation [^6] by a wide margin. An absolute masterpiece from start to finish, this album (Tame Impala's fourth) was the first one released after I started actively following him thanks to &mdash; I kid you not &mdash; a Ford Edge commercial during a football game. [^7] The theme of this album, as I see it, is time. Every song examines a different aspect of how time &mdash; the past, the present, and the future &mdash; impact the human experience. The title, _The Slow Rush_, perfectly captures the duality of time. The ticking of time can be slow; just listen to the wall clock (if you still have one) at night when you're trying to sleep. The interval between the `tick` and the `tock` last an eternity. And yet some days go by in a blink of the eye, more so now I'm older. Did they really happen, or did we Daylight savings a whole day instead of just an hour? Take "Borderline" for example: the theme in this song directly connects to the feeling I share of trying to grab onto something to slow the passage of time, but knowing only too well that my grip is tenuous at best. "We're on the borderline / Caught between the tides of pain and rapture / Then I saw the time / Watched it speedin' by like a train / Like a train". Hits me right in that vulnerable spot, every time.
 
 # Do memories matter?
 
@@ -75,5 +98,6 @@ If I had to think of something to take away from this, just for you who do relat
 [^3]: Is my brain me? Or is it a separate entity? But what is my identity without my brain thinking about that identity?
 [^4]: [A fun little read](https://www.historylink.org/File/20301) told me that the library that this memory happened at is not where the Sammamish library is located in the present day. Funnily enough, the old library was at 825 228th Ave **NE** while the current one is at 825 228th Ave **SE**.
 [^5]: You, sadly, always have the option of closing this tab. I hope you don't though.
-[^6]: So you can bet my easiest access point to 2020 memories are by listening to this album :)
-[^7]: Check it out here if you don't believe me: https://youtu.be/aWNTCdpg7qo. The sample from "Let It Happen" starts at 0:11 and the part after 0:23 is maybe one of my favorite guitar solos of all time.
+[^6]: If you're curious, I type at ~600 CPM so each key would take 1 ds.
+[^7]: So you can bet my easiest access point to 2020 memories are by listening to this album 🙂
+[^8]: Check it out here if you don't believe me: https://youtu.be/aWNTCdpg7qo. The sample from "Let It Happen" starts at 0:11 and the part after 0:23 is maybe one of my favorite guitar solos of all time.
