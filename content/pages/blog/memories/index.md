@@ -5,33 +5,6 @@ date: "2022-08-15"
 
 > A meandering stream of consciousness about memories, remembering things and not remembering them, with some real memories sprinkled in.
 
-# Outline 1
-
-- Intro
-- Immediate response
-- Remembering via Music
-- Memories and everyone else
-  - Siddhesh
-  - The world
-  - 1 second a day
-- Time
-  - The great equalizer
-  - What can we do but accept it and enjoy each moment to the fullest?
-
-# Outline 2
-
-- Intro
-- immediate response
-- Remembering via music
-- memories -> time connection
-- time the great equalizer
-- everyone else
-  - siddhesh
-  - the world
-  - 1 sec
-
----
-
 # Intro
 
 For as long as I can remember, I've had bad memory.[^1] But every so often, I'm gripped by a soul-deep anxiety that I've begun to forget so many important things, people, memories, and places from my life. It's paralyzing, knowing that I've lived a whopping $26.5 \times 365$ days on this Earth and yet struggle to remember the last one. Who am I, what is my identity, if not the sum of my lived experiences? If I can't even point to those experiences and say, "I was there. I did that. I lived that," then... what has it all been about? Even without the existential questioning, it's also pretty annoying day-to-day, forgetting the basic things I shouldn't be. It makes people think I don't care about them. People say you'll always remember the things you care about... But I care about so much and remember so little. Why?
@@ -73,7 +46,7 @@ Funnily enough, after an incredible Tame Impala concert last year in Washington,
 
 ## How does society feel?
 
-And the more I zoom out, the more I see signs of people trying to assuage this fear that is everpresent and omniscient
+And the more I zoom out, the more I see signs of people eternally obsessed with, afraid of, or in awe of the big T.
 
 What do memories mean in the grand scheme of things? Dementia is one of the most feared diseases in the world. Taking photos is so easy now. Movies and TV shows consistently jump on this - look at _Memento_. Memories are such a core part of the human experience that it's immensely difficult to live in the present at times.
 
