@@ -44,9 +44,7 @@ Funnily enough, after an incredible Tame Impala concert last year in Washington,
 
 --------------------------------------------------- GOOD TILL HERE ---------------------------------------------------
 
-## How does society feel?
-
-And the more I zoom out, the more I see signs of people eternally obsessed with, afraid of, or in awe of the big T.
+I could go on forever if I wanted to list all of the ways people have expressed their anger, fear, confusion, and more that is borne out of time. But one subsection of that compendium of grief that's particularly relevant and chock-full of examples has to do with memories.
 
 What do memories mean in the grand scheme of things? Dementia is one of the most feared diseases in the world. Taking photos is so easy now. Movies and TV shows consistently jump on this - look at _Memento_. Memories are such a core part of the human experience that it's immensely difficult to live in the present at times.
 
