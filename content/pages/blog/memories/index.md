@@ -67,7 +67,7 @@ If I had to think of something to take away from this, just for you who do relat
 [^1]: I guess that means that I _might_ have had good memory at some point... but I don't remember that, so I can't be sure.
 [^2]: A stargram was a cute little "Congratulations on performing in this play!" to a member of the cast/crew that an audience member could pay for
 [^3]: Is my brain me? Or is it a separate entity? But what is my identity without my brain thinking about that identity?
-[^4]: [A fun little read](https://www.historylink.org/File/20301) told me that the library that this memory happened at is not where the Sammamish library is located in the present day. Funnily enough, the old library was at 825 228th Ave **NE** while the current one is at 825 228th Ave **SE**.
+[^4]: [A fun little read](https://www.historylink.org/File/20301) told me that the library where this memory happened is not where the Sammamish library is located in the present day. Funnily enough, the old library was at 825 228th Ave **NE** while the current one is at 825 228th Ave **SE**.
 [^5]: You, sadly, always have the option of closing this tab. I hope you don't though.
 [^6]: Sorry, no, I'm not listing them all here. That's for another time.
 [^7]: If you're curious, I type at ~600 CPM so each key would use up roughly 0.1s.
