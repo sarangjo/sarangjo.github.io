@@ -42,9 +42,9 @@ Hits me right in that vulnerable spot, every time.
 
 Funnily enough, after an incredible Tame Impala concert in 2021 in Washington, D.C., when my friend [Siddhesh](https://siddhesh.substack.com) and I got some food on the streets near Capital One Arena, it was this exact topic that we talked about. It had been a few years since we'd hung out, and just under 11 years since we had been at Gurukul together, and so much of it felt like a blur all these years later. Perhaps the concert had struck a chord in us (it was, of course, part of the _The Slow Rush_ tour), but our conversation quickly turned to reminiscing and bemoaning the fact that such an incredible and formative part of our life felt like something in our mental periphery that we could never truly and fully remember. A few months later, I stumbled upon some audio recordings I had taken of a random day in 9th ~~grade~~ standard, self-assured at the time that those low-fidelity, hard-to-understand snippets of audio would be sufficient to call Future-Me back to that place and time easily. But now, they elicit mere flashes of simpler times, and nothing more... and surely the more time passes the more we will forget.
 
---------------------------------------------------- GOOD TILL HERE ---------------------------------------------------
+All around us today are countless examples of how we as a species have tried our best to conquer the withering away of memories, starting with the revolutionary invention of writing, all the way to the insane ease with which we can capture our life experiences in photos and videos. Apps like "1 Second A Day" try to make this a bit more streamlined, focusing on just trying to capture a single second from each day. So much of Hollywood runs on productizing nostalgia: taking the experiences and memories people cherish and conver them into something
 
-I could go on forever if I wanted to list all of the ways people have expressed their anger, fear, confusion, sadness, and more that is borne out of time. But one subsection of that compendium of grief that's particularly relevant and chock-full of examples has to do with memories.
+--------------------------------------------------- GOOD TILL HERE ---------------------------------------------------
 
 TODO: where does this fit? In the poignant words of Andy "The Nard Dog" Bernard, "I wish there was a way to know you're in the good old days before you've actually left them."
 
@@ -63,8 +63,6 @@ Videos = sight + sound; memoirs/diary, 1 second a day, best thing from the day
 # Looking forward/message/call to action?
 
 I don't really know if anyone else feels this way, but if you do I hope this felt validating, knowing that there's someone else out there who hates the sieve-like nature of their brain too.
-
-If I had to think of something to take away from this, just for you who do relate, I guess it's the age-old adage plastered on every artsy wall hanging: live every day to the fullest. Keep in touch with the people who have had even the smallest connection in your life - use social media for good for once. Make it a point to try to reach out to someone you haven't talked to in forever. It doesn't have to be an immensely deep conversation, it just feels nice to know they're still doing well and what a different sequence of steps have led them to where they are in life now. Do memory games, keep your brain active. Write. Put down in ink (or 1's and 0's) the things you worry about losing and you might find yourself holdong onto them even better than before.
 
 ---
 
