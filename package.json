@@ -8,7 +8,7 @@
     "url": "https://github.com/sarangjo/sarangjo.github.io/issues"
   },
   "dependencies": {
-    "gatsby": "4.20",
+    "gatsby": "4.25",
     "gatsby-plugin-image": "^2.5.1",
     "gatsby-plugin-manifest": "^4.5.1",
     "gatsby-plugin-offline": "^5.5.1",
