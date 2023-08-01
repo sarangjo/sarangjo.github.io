@@ -13,13 +13,13 @@ Personal website based on the Gatsby starter blog.
 As of now, we're using a local version of `gatsby-transformer-fountain`. Head into `./plugins/gatsby-transformer-fountain` and run:
 
 ```
-$ yarn
+$ npm install
 ```
 
 Then, run
 
 ```
-$ yarn start
+$ npm start
 ```
 
 in the top-level directory.
