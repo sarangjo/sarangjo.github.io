@@ -38,24 +38,25 @@ const classNames = {
   452: "Distributed Systems",
 };
 
-export default function UWCSEPage(props: PageProps) {
+export default function CSEPage(props: PageProps) {
   return (
     <Layout
       location={props.location}
-      title="UW Computer Science and Engineering"
-      titleIcon={
+      title="Computer Science and Engineering"
+      description="CS, CE, CSE, EECS, ECE - call it what you will."
+    >
+      <h2>
+        University of Washington{" "}
         <L style={{ boxShadow: "none" }} to={Links.cs}>
           <StaticImage
             style={{ marginBottom: 0, maxHeight: 60 }}
             src="../images/uwcse.jpg"
-            height={60}
-            alt="uwcse"
+            height={30}
+            alt="cse"
           />
         </L>
-      }
-      description="The launching pad for a lifelong love."
-    >
-      <h2>Research</h2>
+      </h2>
+      <h3>Research</h3>
       <p>
         In my senior year at UW, for my CSE Departmental Honors, I conducted
         research for the{" "}
@@ -65,7 +66,7 @@ export default function UWCSEPage(props: PageProps) {
         <L to={Links.presentation}> presentation</L> at the end of my year with
         MISL.
       </p>
-      <h2>Teaching</h2>
+      <h3>Teaching</h3>
       <p>
         I had the privilege of being a TA for 10 of my 12 quarters at UW CSE:
       </p>
