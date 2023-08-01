@@ -37,7 +37,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { fields: { slug: { regex: $myPath } } }
     ) {
       edges {

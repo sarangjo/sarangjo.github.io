@@ -10,10 +10,7 @@ async function createMdPages(createPage: Actions["createPage"], graphql) {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
+        allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
           edges {
             node {
               fields {
