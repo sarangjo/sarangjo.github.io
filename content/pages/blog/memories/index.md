@@ -1,6 +1,6 @@
 ---
 title: Memories
-date: "2022-08-15"
+date: "2023-08-01"
 ---
 
 > A meandering stream of consciousness about memories, remembering things and not remembering them, with some real memories sprinkled in.
