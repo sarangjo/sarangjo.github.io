@@ -68,6 +68,7 @@ export default function Header(props: Props) {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          margin: "-8px 0px 1.05rem -8px",
         }}
       >
         <span
