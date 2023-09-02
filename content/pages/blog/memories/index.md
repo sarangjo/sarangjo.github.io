@@ -50,40 +50,13 @@ Hits me right in that vulnerable spot, every time.
 
 # So now what?
 
-So... now what? What's the point of all of this reflection and introspection? The first takeaway is trying to reconcile the
+So... now what? What's the point of all of this reflection and introspection?
 
---------------------------------------------------- GOOD TILL HERE ---------------------------------------------------
+The first takeaway is trying to reconcile the importance of living in the moment and the almost inescapable need to capture it for later. It's a fine line to walk: on the one hand, with how easy it is to take a photo or video, all I end up thinking about when I go somewhere or am doing something fun is how to frame my beautiful face best. But on the other hand, with how easy it is to take a photo or video, I should be spending the least energy on doing so. If I needed to worry about how much film I had on hand, or whether I had enough AA's for my disposable camera, it would make sense to put a premium on doing it properly. But hell, I can just take 20 photos without even thinking about it. So... why think about it? The less energy I spend on the notation, the more I might be helping my brain actually remember things; the more I'm able to live in the moment. This is probably a very obvious and not insightful conclusion, but I think some part of me needed to actually write it for myself.
 
-1. Handling living in the present
-2. Acknowledging the universality passage of time ("defeat")
+The other takeaway is coming to terms with accepting defeat at the hands of time. This defeat manifests in many forms: forgetting the past, of course; carrying regrets around all your life; leaving the people you love; and the list goes on. Every time, it feels unfair, like some gross injustice is being levied against us. But this is just the reality of the world we live in. I don't know if I've fully accepted this yet &mdash; I'm still riddled with indecision at all times, and I constantly harp on decisions I made in the past that I can't do anything about. But I'm hoping this gets me a step closer. And if I'm being fair, if the whole world had fully come to terms with this, then we'd probably lose out on a majority of the stories and songs that we've come up with over the years.
 
-It is an essential
-
-# Dumping ground
-
-Danger: Memories are such a core part of the human experience that it's immensely difficult to live in the present at times.
-
-Leaving grandparents
-
-Having regrets
-
-We have to accept that this is the reality of the world and we are not alone in this apparent gross injustice
-
-# Do memories matter?
-
-Yet in our efforts to capture more memories and moments from our lives, perhaps we are limiting our brains' ability to remember on their own?
-
-But as we sat there, downing cheap but delicious Chinese food, a previously unthinkable idea came to my mind. Maybe you're only supposed to live and feel those moments, well, in the moment. The richest of feelings comes from knowing you really were fully invested in something. Something about ????
-
-It's too easy now to try to prioritize taking photos over being present; but you have to try to find a good balance so it doesn't overtake being there in the first place.
-
-In the panic of trying to take the best photo of a place I visit, I lose sight of the beauty of the fact that I am where I am in that moment. In recent trips, I've tried to make sure to just take 30 seconds to fully be present and immerse myself wherever I am.
-
-Videos = sight + sound; memoirs/diary, 1 second a day, best thing from the day
-
-# Looking forward/message/call to action?
-
-I don't really know if anyone else feels this way, but if you do I hope this felt validating, knowing that there's someone else out there who hates the sieve-like nature of their brain too.
+I don't really know if anyone relates to anything I wrote, but if you do I hope this felt validating, knowing that there's someone else out there who hates the sieve-like nature of their brain too.
 
 ---
 
