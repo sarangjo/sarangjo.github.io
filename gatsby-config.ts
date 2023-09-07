@@ -33,16 +33,12 @@ const config: GatsbyConfig = {
               maxWidth: 590,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
+          `gatsby-remark-responsive-iframe`,
           `gatsby-remark-external-links`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-reading-time`,
+          `gatsby-remark-katex`,
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
