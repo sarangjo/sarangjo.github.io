@@ -3,7 +3,7 @@ title: Weekend Mornings
 date: "2019-05-10"
 ---
 
-_TL;DR: Probably a good idea. This is basically an account of some of my most memorable weekend memories. Nothing else of use in the intro, skip to [the main part](#the-memories) if you're actually here to read interesting content._
+_An account of some of my most memorable weekend memories. Nothing else of use in the intro, feel free to skip to [the main part](#the-memories) if you're actually here to read interesting content._
 
 Anyone who knows me relatively well will know that I pretty much am the definition of "night owl". Even when I joke about waking up early, it doesn't go well for me:
 
