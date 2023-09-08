@@ -5,7 +5,8 @@ import Layout from "../components/layout";
 import { L } from "../utils";
 
 const Links = {
-  cs: "https://cs.uw.edu",
+  uw: "https://cs.uw.edu",
+  uchicago: "https://cs.uchicago.edu/",
   misl: "https://misl.cs.washington.edu/",
   fluidics: "https://misl.cs.washington.edu/projects/fluidics.html",
   thesis: "/papers/uw-thesis.pdf",
@@ -43,15 +44,30 @@ export default function CSEPage(props: PageProps) {
     <Layout
       location={props.location}
       title="Computer Science and Engineering"
-      description="CS, CE, CSE, EECS, ECE - call it what you will."
+      description="CS, CE, CSE, EECS, ECE, CMSC - call it what you will."
     >
       <h2>
-        University of Washington{" "}
-        <L style={{ boxShadow: "none" }} to={Links.cs}>
+        University of Chicago (2018-?){" "}
+        <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uw}>
           <StaticImage
-            style={{ marginBottom: 0, maxHeight: 60 }}
-            src="../images/uwcse.jpg"
-            height={30}
+            style={{ marginBottom: 0, maxHeight: 45 }}
+            src="../images/uchicagocs.png"
+            height={45}
+            alt="cse"
+          />
+        </L>
+      </h2>
+      <p>
+        I'm pursuing my PhD at UChicago CS starting Fall 2023. I'll update this
+        section as more things start happening!
+      </p>
+      <h2>
+        University of Washington (2014-18){" "}
+        <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uw}>
+          <StaticImage
+            style={{ marginBottom: 0, maxHeight: 45 }}
+            src="../images/uwcse.png"
+            height={45}
             alt="cse"
           />
         </L>
