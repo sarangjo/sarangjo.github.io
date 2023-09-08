@@ -29,7 +29,6 @@ const Label = ({ type }: { type: string }) => (
 export default function ProjectsPage(props: PageProps) {
   const completed = () => (
     <>
-      <h2>Completed Projects</h2>
       <ul>
         <li>
           <L to="https://ekta.app/">Ekta: The Desi Common Portal</L> (active
@@ -54,10 +53,6 @@ export default function ProjectsPage(props: PageProps) {
           <Label type="uw" />
         </li>
         <li>
-          <L to="https://kinspire.org/">Kinspire Website</L>
-          <Label type="kinspire" />
-        </li>
-        <li>
           <L to="https://chrome.google.com/webstore/detail/uw-awaaz-transposer/fjhhmdelhgjdjklocpgdoljjkneebcog">
             Transposer for UW Awaaz sheet music
           </L>{" "}
@@ -66,7 +61,7 @@ export default function ProjectsPage(props: PageProps) {
         </li>
         <li>
           ASA Score Checker and Reporter (
-          <L to="https://github.com/sarangjo/asa-judging">source code</L>)
+          <L to="https://github.com/desiacappella/operations">source code</L>)
           <Label type="asa" />
         </li>
         <li>
@@ -111,7 +106,7 @@ export default function ProjectsPage(props: PageProps) {
 
   const inProgress = () => (
     <>
-      <h2>In progress</h2>
+      <h2>Work in progress</h2>
       <ul>
         <li>
           <L to="https://rlesports.sarangj.com">
@@ -132,8 +127,7 @@ export default function ProjectsPage(props: PageProps) {
           UW CSE Courses visualization <span className="label uw">UW</span>
         </li>
         <li>
-          UW Calendar (who knows when this will actually be completed){" "}
-          <Label type="uw" />
+          UW Calendar <Label type="uw" />
         </li>
       </ul>
     </>

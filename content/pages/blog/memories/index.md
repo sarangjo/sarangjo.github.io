@@ -1,6 +1,6 @@
 ---
 title: Memories
-date: "2023-09-07"
+date: "2023-09-08"
 ---
 
 _A meandering stream of consciousness about memories, remembering things and not remembering them, with some real memories sprinkled in._
@@ -30,8 +30,8 @@ After an incredible Tame Impala concert in 2021 in Washington, D.C., Siddhesh an
 
 All around us today are countless examples of how we as a species have tried our best to conquer the withering away of memories and lived experience, starting with the revolutionary invention of language and telling stories, all the way to the insane ease with which we can capture our life experiences in photos and videos. Apps like "1 Second A Day" and "BeReal" try to make this a bit more streamlined, focusing on just trying to capture a single second from each day. So much of Hollywood runs on productizing nostalgia: taking the experiences and memories people cherished from their childhood and converting them into something people will not hesitate to spend money on. How many reboots of old series were produced in the last couple years alone? On the other hand, well-crafted stories about the complicated relationship we have with memories, like the movie _Memento_ (one of my favorites), resonate so strongly with people.
 
-<figure>
-    <img src="./remembrall.gif">
+<figure style="display: flex; flex-direction: column;">
+    <img style="margin: auto;" src="./remembrall.gif">
     <figcaption style="text-align: center; padding-top: 2px; font-size: 85%;">"Only problem is, I can't remember what I've forgotten."</figcaption>
 </figure>
 

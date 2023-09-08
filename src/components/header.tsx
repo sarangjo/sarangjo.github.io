@@ -79,7 +79,7 @@ export default function Header(props: Props) {
         >
           <ListLink to="/">Home</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
-          <ListLink to="/cse">CSE</ListLink>
+          <ListLink to="/academia">Academia</ListLink>
           <ListLink to="/blog/">Blog</ListLink>
           <ListLink to="/poetry/">Poetry</ListLink>
           <ListLink to="/music/">Music</ListLink>

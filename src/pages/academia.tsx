@@ -39,12 +39,12 @@ const classNames = {
   452: "Distributed Systems",
 };
 
-export default function CSEPage(props: PageProps) {
+export default function AcademiaPage(props: PageProps) {
   return (
     <Layout
       location={props.location}
-      title="Computer Science and Engineering"
-      description="CS, CE, CSE, EECS, ECE, CMSC - call it what you will."
+      title="Academia"
+      description={`"SIS, Stay in School, 'cause it's the best"`}
     >
       <h2>
         University of Chicago (2018-?){" "}
