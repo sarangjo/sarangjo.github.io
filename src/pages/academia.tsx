@@ -47,7 +47,7 @@ export default function AcademiaPage(props: PageProps) {
       description={`"SIS, Stay in School, 'cause it's the best"`}
     >
       <h2>
-        University of Chicago (2018-?){" "}
+        University of Chicago (2023-?){" "}
         <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uw}>
           <StaticImage
             style={{ marginBottom: 0, maxHeight: 45 }}
