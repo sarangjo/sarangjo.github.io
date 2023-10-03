@@ -45,7 +45,7 @@ export default function AcademiaPage(props: PageProps) {
     <Layout
       location={props.location}
       title="Academia"
-      description={`"SIS, Stay in School, 'cause it's the best"`}
+      description={`"SIS, Stay in School, 'cause it's the best" - Peaches`}
     >
       <h2>
         University of Chicago (2023-?){" "}
