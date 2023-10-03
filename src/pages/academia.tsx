@@ -12,6 +12,7 @@ const Links = {
   thesis: "/papers/uw-thesis.pdf",
   presentation:
     "https://docs.google.com/presentation/d/e/2PACX-1vRuce7h-qTiSWLqWiQV-dWiqu8P5Qqd48mvFM15-2wApVB8qFY9MM4blEn7iGN4xJm_u4DD4DEbJhl2/pub?start=false&loop=false&delayms=3000",
+  puddle: "https://dl.acm.org/doi/abs/10.1145/3297858.3304027",
 };
 
 // TODO use this
@@ -82,6 +83,9 @@ export default function AcademiaPage(props: PageProps) {
         <L to={Links.presentation}> presentation</L> at the end of my year with
         MISL.
       </p>
+      <ul>
+        <li>Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform (<L to={Links.puddle}>ACM Digital Library</L>)</li>
+      </ul>
       <h3>Teaching</h3>
       <p>
         I had the privilege of being a TA for 10 of my 12 quarters at UW CSE:
