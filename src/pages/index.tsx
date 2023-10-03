@@ -28,13 +28,13 @@ export default function Index(props: PageProps<any>) {
       showBio={true}
     >
       <p>
-        Hi there! I&apos;m Sarang Joshi, a computer scientist, singer, and life
+        Hi there! I&apos;m Sarang Joshi, a <Link to="/academia">computer scientist</Link>, singer, and life
         enthusiast studying to get my PhD at the{" "}
         <L to={Links.uchicago}>University of Chicago</L> in Chicago, IL. I
         graduated cum laude from the{" "}
         <L to={Links.uw}>University of Washington, Seattle</L>, with a B.S. in{" "}
         <L to={Links.cs}>Computer Science</L> with Honors, where I was a{" "}
-        <Link to="/uwcse">Teaching Assistant and Research Assistant</Link>, and
+        Teaching Assistant and Research Assistant, and
         worked at <L to={Links.illumio}>Illumio</L> for 5 years before starting
         my PhD.
       </p>
