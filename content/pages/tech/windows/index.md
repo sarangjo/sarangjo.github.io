@@ -3,19 +3,19 @@ title: Developing Software on Windows
 date: "2022-09-21"
 ---
 
-(Originally drafted on 2018-11-16 and updated with better context and perspective)
+> This page was originally drafted on 2018-11-16 and updated with better context and perspective. 2018... simpler days.
 
-Developing software on can be confusing. Here are some of my notes to explain how it all works together as part of my crusade to not use a Mac as a software developer at Illumio.
+Developing software on Windows can be confusing. There are memes galore about the experience of developing on Windows. Here are some of my notes to explain how it all works together, as part of my crusade to not use a Mac as a software developer at Illumio.
 
 # Shells
 
-**Definition**: 
+**Definition**:
 - A shell is a program that allows the user to execute commands provided by the operating system.
 - A shell may or may not be "graphical" - i.e. include a GUI that allows the shell to be run in a window.
 
 ## Native
 
-- `cmd.exe` (graphical) – the most primitive command line application on Windows, would like for this to be obsolete
+- `cmd.exe` (graphical) – This is the most primitive command line application on Windows. It's got lots of years would like for this to be obsolete
 - `powershell.exe` (graphical) – native MSFT improvement on CMD, a bit more verbose than \*nix shells and not POSIX compliant by a long shot. but is now cross-platform, so they're trying for compatibility
 
 ## Unix-like
@@ -30,7 +30,7 @@ As noted above, `bash.exe` is non-graphical, which means in order to use it, the
 
 # Command line environment
 
-**Definition**: A native Windows graphical program using which a 
+**Definition**: A native Windows graphical program using which a
 
 Assists with building of native Windows applications using MinGW-w64
 
