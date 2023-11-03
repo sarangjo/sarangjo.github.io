@@ -97,8 +97,14 @@ export default function MusicPage(props: PageProps) {
           .
         </li>
         <li>
+          <L to="https://soundcloud.com/against-the-flow-1/hey-there-delilah-sa">
+            Hey There Delilah (ft. Against the Flow)
+          </L>
+          , <b>Plain White T's</b>. April 2011.
+        </li>
+        <li>
           <L to="https://www.youtube.com/watch?v=wMnfi-He0Uc&list=PLB0785C00EA91F358">
-            Farewell
+            Farewell (ft. Against the Flow)
           </L>
           . February 2011. An original composition by my erstwhile band, Against
           the Flow!
@@ -130,22 +136,166 @@ export default function MusicPage(props: PageProps) {
         </li>
       </ul>
       <JoshiShow />
-      <Undergrad />
+      <Awaaz />
     </Layout>
   );
 }
 
-const Undergrad = () => (
+const Awaaz = () => (
   <>
-    <h2>Undergrad</h2>
-    <ul></ul>
-    <p>Highlights from my UW Awaaz days:</p>
+    <h2>
+      UW Awaaz{" "}
+      <L style={{ boxShadow: "none" }} to="https://instagram.com/uwawaaz">
+        <StaticImage
+          style={{ marginBottom: 0, maxHeight: 30 }}
+          src="../images/instagram.png"
+          alt="insta"
+          height={30}
+        />
+      </L>
+    </h2>
+    <p>
+      The premier South-Asian fusion a cappella group at the University of
+      Washington.
+    </p>
+    <h3>2017-18 (Musical Director)</h3>
+    <p>
+      For my final year on the team, we recorded our fourth studio album, which
+      I am in the process of locating.
+    </p>
     <ul>
       <li>
-        <L to="https://www.youtube.com/watch?v=o3QCeqIMWmA">
-          Zara Sa/Jar of Hearts
+        Numb/Ae Dil Hai Mushkil (
+        <L to="https://www.youtube.com/watch?v=dsTxr04SnWo">Aarohi 2018</L>).
+        Soloist for Ae Dil Hai Mushkil.
+      </li>
+      <li>
+        Cry Me a River/Dastaan-E-Om Shanti Om (
+        <L to="https://www.youtube.com/watch?v=9lNfMQ9p53w">Aarohi 2018</L>).
+        Soloist for Dastaan-E-Om Shanti Om.
+      </li>
+      <li>
+        Senior Song (
+        <L to="https://www.youtube.com/watch?v=VuenTfiURj4">Aarohi 2018</L>). A
+        10-minute tour de force which charts the stories of the four seniors who
+        graduated in 2018.
+      </li>
+    </ul>
+    <h3>2016-17 (Musical Director)</h3>
+    <p>
+      An exciting project this year was{" "}
+      <b>
+        <L to="https://www.youtube.com/watch?v=ifRN2lJgktU&list=PLEwKvRIp2FHIlSDTHXBhOLTvWf-iwk4nk">
+          Expressions
         </L>
-        , <i>Alankaar</i>
+      </b>
+      , which was a collaborative showcase with{" "}
+      <L to="https://natyauw.weebly.com/">Natya UW</L>, the University of
+      Washington's premier Indian classical dance team. We also recorded our
+      third studio album,{" "}
+      <i>
+        <L to="https://www.youtube.com/playlist?list=PLEwKvRIp2FHK2a2DxudZOP8dPMl31oZZQ">
+          Avrutti
+        </L>
+      </i>
+      .
+    </p>
+    <ul>
+      <li>
+        Summertime Sadness/Tujhe Bhula Diya (
+        <L to="https://www.youtube.com/watch?v=DncMpQoxO3E&list=PLEwKvRIp2FHK2a2DxudZOP8dPMl31oZZQ">
+          Studio recording
+        </L>
+        ) (
+        <L to="https://youtu.be/fvaBi5SdTTA?si=LW1C-ID4yJXhRfbr&t=445">
+          Desi Dhamaka 2017
+        </L>
+        ).
+      </li>
+      <li>
+        Tanhayee (
+        <L to="https://www.youtube.com/watch?v=jpJ0wDx1RBc&list=PLEwKvRIp2FHK2a2DxudZOP8dPMl31oZZQ">
+          Studio recording
+        </L>
+        ) (
+        <b>
+          <L to="https://www.youtube.com/watch?v=7AikuWcaN40">Expressions</L>
+        </b>
+        ). Soloed in live performances in the second half of the year.
+      </li>
+      <li>
+        Bravery (
+        <b>
+          <L to="https://www.youtube.com/watch?v=asueECOrvqg&list=PLEwKvRIp2FHIlSDTHXBhOLTvWf-iwk4nk">
+            Expressions
+          </L>
+        </b>
+        ). UW Awaaz's first ever fully original composition, an instrumental
+        piece depicting a story of immigrants leaving their homes for a new
+        land.
+      </li>
+    </ul>
+    <h3>2015-16</h3>
+    <p>
+      This year, we competed at Anahat 2015 and placed 3rd, which was UW Awaaz's
+      first ever competitive top-3 placing! We also recorded our second studio
+      album,{" "}
+      <i>
+        <L to="https://www.youtube.com/playlist?list=PLEwKvRIp2FHKWgP0w4sFPTiAlp4rUJSMU">
+          Alankaar
+        </L>
+      </i>
+      .
+    </p>
+    <ul>
+      <li>
+        Bhare Naina (
+        <L to="https://www.youtube.com/watch?v=tCri7QeYBDA&list=PLEwKvRIp2FHKWgP0w4sFPTiAlp4rUJSMU">
+          Studio recording
+        </L>
+        ) (<L to="https://www.youtube.com/watch?v=6jbcj07p5nM">Anahat 2015</L>).
+      </li>
+      <li>
+        Zara Sa/Jar of Hearts (
+        <L to="https://www.youtube.com/watch?v=o3QCeqIMWmA&list=PLEwKvRIp2FHKWgP0w4sFPTiAlp4rUJSMU">
+          Studio recording
+        </L>
+        ) (
+        <L to="https://youtu.be/6jbcj07p5nM?si=E8TLTLxllnbZmktt&t=326">
+          Anahat 2015
+        </L>
+        ). Soloist for Zara Sa.
+      </li>
+    </ul>
+    <h3>2014-15</h3>
+    <p>
+      This was the first year we did studio recordings, producing our first
+      album{" "}
+      <i>
+        <L to="https://www.youtube.com/playlist?list=PLEwKvRIp2FHLpKx-14-_-AueQFHdSBDzz">
+          Studio Sessions
+        </L>
+      </i>
+      .
+    </p>
+    <ul>
+      <li>
+        Show Me the Meaning of Being Lonely (
+        <L to="https://youtu.be/entlODZjEXU">Aarohi 2015</L>).
+      </li>
+      <li>
+        Aadat/Ain't No Sunshine (
+        <L to="https://www.youtube.com/watch?v=RajZ5iBNxtY&list=PLEwKvRIp2FHLpKx-14-_-AueQFHdSBDzz">
+          Studio recording
+        </L>
+        ).
+      </li>
+      <li>
+        Kannodu Kanbathellam (
+        <L to="https://www.youtube.com/watch?v=eJeWb41Kr7k&list=PLEwKvRIp2FHLpKx-14-_-AueQFHdSBDzz">
+          Studio recording
+        </L>
+        ).
       </li>
     </ul>
   </>
