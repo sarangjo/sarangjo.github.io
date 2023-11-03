@@ -15,13 +15,13 @@ Developing software on Windows can be confusing. There are memes galore about th
 
 ## Native
 
-- `cmd.exe` (graphical) – This is the most primitive command line application on Windows. It's got lots of years would like for this to be obsolete
-- `powershell.exe` (graphical) – native MSFT improvement on CMD, a bit more verbose than \*nix shells and not POSIX compliant by a long shot. but is now cross-platform, so they're trying for compatibility
+- [`cmd.exe`](https://en.wikipedia.org/wiki/Cmd.exe) (graphical) – the most primitive command line application on Windows. It's got lots of years of usage in the world (it's 35 years old at the time of writing), but I would like for this to be obsolete, please. No hate, it's just time to let bygones be bygones.
+- [`powershell.exe`](https://en.wikipedia.org/wiki/PowerShell) (graphical) – the native MSFT improvement on CMD. PowerShell commands are a bit more verbose than corresponding `bash` commands, and PowerShell is not POSIX compliant by a long shot. It is now cross-platform, however, so they're trying for compatibility and adoption outside of Windows.
 
 ## Unix-like
 
 - `bash.exe` (non-graphical) - the \*nix developer's favorite (or so I think?) shell. Not natively installed on a Windows machine, needs to be installed from a third-party source, like:
-  - Git for Windows (includes "Git bash", which is pulled from MSYS2)
+  - Git for Windows (includes "Git Bash", which is pulled from MSYS2)
   - Windows Subsystem for Linux (see below)
   - Cygwin (see below)
   - MSYS2 (see below)
