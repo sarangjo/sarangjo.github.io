@@ -28,25 +28,27 @@ export default function Index(props: PageProps<any>) {
       showBio={true}
     >
       <p>
-        Hi there! I&apos;m Sarang Joshi, a <Link to="/academia">computer scientist</Link>, singer, and life
-        enthusiast studying to get my PhD at the{" "}
+        Hi there! I&apos;m Sarang Joshi, a{" "}
+        <Link to="/academia">computer scientist</Link>, singer, and life
+        enthusiast studying as a first-year PhD student at the{" "}
         <L to={Links.uchicago}>University of Chicago</L> in Chicago, IL. I
         graduated cum laude from the{" "}
-        <L to={Links.uw}>University of Washington, Seattle</L>, with a B.S. in{" "}
-        <L to={Links.cs}>Computer Science</L> with Honors, where I was a{" "}
-        Teaching Assistant and Research Assistant, and
-        worked at <L to={Links.illumio}>Illumio</L> for 5 years before starting
-        my PhD.
+        <L to={Links.uw}>University of Washington, Seattle</L> in 2018, with a
+        B.S. in <L to={Links.cs}>Computer Science</L> with Honors, where I was a{" "}
+        Teaching Assistant and Research Assistant, and worked at{" "}
+        <L to={Links.illumio}>Illumio</L> for 5 years before starting my PhD in
+        2023.
       </p>
       <p>
-        I am also an Executive Director of <L to={Links.kinspire}>Kinspire</L>,
-        a 501(c)(3) dedicated to the revitalization of education for children in
-        orphanages in India, an Advisor and former Director of{" "}
+        I currently serve as an Executive Director of{" "}
+        <L to={Links.kinspire}>Kinspire</L>, a 501(c)(3) dedicated to the
+        revitalization of education for children in orphanages in India, and CTO
+        of <L to={Links.ekta}>Ekta</L>, a unified platform for the collegiate
+        South-Asian performing circuits. I formerly served as an Advisor and
+        Director of{" "}
         <L to={Links.asa}>the Association of South-Asian A cappella</L>, a
         non-profit working to foster the growth of the South-Asian a cappella
-        artform in college campuses and across the country, and CTO of{" "}
-        <L to={Links.ekta}>Ekta</L>, a unified platform for the collegiate
-        South-Asian performing circuits.
+        artform in college campuses and across the country.
       </p>
       <p>
         Outside of that, I like to <Link to="/music">make music</Link>,{" "}

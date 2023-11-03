@@ -58,10 +58,19 @@ export default function AcademiaPage(props: PageProps) {
           />
         </L>
       </h2>
+      <h3>Research</h3>
       <p>
-        I'm pursuing my PhD at UChicago CS starting Fall 2023. I'll update this
-        section as more things start happening!
+        I'm currently exploring the intersection of quantum and classical
+        computer architecture under the advisement of Prof. Yanjing Li with
+        support from Prof. Fred Chong.
       </p>
+      <h3>Teaching</h3>
+      <p>
+        I have TA'd for the following classes during my time at UChicago CS:
+      </p>
+      <ul>
+        <li>Fall 2023: CMSC 144, Systems Programming II</li>
+      </ul>
       <h2>
         University of Washington (2014-18){" "}
         <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uw}>
@@ -84,7 +93,10 @@ export default function AcademiaPage(props: PageProps) {
         MISL.
       </p>
       <ul>
-        <li>Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform (<L to={Links.puddle}>ACM Digital Library</L>)</li>
+        <li>
+          Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform
+          (<L to={Links.puddle}>ACM Digital Library</L>)
+        </li>
       </ul>
       <h3>Teaching</h3>
       <p>
