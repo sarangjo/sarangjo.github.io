@@ -7,6 +7,9 @@ import { rhythm } from "../utils/typography";
 
 import "./md-post.css";
 
+// Katex
+require(`katex/dist/katex.min.css`);
+
 export default function MdPostTemplate(props: PageProps<any, any>) {
   const post = props.data.markdownRemark;
   const siteTitle = props.data.site.siteMetadata.title;

@@ -41,7 +41,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allFountain(sort: { fields: [frontmatter___date], order: DESC }) {
+    allFountain(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           fields {

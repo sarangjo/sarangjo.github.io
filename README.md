@@ -10,16 +10,17 @@ Personal website based on the Gatsby starter blog.
 
 ## Setup
 
-As of now, we're using a local version of `gatsby-transformer-fountain`. Head into `./plugins/gatsby-transformer-fountain` and run:
+1. Head into `./plugins/gatsby-transformer-fountain-local` and run:
+   ```
+   $ npm install --legacy-peer-deps
+   ```
+   since we're using a local version of `gatsby-transformer-fountain`.
 
-```
-$ yarn
-```
-
-Then, run
-
-```
-$ yarn start
-```
-
-in the top-level directory.
+2. Then, move to the top-level directory and run:
+   ```
+   $ npm install --legacy-peer-deps
+   ```
+3. Run
+   ```
+   $ npm start
+   ```

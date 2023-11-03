@@ -8,10 +8,58 @@ import { StaticImage } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
 
 export default function MusicPage(props: PageProps) {
-  const highSchool = () => (
-    <>
-      <h2>High School and Before</h2>
+  return (
+    <Layout
+      location={props.location}
+      title="Music"
+      description="My earliest and longest-living passion."
+    >
       <ul>
+        <li>
+          <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>,{" "}
+          <b>Linkin Park</b>, drum cover. July 2023.
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=bL5LXOtVdQM">Back in Black</L>,{" "}
+          <b>AC/DC</b>, drum cover. June 2023.
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=GMvmfZ6w6Ws">
+            Hymn for the Weekend
+          </L>
+          , <b>Coldplay</b>, drum cover. April 2023.
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=M83aGZKBB9s">
+            Fight for Your Right
+          </L>
+          , <b>Beastie Boys</b>, drum cover. February 2023.
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=gWxVCKkrMTs&list=PLB0785C00EA91F358">
+            Chunar
+          </L>
+          , <i>ABCD 2</i>. June 2019. Arranged and edited by Eshaan Gandhi.
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=-ObQkl34lRA&list=PLB0785C00EA91F358">
+            Where Do We Draw the Line
+          </L>
+          , <b>Poets of the Fall</b>. March 2019.
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=h9WfWdRy_tE&list=PLB0785C00EA91F358">
+            Yeh Jo Des (ft. Kavya Magham)
+          </L>
+          , <i>Swades</i>. January 26, 2019. In celebration of India&apos;s
+          Republic Day 2019.
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=q4qZKvpb4mU&list=PLB0785C00EA91F358">
+            Iridescent
+          </L>
+          , <b>Linkin Park</b>. Summer 2017.
+        </li>
         <li>
           <L to="https://www.youtube.com/watch?v=ceG4IJUdsas&list=PLB0785C00EA91F358">
             Wonderwall (ft. Arjun Patel)
@@ -81,117 +129,74 @@ export default function MusicPage(props: PageProps) {
           , <b>Hridaynath Mangeshkar</b>.
         </li>
       </ul>
-    </>
-  );
-
-  const undergrad = () => (
-    <>
-      <h2>Undergrad</h2>
-      <ul>
-        <li>
-          <L to="https://www.youtube.com/watch?v=q4qZKvpb4mU&list=PLB0785C00EA91F358">
-            Iridescent
-          </L>
-          , <b>Linkin Park</b>. Summer 2017.
-        </li>
-      </ul>
-      <p>Highlights from my UW Awaaz days:</p>
-      <ul>
-        <li>
-          <L to="https://www.youtube.com/watch?v=o3QCeqIMWmA">
-            Zara Sa/Jar of Hearts
-          </L>
-          , <i>Alankaar</i>
-        </li>
-      </ul>
-    </>
-  );
-
-  const joshiShow = () => (
-    <>
-      <h2>
-        The Joshi Show{" "}
-        <L
-          style={{ boxShadow: "none" }}
-          to="https://instagram.com/thejoshishow"
-        >
-          <StaticImage
-            style={{ marginBottom: 0, maxHeight: 30 }}
-            src="../images/instagram.png"
-            alt="insta"
-            height={30}
-          />
-        </L>
-      </h2>
-      <p>
-        This is a little pet project of mine, where I cover Western pop songs in
-        Indian classical style. Some love it, most hate it. I call it, &quot;The
-        Joshi Show&quot;.
-      </p>
-      <ul>
-        <li>
-          Episode 6.{" "}
-          <L to="https://www.instagram.com/p/Cg2P98IJ3x6/">Run to You</L> by
-          Pentatonix (Raag Sindh Bhairavi)
-        </li>
-        <li>
-          Episode 5.{" "}
-          <L to="https://www.instagram.com/p/COKIKeRhliD/">Scarborough Fair</L>{" "}
-          by Simon and Garfunkel (Raag Kaafi)
-        </li>
-        <li>
-          Episode 4. <L to="https://www.instagram.com/p/B7hAi-HlPVP/">Lovely</L>{" "}
-          by Billie Eilish (Raag Asavari)
-        </li>
-        <li>
-          Episode 3.{" "}
-          <L to="https://www.instagram.com/p/B2UlUnWlfFT/">Skyfall</L> by Adele
-          (Raag Asavari)
-        </li>
-        <li>
-          Episode 2.{" "}
-          <L to="https://www.instagram.com/p/BzHX2Usn06P/">Yesterday</L> by The
-          Beatles (Raag Mishra Bilaaval)
-        </li>
-        <li>
-          Episode 1.{" "}
-          <L to="https://www.instagram.com/p/ByBgghknRPS/">How Long</L> by
-          Charlie Puth (Raag Asavari)
-        </li>
-      </ul>
-    </>
-  );
-
-  return (
-    <Layout
-      location={props.location}
-      title="Music"
-      description="My earliest and longest-living passion."
-    >
-      <ul>
-        <li>
-          <L to="https://www.youtube.com/watch?v=gWxVCKkrMTs&list=PLB0785C00EA91F358">
-            Chunar
-          </L>
-          , <i>ABCD 2</i>. June 2019. Arranged and edited by Eshaan Gandhi.
-        </li>
-        <li>
-          <L to="https://www.youtube.com/watch?v=-ObQkl34lRA&list=PLB0785C00EA91F358">
-            Where Do We Draw the Line
-          </L>
-          , <b>Poets of the Fall</b>. March 2019.
-        </li>
-        <li>
-          <L to="https://www.youtube.com/watch?v=h9WfWdRy_tE&list=PLB0785C00EA91F358">
-            Yeh Jo Des (ft. Kavya Magham)
-          </L>
-          , <i>Swades</i>. January 26, 2019. In celebration of India&apos;s
-          Republic Day 2019.
-        </li>
-      </ul>
-      {joshiShow()}
-      {undergrad()}
-      {highSchool()}
+      <JoshiShow />
+      <Undergrad />
     </Layout>
   );
 }
+
+const Undergrad = () => (
+  <>
+    <h2>Undergrad</h2>
+    <ul></ul>
+    <p>Highlights from my UW Awaaz days:</p>
+    <ul>
+      <li>
+        <L to="https://www.youtube.com/watch?v=o3QCeqIMWmA">
+          Zara Sa/Jar of Hearts
+        </L>
+        , <i>Alankaar</i>
+      </li>
+    </ul>
+  </>
+);
+
+const JoshiShow = () => (
+  <>
+    <h2>
+      The Joshi Show{" "}
+      <L style={{ boxShadow: "none" }} to="https://instagram.com/thejoshishow">
+        <StaticImage
+          style={{ marginBottom: 0, maxHeight: 30 }}
+          src="../images/instagram.png"
+          alt="insta"
+          height={30}
+        />
+      </L>
+    </h2>
+    <p>
+      This is a little pet project of mine, where I cover Western pop songs in
+      Indian classical style. Some love it, most hate it. I call it, &quot;The
+      Joshi Show&quot;.
+    </p>
+    <ul>
+      <li>
+        Episode 6.{" "}
+        <L to="https://www.instagram.com/p/Cg2P98IJ3x6/">Run to You</L>,{" "}
+        <b>Pentatonix</b> (Raag Sindh Bhairavi). August 4, 2022.
+      </li>
+      <li>
+        Episode 5.{" "}
+        <L to="https://www.instagram.com/p/COKIKeRhliD/">Scarborough Fair</L>,{" "}
+        <b>Simon and Garfunkel</b> (Raag Kaafi). April 27, 2021.
+      </li>
+      <li>
+        Episode 4. <L to="https://www.instagram.com/p/B7hAi-HlPVP/">Lovely</L>,{" "}
+        <b>Billie Eilish</b> (Raag Asavari). January 19, 2020.
+      </li>
+      <li>
+        Episode 3. <L to="https://www.instagram.com/p/B2UlUnWlfFT/">Skyfall</L>,{" "}
+        <b>Adele</b> (Raag Asavari). September 12, 2019.
+      </li>
+      <li>
+        Episode 2.{" "}
+        <L to="https://www.instagram.com/p/BzHX2Usn06P/">Yesterday</L>,{" "}
+        <b>The Beatles</b> (Raag Mishra Bilaaval). June 24, 2019.
+      </li>
+      <li>
+        Episode 1. <L to="https://www.instagram.com/p/ByBgghknRPS/">How Long</L>
+        , <b>Charlie Puth</b> (Raag Asavari). May 28, 2019.
+      </li>
+    </ul>
+  </>
+);
