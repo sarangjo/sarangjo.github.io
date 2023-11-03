@@ -33,7 +33,7 @@ async function createMdPages(createPage: Actions["createPage"], graphql) {
   // Create blog posts pages.
   const allPosts: { node: any }[] = result.data.allMarkdownRemark.edges;
 
-  // Split up by category based on the folder: e.g. blog, tech, etc.
+  // Split up by category based on the folder: e.g. blog, poetry, etc.
   const postMap = allPosts.reduce((acc, cur) => {
     const key = cur.node.fields.slug.split("/")[1];
     if (!(key in acc)) {
@@ -115,13 +115,13 @@ async function createMdIndexPages(createPage) {
       description:
         "No fancy description. Just poetry. This is serious business.",
     },
-    {
-      slug: "tech",
-      title: "Tech Notes",
-      description:
-        "A small contribution to the massive collection of information about the tech world.",
-      seo: [`tech`, `gatsby`, `javascript`, `react`],
-    },
+    // {
+    //   slug: "tech",
+    //   title: "Tech Notes",
+    //   description:
+    //     "A small contribution to the massive collection of information about the tech world.",
+    //   seo: [`tech`, `gatsby`, `javascript`, `react`],
+    // },
     {
       slug: "blog",
       title: "Life Enthusiasm",
@@ -138,7 +138,6 @@ async function createMdIndexPages(createPage) {
         myPath: `//${ind.slug}/.*/`,
         title: ind.title,
         description: ind.description,
-        seo: ind.seo || [],
       },
     })
   );
