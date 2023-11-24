@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - 84-auto-deploy
+      - main
 permissions:
   contents: write
 jobs:
