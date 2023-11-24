@@ -82,7 +82,7 @@ export default function MusicPage(props: PageProps) {
           </L>
           , <i>Edges</i>. December 2012. Nominated for &quot;Outstanding Performance by an Actor in
           a Featured Ensemble Role&quot; at the{" "}
-          <L to="https://www.5thavenue.org/images/pdfs/1213_5thAveAwards_Nominees_and_Recipients.pdf">
+          <L to="https://web.archive.org/web/20200530190606/https://www.5thavenue.org/images/pdfs/1213_5thAveAwards_Nominees_and_Recipients.pdf">
             2013 5th Avenue Awards
           </L>
           .
