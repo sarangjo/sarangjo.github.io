@@ -60,14 +60,11 @@ export default function AcademiaPage(props: PageProps) {
       </h2>
       <h3>Research</h3>
       <p>
-        I'm currently exploring the intersection of quantum and classical
-        computer architecture under the advisement of Prof. Yanjing Li with
-        support from Prof. Fred Chong.
+        I'm currently exploring the intersection of quantum and classical computer architecture
+        under the advisement of Prof. Yanjing Li with support from Prof. Fred Chong.
       </p>
       <h3>Teaching</h3>
-      <p>
-        I have TA'd for the following classes during my time at UChicago CS:
-      </p>
+      <p>I have TA'd for the following classes during my time at UChicago CS:</p>
       <ul>
         <li>Fall 2023: CMSC 144, Systems Programming II</li>
       </ul>
@@ -84,24 +81,20 @@ export default function AcademiaPage(props: PageProps) {
       </h2>
       <h3>Research</h3>
       <p>
-        In my senior year at UW, for my CSE Departmental Honors, I conducted
-        research for the{" "}
+        In my senior year at UW, for my CSE Departmental Honors, I conducted research for the{" "}
         <L to={Links.misl}>Molecular Information Systems Lab</L>, on the{" "}
         <L to={Links.fluidics}>Microfluidic Automation</L> project. I wrote a{" "}
-        <L to={Links.thesis}>thesis</L> and gave a{" "}
-        <L to={Links.presentation}> presentation</L> at the end of my year with
-        MISL.
+        <L to={Links.thesis}>thesis</L> and gave a <L to={Links.presentation}> presentation</L> at
+        the end of my year with MISL.
       </p>
       <ul>
         <li>
-          Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform
-          (<L to={Links.puddle}>ACM Digital Library</L>)
+          Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform (
+          <L to={Links.puddle}>ACM Digital Library</L>)
         </li>
       </ul>
       <h3>Teaching</h3>
-      <p>
-        I had the privilege of being a TA for 10 of my 12 quarters at UW CSE:
-      </p>
+      <p>I had the privilege of being a TA for 10 of my 12 quarters at UW CSE:</p>
       <ul>
         {Taing.map((classNumber, idx) => {
           // Calculate the current quarter

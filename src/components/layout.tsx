@@ -38,9 +38,7 @@ export default function Layout(props: React.PropsWithChildren<Props>) {
     >
       <Helmet
         htmlAttributes={{ lang: "en" }}
-        meta={[
-          { name: "description", content: helmetDescription || description },
-        ]}
+        meta={[{ name: "description", content: helmetDescription || description }]}
         title={helmetTitle || title}
       />
       <Header

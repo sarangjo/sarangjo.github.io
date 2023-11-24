@@ -6,8 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const TITLE = "Theater";
-const DESCRIPTION =
-  "All the world's a stage, and all the men and women merely players.";
+const DESCRIPTION = "All the world's a stage, and all the men and women merely players.";
 
 export default function TheaterIndex(props: PageProps<any>) {
   const { data } = props;
@@ -23,10 +22,7 @@ export default function TheaterIndex(props: PageProps<any>) {
       helmetTitle={`${TITLE} | ${title}`}
       showBio={false}
     >
-      <SEO
-        title={TITLE}
-        keywords={[`theater`, `gatsby`, `javascript`, `react`]}
-      />
+      <SEO title={TITLE} keywords={[`theater`, `gatsby`, `javascript`, `react`]} />
       {posts.map(({ node }, i) => (
         <PostExcerpt key={i} node={node} type="theater" />
       ))}

@@ -4,9 +4,7 @@ import { Link } from "gatsby";
 import Bio from "./bio";
 import { rhythm, scale } from "../utils/typography";
 
-const ListLink = (
-  props: React.PropsWithChildren<{ to: string; useA?: boolean }>
-) => (
+const ListLink = (props: React.PropsWithChildren<{ to: string; useA?: boolean }>) => (
   <span style={{ display: "inline-block", marginRight: "1rem" }}>
     {props.useA ? (
       <a href={props.to} target="_blank" rel="noopener noreferrer">

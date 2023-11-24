@@ -9,13 +9,7 @@ const content = (node, type) =>
     <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
   );
 
-export default function PostExcerpt({
-  node,
-  type,
-}: {
-  node: any;
-  type?: string;
-}) {
+export default function PostExcerpt({ node, type }: { node: any; type?: string }) {
   const title = node.frontmatter.title || node.fields.slug;
   return (
     <div key={node.fields.slug}>

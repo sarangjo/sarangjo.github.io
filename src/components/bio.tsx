@@ -8,7 +8,7 @@ function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
+      render={(data) => {
         const { author } = data.site.siteMetadata;
         return (
           <div
@@ -28,7 +28,8 @@ function Bio() {
               }}
               imgStyle={{
                 borderRadius: `50%`,
-              }} />
+              }}
+            />
             <p style={{ margin: "auto 0" }}>
               <strong>{author}</strong>&apos;s personal website.
             </p>
@@ -39,18 +40,19 @@ function Bio() {
   );
 }
 
-const bioQuery = graphql`query BioQuery {
-  avatar: file(absolutePath: {regex: "/profile-pic.jpg/"}) {
-    childImageSharp {
-      gatsbyImageData(width: 50, height: 50, layout: FIXED)
+const bioQuery = graphql`
+  query BioQuery {
+    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      childImageSharp {
+        gatsbyImageData(width: 50, height: 50, layout: FIXED)
+      }
+    }
+    site {
+      siteMetadata {
+        author
+      }
     }
   }
-  site {
-    siteMetadata {
-      author
-    }
-  }
-}
 `;
 
 export default Bio;

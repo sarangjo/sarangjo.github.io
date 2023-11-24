@@ -31,8 +31,7 @@ export default function ProjectsPage(props: PageProps) {
     <>
       <ul>
         <li>
-          <L to="https://ekta.app/">Ekta: The Desi Common Portal</L> (active
-          development)
+          <L to="https://ekta.app/">Ekta: The Desi Common Portal</L> (active development)
         </li>
         <li>
           <L to="https://courses.cs.washington.edu/courses/cse351/heapsim/">
@@ -42,14 +41,10 @@ export default function ProjectsPage(props: PageProps) {
         </li>
         <li>
           Full-stack single-page Typescript app template (
-          <L to="https://github.com/sarangjo/full-stack-typescript-app">
-            source code
-          </L>
-          )
+          <L to="https://github.com/sarangjo/full-stack-typescript-app">source code</L>)
         </li>
         <li>
-          Paper Telephone (
-          <L to="https://github.com/sarangjo/paper-telephone">source code</L>)
+          Paper Telephone (<L to="https://github.com/sarangjo/paper-telephone">source code</L>)
           <Label type="uw" />
         </li>
         <li>
@@ -82,23 +77,19 @@ export default function ProjectsPage(props: PageProps) {
         </li>
         <li>Doc Scheduler</li>
         <li>
-          Radio Transceiver &mdash; my final project for Computer Science and
-          Engineering at RHS (
+          Radio Transceiver &mdash; my final project for Computer Science and Engineering at RHS (
           <L to="https://github.com/sarangjo/radiotransceiver">source code</L>
           ) <Label type="rhs" />
         </li>
         <li>
-          IonoWumpus &mdash; winner of the Unlimited Category at Hunt the Wumpus
-          2012 (<L to="https://github.com/sarangjo/IonoWumpus">source code</L>){" "}
-          <Label type="rhs" />
+          IonoWumpus &mdash; winner of the Unlimited Category at Hunt the Wumpus 2012 (
+          <L to="https://github.com/sarangjo/IonoWumpus">source code</L>) <Label type="rhs" />
         </li>
         <li>
-          YahtzeePC (
-          <L to="https://github.com/sarangjo/yahtzeepc/">source code</L>)
+          YahtzeePC (<L to="https://github.com/sarangjo/yahtzeepc/">source code</L>)
         </li>
         <li>
-          LOGO projects (
-          <L to="https://github.com/sarangjo/logo-projects">source code</L>)
+          LOGO projects (<L to="https://github.com/sarangjo/logo-projects">source code</L>)
         </li>
       </ul>
     </>
@@ -109,14 +100,11 @@ export default function ProjectsPage(props: PageProps) {
       <h2>Work in progress</h2>
       <ul>
         <li>
-          <L to="https://rlesports.sarangj.com">
-            Rocket League eSports visualization
-          </L>{" "}
-          (<L to="https://github.com/sarangjo/rlesports">source code</L>)
+          <L to="https://rlesports.sarangj.com">Rocket League eSports visualization</L> (
+          <L to="https://github.com/sarangjo/rlesports">source code</L>)
         </li>
         <li>
-          Kinspire Portal (
-          <L to="https://github.com/kinspire/kinspire-portal">source code</L>)
+          Kinspire Portal (<L to="https://github.com/kinspire/kinspire-portal">source code</L>)
           <Label type="kinspire" />
         </li>
         <li>SS Soundboard</li>

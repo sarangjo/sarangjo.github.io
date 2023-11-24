@@ -19,8 +19,7 @@ export default function SEO({
     <StaticQuery
       query={detailsQuery}
       render={(data) => {
-        const metaDescription =
-          description || data.site.siteMetadata.description;
+        const metaDescription = description || data.site.siteMetadata.description;
         return (
           <Helmet
             htmlAttributes={{

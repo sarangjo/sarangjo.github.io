@@ -16,30 +16,24 @@ export default function MusicPage(props: PageProps) {
     >
       <ul>
         <li>
-          <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>,{" "}
-          <b>Linkin Park</b>, drum cover. July 2023.
+          <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>, <b>Linkin Park</b>, drum
+          cover. July 2023.
         </li>
         <li>
-          <L to="https://www.youtube.com/watch?v=bL5LXOtVdQM">Back in Black</L>,{" "}
-          <b>AC/DC</b>, drum cover. June 2023.
+          <L to="https://www.youtube.com/watch?v=bL5LXOtVdQM">Back in Black</L>, <b>AC/DC</b>, drum
+          cover. June 2023.
         </li>
         <li>
-          <L to="https://www.youtube.com/watch?v=GMvmfZ6w6Ws">
-            Hymn for the Weekend
-          </L>
-          , <b>Coldplay</b>, drum cover. April 2023.
+          <L to="https://www.youtube.com/watch?v=GMvmfZ6w6Ws">Hymn for the Weekend</L>,{" "}
+          <b>Coldplay</b>, drum cover. April 2023.
         </li>
         <li>
-          <L to="https://www.youtube.com/watch?v=M83aGZKBB9s">
-            Fight for Your Right
-          </L>
-          , <b>Beastie Boys</b>, drum cover. February 2023.
+          <L to="https://www.youtube.com/watch?v=M83aGZKBB9s">Fight for Your Right</L>,{" "}
+          <b>Beastie Boys</b>, drum cover. February 2023.
         </li>
         <li>
-          <L to="https://www.youtube.com/watch?v=gWxVCKkrMTs&list=PLB0785C00EA91F358">
-            Chunar
-          </L>
-          , <i>ABCD 2</i>. June 2019. Arranged and edited by Eshaan Gandhi.
+          <L to="https://www.youtube.com/watch?v=gWxVCKkrMTs&list=PLB0785C00EA91F358">Chunar</L>,{" "}
+          <i>ABCD 2</i>. June 2019. Arranged and edited by Eshaan Gandhi.
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=-ObQkl34lRA&list=PLB0785C00EA91F358">
@@ -51,13 +45,10 @@ export default function MusicPage(props: PageProps) {
           <L to="https://www.youtube.com/watch?v=h9WfWdRy_tE&list=PLB0785C00EA91F358">
             Yeh Jo Des (ft. Kavya Magham)
           </L>
-          , <i>Swades</i>. January 26, 2019. In celebration of India&apos;s
-          Republic Day 2019.
+          , <i>Swades</i>. January 26, 2019. In celebration of India&apos;s Republic Day 2019.
         </li>
         <li>
-          <L to="https://www.youtube.com/watch?v=q4qZKvpb4mU&list=PLB0785C00EA91F358">
-            Iridescent
-          </L>
+          <L to="https://www.youtube.com/watch?v=q4qZKvpb4mU&list=PLB0785C00EA91F358">Iridescent</L>
           , <b>Linkin Park</b>. Summer 2017.
         </li>
         <li>
@@ -82,15 +73,15 @@ export default function MusicPage(props: PageProps) {
           <L to="https://www.youtube.com/watch?v=lIYgb6FBe34&list=PLB0785C00EA91F358">
             Viva la Vida/Jashn-e-Bahaara
           </L>
-          , <b>Penn Masala</b>. Spring 2013. Definitely foreshadowing for my
-          South-Asian a cappella days!
+          , <b>Penn Masala</b>. Spring 2013. Definitely foreshadowing for my South-Asian a cappella
+          days!
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=oZjD6p00NQA&list=PLB0785C00EA91F358">
             Part of a Painting
           </L>
-          , <i>Edges</i>. December 2012. Nominated for &quot;Outstanding
-          Performance by an Actor in a Featured Ensemble Role&quot; at the{" "}
+          , <i>Edges</i>. December 2012. Nominated for &quot;Outstanding Performance by an Actor in
+          a Featured Ensemble Role&quot; at the{" "}
           <L to="https://www.5thavenue.org/images/pdfs/1213_5thAveAwards_Nominees_and_Recipients.pdf">
             2013 5th Avenue Awards
           </L>
@@ -106,21 +97,16 @@ export default function MusicPage(props: PageProps) {
           <L to="https://www.youtube.com/watch?v=wMnfi-He0Uc&list=PLB0785C00EA91F358">
             Farewell (ft. Against the Flow)
           </L>
-          . February 2011. An original composition by my erstwhile band, Against
-          the Flow!
+          . February 2011. An original composition by my erstwhile band, Against the Flow!
         </li>
         <p>From family performances:</p>
         <li>
-          <L to="https://www.youtube.com/watch?v=gjjT9nfSU5Y&list=PLB0785C00EA91F358">
-            Gaaravaa
-          </L>
-          , <b>Milind Ingle</b>.
+          <L to="https://www.youtube.com/watch?v=gjjT9nfSU5Y&list=PLB0785C00EA91F358">Gaaravaa</L>,{" "}
+          <b>Milind Ingle</b>.
         </li>
         <li>
-          <L to="https://soundcloud.com/sarang-joshi/tu-hi-hakeekat">
-            Tu Hi Hakeekat
-          </L>
-          , <i>Tum Mile</i>.
+          <L to="https://soundcloud.com/sarang-joshi/tu-hi-hakeekat">Tu Hi Hakeekat</L>,{" "}
+          <i>Tum Mile</i>.
         </li>
         <li>
           <L to="https://soundcloud.com/sarang-joshi/musafir-chalte-chalte">
@@ -155,31 +141,28 @@ const Awaaz = () => (
       </L>
     </h2>
     <p>
-      UW Awaaz is the premier South-Asian fusion a cappella group at the
-      University of Washington. I joined the team in 2014, and left after
-      graduating in 2018. I've highlighted a few of my favorite songs below!
+      UW Awaaz is the premier South-Asian fusion a cappella group at the University of Washington. I
+      joined the team in 2014, and left after graduating in 2018. I've highlighted a few of my
+      favorite songs below!
     </p>
     <h3>2017-18 (Musical Director)</h3>
     <p>
-      For my final year on the team, we recorded our fourth studio album, which
-      I am in the process of locating.
+      For my final year on the team, we recorded our fourth studio album, which I am in the process
+      of locating.
     </p>
     <ul>
       <li>
-        Numb/Ae Dil Hai Mushkil (
-        <L to="https://www.youtube.com/watch?v=dsTxr04SnWo">Aarohi 2018</L>
+        Numb/Ae Dil Hai Mushkil (<L to="https://www.youtube.com/watch?v=dsTxr04SnWo">Aarohi 2018</L>
         ). Soloist for Ae Dil Hai Mushkil.
       </li>
       <li>
         Cry Me a River/Dastaan-E-Om Shanti Om (
-        <L to="https://www.youtube.com/watch?v=9lNfMQ9p53w">Aarohi 2018</L>).
-        Soloist for Dastaan-E-Om Shanti Om.
+        <L to="https://www.youtube.com/watch?v=9lNfMQ9p53w">Aarohi 2018</L>). Soloist for
+        Dastaan-E-Om Shanti Om.
       </li>
       <li>
-        Senior Song (
-        <L to="https://www.youtube.com/watch?v=VuenTfiURj4">Aarohi 2018</L>). A
-        10-minute tour de force which charts the stories of the four seniors who
-        graduated in 2018.
+        Senior Song (<L to="https://www.youtube.com/watch?v=VuenTfiURj4">Aarohi 2018</L>). A
+        10-minute tour de force which charts the stories of the four seniors who graduated in 2018.
       </li>
     </ul>
     <h3>2016-17 (Musical Director)</h3>
@@ -190,14 +173,11 @@ const Awaaz = () => (
           Expressions
         </L>
       </b>
-      , which was a collaborative showcase with{" "}
-      <L to="https://natyauw.weebly.com/">Natya UW</L>, the University of
-      Washington's premier Indian classical dance team. We also recorded our
-      third studio album,{" "}
+      , which was a collaborative showcase with <L to="https://natyauw.weebly.com/">Natya UW</L>,
+      the University of Washington's premier Indian classical dance team. We also recorded our third
+      studio album,{" "}
       <i>
-        <L to="https://www.youtube.com/playlist?list=PLEwKvRIp2FHK2a2DxudZOP8dPMl31oZZQ">
-          Avrutti
-        </L>
+        <L to="https://www.youtube.com/playlist?list=PLEwKvRIp2FHK2a2DxudZOP8dPMl31oZZQ">Avrutti</L>
       </i>
       .
     </p>
@@ -207,10 +187,7 @@ const Awaaz = () => (
         <L to="https://www.youtube.com/watch?v=DncMpQoxO3E&list=PLEwKvRIp2FHK2a2DxudZOP8dPMl31oZZQ">
           Studio recording
         </L>
-        ) (
-        <L to="https://youtu.be/fvaBi5SdTTA?si=LW1C-ID4yJXhRfbr&t=445">
-          Desi Dhamaka 2017
-        </L>
+        ) (<L to="https://youtu.be/fvaBi5SdTTA?si=LW1C-ID4yJXhRfbr&t=445">Desi Dhamaka 2017</L>
         ).
       </li>
       <li>
@@ -231,16 +208,14 @@ const Awaaz = () => (
             Expressions
           </L>
         </b>
-        ). UW Awaaz's first ever fully original composition, an instrumental
-        piece depicting a story of immigrants leaving their homes for a new
-        land.
+        ). UW Awaaz's first ever fully original composition, an instrumental piece depicting a story
+        of immigrants leaving their homes for a new land.
       </li>
     </ul>
     <h3>2015-16</h3>
     <p>
-      This year, we competed at Anahat 2015 and placed 3rd, which was UW Awaaz's
-      first ever competitive top-3 placing! We also recorded our second studio
-      album,{" "}
+      This year, we competed at Anahat 2015 and placed 3rd, which was UW Awaaz's first ever
+      competitive top-3 placing! We also recorded our second studio album,{" "}
       <i>
         <L to="https://www.youtube.com/playlist?list=PLEwKvRIp2FHKWgP0w4sFPTiAlp4rUJSMU">
           Alankaar
@@ -261,17 +236,13 @@ const Awaaz = () => (
         <L to="https://www.youtube.com/watch?v=o3QCeqIMWmA&list=PLEwKvRIp2FHKWgP0w4sFPTiAlp4rUJSMU">
           Studio recording
         </L>
-        ) (
-        <L to="https://youtu.be/6jbcj07p5nM?si=E8TLTLxllnbZmktt&t=326">
-          Anahat 2015
-        </L>
+        ) (<L to="https://youtu.be/6jbcj07p5nM?si=E8TLTLxllnbZmktt&t=326">Anahat 2015</L>
         ). Soloist for Zara Sa.
       </li>
     </ul>
     <h3>2014-15</h3>
     <p>
-      This was the first year we did studio recordings, producing our first
-      album{" "}
+      This was the first year we did studio recordings, producing our first album{" "}
       <i>
         <L to="https://www.youtube.com/playlist?list=PLEwKvRIp2FHLpKx-14-_-AueQFHdSBDzz">
           Studio Sessions
@@ -281,8 +252,7 @@ const Awaaz = () => (
     </p>
     <ul>
       <li>
-        Show Me the Meaning of Being Lonely (
-        <L to="https://youtu.be/entlODZjEXU">Aarohi 2015</L>).
+        Show Me the Meaning of Being Lonely (<L to="https://youtu.be/entlODZjEXU">Aarohi 2015</L>).
       </li>
       <li>
         Aadat/Ain't No Sunshine (
@@ -316,37 +286,33 @@ const JoshiShow = () => (
       </L>
     </h2>
     <p>
-      This is a little pet project of mine, where I cover Western pop songs in
-      Indian classical style. Some love it, most hate it. I call it, &quot;The
-      Joshi Show&quot;.
+      This is a little pet project of mine, where I cover Western pop songs in Indian classical
+      style. Some love it, most hate it. I call it, &quot;The Joshi Show&quot;.
     </p>
     <ul>
       <li>
-        Episode 6.{" "}
-        <L to="https://www.instagram.com/p/Cg2P98IJ3x6/">Run to You</L>,{" "}
+        Episode 6. <L to="https://www.instagram.com/p/Cg2P98IJ3x6/">Run to You</L>,{" "}
         <b>Pentatonix</b> (Raag Sindh Bhairavi). August 4, 2022.
       </li>
       <li>
-        Episode 5.{" "}
-        <L to="https://www.instagram.com/p/COKIKeRhliD/">Scarborough Fair</L>,{" "}
+        Episode 5. <L to="https://www.instagram.com/p/COKIKeRhliD/">Scarborough Fair</L>,{" "}
         <b>Simon and Garfunkel</b> (Raag Kaafi). April 27, 2021.
       </li>
       <li>
-        Episode 4. <L to="https://www.instagram.com/p/B7hAi-HlPVP/">Lovely</L>,{" "}
-        <b>Billie Eilish</b> (Raag Asavari). January 19, 2020.
+        Episode 4. <L to="https://www.instagram.com/p/B7hAi-HlPVP/">Lovely</L>, <b>Billie Eilish</b>{" "}
+        (Raag Asavari). January 19, 2020.
       </li>
       <li>
-        Episode 3. <L to="https://www.instagram.com/p/B2UlUnWlfFT/">Skyfall</L>,{" "}
-        <b>Adele</b> (Raag Asavari). September 12, 2019.
+        Episode 3. <L to="https://www.instagram.com/p/B2UlUnWlfFT/">Skyfall</L>, <b>Adele</b> (Raag
+        Asavari). September 12, 2019.
       </li>
       <li>
-        Episode 2.{" "}
-        <L to="https://www.instagram.com/p/BzHX2Usn06P/">Yesterday</L>,{" "}
+        Episode 2. <L to="https://www.instagram.com/p/BzHX2Usn06P/">Yesterday</L>,{" "}
         <b>The Beatles</b> (Raag Mishra Bilaaval). June 24, 2019.
       </li>
       <li>
-        Episode 1. <L to="https://www.instagram.com/p/ByBgghknRPS/">How Long</L>
-        , <b>Charlie Puth</b> (Raag Asavari). May 28, 2019.
+        Episode 1. <L to="https://www.instagram.com/p/ByBgghknRPS/">How Long</L>,{" "}
+        <b>Charlie Puth</b> (Raag Asavari). May 28, 2019.
       </li>
     </ul>
   </>

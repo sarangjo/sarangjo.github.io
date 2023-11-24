@@ -16,7 +16,11 @@ div.script {
 }
 
 .script * {
-  font: 16px "Courier Final Draft", Courier, "Courier New", monospace !important;
+  font:
+    16px "Courier Final Draft",
+    Courier,
+    "Courier New",
+    monospace !important;
 }
 
 .script h2 {
