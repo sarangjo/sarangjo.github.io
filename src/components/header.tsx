@@ -21,9 +21,9 @@ const ListLink = (
 interface Props {
   location: Window["location"];
   title: string;
-  description: string;
-  showBio: boolean;
-  titleIcon: ReactElement;
+  description?: string;
+  showBio?: boolean;
+  titleIcon?: ReactElement;
 }
 
 const getParentParts = (fullPath: string) => {
@@ -36,15 +36,15 @@ export default function Header(props: Props) {
 
   // Evaluate the "parent" page
   const parentParts = getParentParts(location.pathname);
-  let superTop: React.JSX.Element[] = [];
+  let pageLineage: React.JSX.Element[] = [];
   if (parentParts.length > 0) {
-    superTop.push(<span style={{ marginRight: "4px" }}>&uarr;</span>);
+    pageLineage.push(<span style={{ marginRight: "4px" }}>&uarr;</span>);
     let link = "/";
 
     // Fencepost
     parentParts.forEach((part: string, idx: number) => {
       link += `${part}/`;
-      superTop.push(
+      pageLineage.push(
         <span key={link}>
           <i style={{ ...scale(-1 / 4) }}>
             {idx !== 0 && "&nbsp;&gt;&nbsp;"}
@@ -69,14 +69,10 @@ export default function Header(props: Props) {
           alignItems: "center",
           justifyContent: "space-between",
           margin: "-8px 0px 1.05rem -8px",
+          flexWrap: "wrap",
         }}
       >
-        <span
-          style={{
-            listStyle: "none",
-            flexShrink: 0,
-          }}
-        >
+        <div style={{ display: "inline-block" }}>
           <ListLink to="/">Home</ListLink>
           <ListLink to="/projects/">Projects</ListLink>
           <ListLink to="/academia">Academia</ListLink>
@@ -89,8 +85,8 @@ export default function Header(props: Props) {
           <ListLink to="/cv.pdf" useA>
             CV
           </ListLink>
-        </span>
-        <div style={{ display: "flex" }}>{superTop}</div>
+        </div>
+        <div style={{ display: "inline-block" }}>{pageLineage}</div>
       </div>
       <h1 style={{ ...scale(1.5), marginTop: 0, marginBottom: rhythm(0.75) }}>
         {title} {titleIcon}
