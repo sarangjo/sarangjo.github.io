@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 
 import Layout from "../components/layout";
 import { L } from "../utils";
@@ -7,6 +7,29 @@ import "./projects.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
 
+/*
+interface LabelProps {
+  color?: CSSProperties["color"];
+  text: string;
+}
+
+function Label({ color, text }: LabelProps) {
+  return (
+    <span
+      style={{
+        borderRadius: "20px",
+        border: "1px solid",
+        borderColor: color,
+        padding: "2px 8px",
+        fontSize: "80%",
+      }}
+    >
+      {text}
+    </span>
+  );
+}
+*/
+
 export default function MusicPage(props: PageProps) {
   return (
     <Layout
@@ -14,67 +37,71 @@ export default function MusicPage(props: PageProps) {
       title="Music"
       description="My earliest and longest-living passion."
     >
+      <p>
+        <b>Key:</b> 🎤 sung, 🥁 drummed, 🎹 played piano/keys/harmonium, 📝 arranged, 💡 composed,
+        🎛️ produced/edited. 🤝 collaboration, 🍿 live performance, 🎭 theater performance.
+      </p>
       <ul>
         <li>
-          <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>, <b>Linkin Park</b>, drum
-          cover. July 2023.
+          <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>, <b>Linkin Park</b>. July
+          2023. 🥁
         </li>
         <li>
-          <L to="https://www.youtube.com/watch?v=bL5LXOtVdQM">Back in Black</L>, <b>AC/DC</b>, drum
-          cover. June 2023.
+          <L to="https://www.youtube.com/watch?v=bL5LXOtVdQM">Back in Black</L>, <b>AC/DC</b>. June
+          2023. 🥁🍿
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=GMvmfZ6w6Ws">Hymn for the Weekend</L>,{" "}
-          <b>Coldplay</b>, drum cover. April 2023.
+          <b>Coldplay</b>. April 2023. 🥁
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=M83aGZKBB9s">Fight for Your Right</L>,{" "}
-          <b>Beastie Boys</b>, drum cover. February 2023.
+          <b>Beastie Boys</b>. February 2023. 🥁
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=gWxVCKkrMTs&list=PLB0785C00EA91F358">Chunar</L>,{" "}
-          <i>ABCD 2</i>. June 2019. Arranged and edited by Eshaan Gandhi.
+          <i>ABCD 2</i>. June 2019. Arranged and edited by Eshaan Gandhi. 🎤🤝
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=-ObQkl34lRA&list=PLB0785C00EA91F358">
             Where Do We Draw the Line
           </L>
-          , <b>Poets of the Fall</b>. March 2019.
+          , <b>Poets of the Fall</b>. March 2019. 🎤🎹
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=h9WfWdRy_tE&list=PLB0785C00EA91F358">
             Yeh Jo Des (ft. Kavya Magham)
           </L>
-          , <i>Swades</i>. January 26, 2019. In celebration of India&apos;s Republic Day 2019.
+          , <i>Swades</i>. January 26, 2019. In celebration of India&apos;s Republic Day 2019. 🎤🤝
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=q4qZKvpb4mU&list=PLB0785C00EA91F358">Iridescent</L>
-          , <b>Linkin Park</b>. Summer 2017.
+          , <b>Linkin Park</b>. Summer 2017. 🎤🎹
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=ceG4IJUdsas&list=PLB0785C00EA91F358">
             Wonderwall (ft. Arjun Patel)
           </L>
-          , <b>Oasis</b>. August 2014.
+          , <b>Oasis</b>. August 2014. 🎤🤝
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=APjHTYhBXBA&list=PLB0785C00EA91F358">
             All of Me (ft. Neeraja Bhagwat)
           </L>
-          , <b>John Legend</b>. August 2014.
+          , <b>John Legend</b>. August 2014. 🎤🤝
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=bYVtDwPt82s&list=PLB0785C00EA91F358">
             Talk Dirty To Me (ft. my Jazz Choir friends)
           </L>
-          , <b>Jason Derulo</b>. Summer 2014.
+          , <b>Jason Derulo</b>. Summer 2014. 🎤🤝
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=lIYgb6FBe34&list=PLB0785C00EA91F358">
             Viva la Vida/Jashn-e-Bahaara
           </L>
           , <b>Penn Masala</b>. Spring 2013. Definitely foreshadowing for my South-Asian a cappella
-          days!
+          days! 🎤🍿
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=oZjD6p00NQA&list=PLB0785C00EA91F358">
@@ -85,40 +112,40 @@ export default function MusicPage(props: PageProps) {
           <L to="https://web.archive.org/web/20200530190606/https://www.5thavenue.org/images/pdfs/1213_5thAveAwards_Nominees_and_Recipients.pdf">
             2013 5th Avenue Awards
           </L>
-          .
+          . 🎤🍿🎭
         </li>
         <li>
           <L to="https://soundcloud.com/against-the-flow-1/hey-there-delilah-sa">
             Hey There Delilah (ft. Against the Flow)
           </L>
-          , <b>Plain White T's</b>. April 2011.
+          , <b>Plain White T's</b>. April 2011. 🎤🤝🎛️
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=wMnfi-He0Uc&list=PLB0785C00EA91F358">
             Farewell (ft. Against the Flow)
           </L>
-          . February 2011. An original composition by my erstwhile band, Against the Flow!
+          . February 2011. An original composition by my erstwhile band, Against the Flow! 🎤🤝🎛️💡
         </li>
         <p>From family performances:</p>
         <li>
           <L to="https://www.youtube.com/watch?v=gjjT9nfSU5Y&list=PLB0785C00EA91F358">Gaaravaa</L>,{" "}
-          <b>Milind Ingle</b>.
+          <b>Milind Ingle</b>. c. 2009-2011. 🎤🤝
         </li>
         <li>
           <L to="https://soundcloud.com/sarang-joshi/tu-hi-hakeekat">Tu Hi Hakeekat</L>,{" "}
-          <i>Tum Mile</i>.
+          <i>Tum Mile</i>. c. 2009-2011. 🎤🤝
         </li>
         <li>
           <L to="https://soundcloud.com/sarang-joshi/musafir-chalte-chalte">
             Musafir Chalte Chalte
           </L>
-          , <b>Ghulam Ali</b>.
+          , <b>Ghulam Ali</b>. c. 2009-2011. 🎤🤝
         </li>
         <li>
           <L to="https://www.youtube.com/watch?v=KQERT1iXzg4&list=PLB0785C00EA91F358">
             Tya Phulanchya Gandhakoshi
           </L>
-          , <b>Hridaynath Mangeshkar</b>.
+          , <b>Hridaynath Mangeshkar</b>. c. 2009-2011. 🎤🤝
         </li>
       </ul>
       <JoshiShow />
@@ -153,16 +180,17 @@ const Awaaz = () => (
     <ul>
       <li>
         Numb/Ae Dil Hai Mushkil (<L to="https://www.youtube.com/watch?v=dsTxr04SnWo">Aarohi 2018</L>
-        ). Soloist for Ae Dil Hai Mushkil.
+        ). Soloist for Ae Dil Hai Mushkil. 🎤🤝📝🍿
       </li>
       <li>
         Cry Me a River/Dastaan-E-Om Shanti Om (
         <L to="https://www.youtube.com/watch?v=9lNfMQ9p53w">Aarohi 2018</L>). Soloist for
-        Dastaan-E-Om Shanti Om.
+        Dastaan-E-Om Shanti Om. 🎤🤝📝🍿
       </li>
       <li>
         Senior Song (<L to="https://www.youtube.com/watch?v=VuenTfiURj4">Aarohi 2018</L>). A
         10-minute tour de force which charts the stories of the four seniors who graduated in 2018.
+        🎤🤝📝🍿
       </li>
     </ul>
     <h3>2016-17 (Musical Director)</h3>
@@ -188,7 +216,7 @@ const Awaaz = () => (
           Studio recording
         </L>
         ) (<L to="https://youtu.be/fvaBi5SdTTA?si=LW1C-ID4yJXhRfbr&t=445">Desi Dhamaka 2017</L>
-        ).
+        ). 🎤🤝📝🍿
       </li>
       <li>
         Tanhayee (
@@ -199,7 +227,7 @@ const Awaaz = () => (
         <b>
           <L to="https://www.youtube.com/watch?v=7AikuWcaN40">Expressions</L>
         </b>
-        ). Soloed in live performances in the second half of the year.
+        ). Soloed in live performances in the second half of the year. 🎤🤝📝🍿
       </li>
       <li>
         Bravery (
@@ -209,7 +237,7 @@ const Awaaz = () => (
           </L>
         </b>
         ). UW Awaaz's first ever fully original composition, an instrumental piece depicting a story
-        of immigrants leaving their homes for a new land.
+        of immigrants leaving their homes for a new land. 🎤🤝💡🍿
       </li>
     </ul>
     <h3>2015-16</h3>
@@ -229,7 +257,7 @@ const Awaaz = () => (
         <L to="https://www.youtube.com/watch?v=tCri7QeYBDA&list=PLEwKvRIp2FHKWgP0w4sFPTiAlp4rUJSMU">
           Studio recording
         </L>
-        ) (<L to="https://www.youtube.com/watch?v=6jbcj07p5nM">Anahat 2015</L>).
+        ) (<L to="https://www.youtube.com/watch?v=6jbcj07p5nM">Anahat 2015</L>). 🎤🤝📝🍿
       </li>
       <li>
         Zara Sa/Jar of Hearts (
@@ -237,7 +265,7 @@ const Awaaz = () => (
           Studio recording
         </L>
         ) (<L to="https://youtu.be/6jbcj07p5nM?si=E8TLTLxllnbZmktt&t=326">Anahat 2015</L>
-        ). Soloist for Zara Sa.
+        ). Soloist for Zara Sa. 🎤🤝📝🍿
       </li>
     </ul>
     <h3>2014-15</h3>
@@ -253,20 +281,21 @@ const Awaaz = () => (
     <ul>
       <li>
         Show Me the Meaning of Being Lonely (<L to="https://youtu.be/entlODZjEXU">Aarohi 2015</L>).
+        🎤🤝🍿
       </li>
       <li>
         Aadat/Ain't No Sunshine (
         <L to="https://www.youtube.com/watch?v=RajZ5iBNxtY&list=PLEwKvRIp2FHLpKx-14-_-AueQFHdSBDzz">
           Studio recording
         </L>
-        ).
+        ). 🎤🤝
       </li>
       <li>
         Kannodu Kanbathellam (
         <L to="https://www.youtube.com/watch?v=eJeWb41Kr7k&list=PLEwKvRIp2FHLpKx-14-_-AueQFHdSBDzz">
           Studio recording
         </L>
-        ).
+        ). 🎤🤝
       </li>
     </ul>
   </>
