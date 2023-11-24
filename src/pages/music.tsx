@@ -155,8 +155,9 @@ const Awaaz = () => (
       </L>
     </h2>
     <p>
-      The premier South-Asian fusion a cappella group at the University of
-      Washington.
+      UW Awaaz is the premier South-Asian fusion a cappella group at the
+      University of Washington. I joined the team in 2014, and left after
+      graduating in 2018. I've highlighted a few of my favorite songs below!
     </p>
     <h3>2017-18 (Musical Director)</h3>
     <p>
@@ -166,8 +167,8 @@ const Awaaz = () => (
     <ul>
       <li>
         Numb/Ae Dil Hai Mushkil (
-        <L to="https://www.youtube.com/watch?v=dsTxr04SnWo">Aarohi 2018</L>).
-        Soloist for Ae Dil Hai Mushkil.
+        <L to="https://www.youtube.com/watch?v=dsTxr04SnWo">Aarohi 2018</L>
+        ). Soloist for Ae Dil Hai Mushkil.
       </li>
       <li>
         Cry Me a River/Dastaan-E-Om Shanti Om (
