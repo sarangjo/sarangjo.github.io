@@ -90,8 +90,8 @@ export default function AcademiaPage(props: PageProps) {
       </p>
       <ul>
         <li>
-          Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform (
-          <L to={Links.puddle}>ACM Digital Library</L>)
+          <b>Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform</b>, Willsey,
+          Max et al. <i>April 2019</i>. (<L to={Links.puddle}>ACM Digital Library</L>)
         </li>
       </ul>
       <h3>Teaching</h3>
