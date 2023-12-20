@@ -60,8 +60,9 @@ export default function AcademiaPage(props: PageProps) {
       </h2>
       <h3>Research</h3>
       <p>
-        I'm currently exploring the intersection of quantum and classical computer architecture
-        under the advisement of Prof. Yanjing Li with support from Prof. Fred Chong.
+        I'm currently working on a project in sustainable computing research with Prof. Andrew Chien
+        as part of the LSSG group. I am also interested in exploring the possibility of pursuing
+        quantum computing research, with Profs. Yanjing Li and Fred Chong.
       </p>
       <h3>Teaching</h3>
       <p>I have TA'd for the following classes during my time at UChicago CS:</p>
