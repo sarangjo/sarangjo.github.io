@@ -100,7 +100,7 @@ export default function ProjectsPage(props: PageProps) {
       <h2>Work in progress</h2>
       <ul>
         <li>
-          <L to="https://rlesports.sarangj.com">Rocket League eSports visualization</L> (
+          <L to="https://sarangj.com/rlesports">Rocket League eSports visualization</L> (
           <L to="https://github.com/sarangjo/rlesports">source code</L>)
         </li>
         <li>
