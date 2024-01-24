@@ -6,7 +6,7 @@ import { L } from "../utils";
 
 const Links = {
   uw: "https://cs.uw.edu",
-  uchicago: "https://cs.uchicago.edu/",
+  uchicago: "https://cs.uchicago.edu/people/sarang-joshi/",
   misl: "https://misl.cs.washington.edu/",
   fluidics: "https://misl.cs.washington.edu/projects/fluidics.html",
   thesis: "/papers/uw-thesis.pdf",
@@ -49,7 +49,7 @@ export default function AcademiaPage(props: PageProps) {
     >
       <h2>
         University of Chicago (2023-?){" "}
-        <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uw}>
+        <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uchicago}>
           <StaticImage
             style={{ marginBottom: 0, maxHeight: 45 }}
             src="../images/uchicagocs.png"
