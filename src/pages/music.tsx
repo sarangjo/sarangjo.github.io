@@ -43,6 +43,14 @@ export default function MusicPage(props: PageProps) {
       </p>
       <ul>
         <li>
+          <L to="https://www.youtube.com/watch?v=t1hE3whHe0k">Cane Shuga</L>, <b>Glass Animals</b>.
+          January 2024. 🎤🥁🎹🎛️
+        </li>
+        <li>
+          <L to="https://www.youtube.com/watch?v=DmnnxQs1KFE">Californication</L>,{" "}
+          <b>Red Hot Chili Peppers</b>. November 2023. 🥁
+        </li>
+        <li>
           <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>, <b>Linkin Park</b>. July
           2023. 🥁
         </li>
