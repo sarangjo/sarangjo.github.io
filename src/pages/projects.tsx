@@ -31,7 +31,7 @@ export default function ProjectsPage(props: PageProps) {
     <>
       <ul>
         <li>
-          <L to="https://ekta.app/">Ekta: The Desi Common Portal</L> (active development)
+          <L to="https://about.ekta.app/">Ekta: The Desi Common Portal</L> (active development)
         </li>
         <li>
           <L to="https://courses.cs.washington.edu/courses/cse351/heapsim/">

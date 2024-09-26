@@ -83,6 +83,7 @@ export default function Header(props: Props) {
           <ListLink to="/cv.pdf" useA>
             CV
           </ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
         </div>
         <div style={{ display: "inline-block" }}>{pageLineage}</div>
       </div>
