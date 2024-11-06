@@ -36,32 +36,6 @@ const imageStyle: CSSProperties = { verticalAlign: "baseline", overflow: "visibl
 // NOTE: We stick with StaticImage because it's not too much redundant code. We can't extract this
 // into a common component because StaticImage requires the source to be available at build time.
 
-const OriginalWork = () => (
-  <>
-    <h2>
-      Originals{" "}
-      <L style={{ boxShadow: "none" }} to="https://open.spotify.com/artist/1KuragyqnYB74QWs0sMFwG">
-        <StaticImage
-          style={imageStyle}
-          src="../images/spotify.png"
-          alt="spotify"
-          height={imageHeight}
-        />
-      </L>
-    </h2>
-    <ul>
-      <li>
-        <L to="https://open.spotify.com/album/1B4qGWkdnr5xVmhgUVSooH">
-          Boxes (Original Motion Picture Soundtrack)
-        </L>
-        . September 25, 2024. Original soundtrack composed, recorded, and produced for the short
-        film "<L to="https://www.instagram.com/boxes.thefilm/">Boxes</L>" by{" "}
-        <L to="https://esha-more.com/filmmaker/">Esha More</L>.
-      </li>
-    </ul>
-  </>
-);
-
 const Covers = () => (
   <>
     <h2>Covers</h2>
@@ -378,8 +352,8 @@ const AgainstTheFlow = () => (
       </li>
       <li>
         <L to="https://www.youtube.com/watch?v=wMnfi-He0Uc&list=PLB0785C00EA91F358">Farewell</L>,{" "}
-        <b>Against the Flow</b>. February 2011. An original composition by my erstwhile band,
-        Against the Flow!
+        <b>Against the Flow</b>. February 2011. This is an original composition that we wrote in 9th
+        standard for the farewell ceremony of the 10th standard class.
       </li>
     </ul>
   </>
@@ -392,7 +366,6 @@ export default function MusicPage(props: PageProps) {
       title="Music"
       description="My earliest and longest-living passion."
     >
-      <OriginalWork />
       <Covers />
       <JoshiShow />
       <Awaaz />
