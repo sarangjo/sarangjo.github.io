@@ -154,7 +154,7 @@ const JoshiShow = () => (
       <L style={{ boxShadow: "none" }} to="https://instagram.com/thejoshishow">
         <StaticImage
           style={imageStyle}
-          src="../images/instagram.png"
+          src="../logos/instagram.png"
           alt="insta"
           height={imageHeight}
         />
@@ -200,7 +200,7 @@ const Awaaz = () => (
       <L style={{ boxShadow: "none" }} to="https://instagram.com/uwawaaz">
         <StaticImage
           style={imageStyle}
-          src="../images/instagram.png"
+          src="../logos/instagram.png"
           alt="insta"
           height={imageHeight}
         />

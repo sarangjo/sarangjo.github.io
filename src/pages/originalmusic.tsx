@@ -13,19 +13,10 @@ export default function OriginalMusicPage(props: PageProps) {
       title="Original Music"
       description="My dream of international fame is just one hit away..."
     >
-      {/* <p>
-        <L
-          style={{ boxShadow: "none" }}
-          to="https://open.spotify.com/artist/1KuragyqnYB74QWs0sMFwG"
-        >
-          <StaticImage style={imageStyle} src="../images/spotify.png" alt="spotify" height={22} />
-        </L>
-      </p>
-      <L to="https://music.apple.com/us/artist/sarang-joshi/1098534301"></L> */}
       <h2>
         Boxes (Original Motion Picture Soundtrack){" "}
         <L style={{ boxShadow: "none" }} to="https://open.spotify.com/album/04A6086SpZ4gceJGaz98C9">
-          <StaticImage style={imageStyle} src="../images/spotify.png" alt="Spotify" height={30} />
+          <StaticImage style={imageStyle} src="../logos/spotify.png" alt="Spotify" height={30} />
         </L>{" "}
         <L
           style={{ boxShadow: "none" }}
@@ -33,7 +24,7 @@ export default function OriginalMusicPage(props: PageProps) {
         >
           <StaticImage
             style={imageStyle}
-            src="../images/ytmusic.png"
+            src="../logos/ytmusic.png"
             alt="YouTube Music"
             height={30}
           />
@@ -44,17 +35,31 @@ export default function OriginalMusicPage(props: PageProps) {
         >
           <StaticImage
             style={imageStyle}
-            src="../images/applemusic.png"
+            src="../logos/applemusic.png"
             alt="Apple Music"
             height={30}
           />
         </L>
       </h2>
-      <i>Released November 19, 2024.</i> I'm beyond excited to share that the original soundtrack
-      for the short film "<L to="https://www.instagram.com/boxes.thefilm/">Boxes</L>" by{" "}
-      <L to="https://esha-more.com/filmmaker/">Esha More</L> is available on all streaming
-      platforms! I had the utmost privilege of composing, performing, and producing the soundtrack.
-      Thank you again to Esha for giving me this incredible opportunity!
+      <p>
+        <i>Released November 19, 2024.</i> I'm beyond excited to share that the original soundtrack
+        for the short film "<L to="https://www.instagram.com/boxes.thefilm/">Boxes</L>" by{" "}
+        <L to="https://esha-more.com/filmmaker/">Esha More</L> is available on all streaming
+        platforms! I had the utmost privilege of composing, performing, and producing the
+        soundtrack. Thank you again to Esha for giving me this incredible opportunity!
+      </p>
+      <div style={{ display: "flex" }}>
+        <figure style={{ margin: "auto" }}>
+          <StaticImage
+            src="../images/boxes.jpg"
+            alt="Photo of Boxes crew at premiere"
+            width={750}
+          />
+          <figcaption style={{ textAlign: "center" }}>
+            A photo of the <i>Boxes</i> crew at the premiere, 7/27/24
+          </figcaption>
+        </figure>
+      </div>
     </Layout>
   );
 }

@@ -129,7 +129,7 @@ export default function ProjectsPage(props: PageProps) {
         <L style={{ boxShadow: "none" }} to="https://github.com/sarangjo">
           <StaticImage
             style={{ marginBottom: 0, maxHeight: 60 }}
-            src="../images/github.png"
+            src="../logos/github.png"
             height={60}
             alt="gh"
           />

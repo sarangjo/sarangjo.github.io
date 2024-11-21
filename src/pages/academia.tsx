@@ -52,7 +52,7 @@ export default function AcademiaPage(props: PageProps) {
         <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uchicago}>
           <StaticImage
             style={{ marginBottom: 0, maxHeight: 45 }}
-            src="../images/uchicagocs.png"
+            src="../logos/uchicagocs.png"
             height={45}
             alt="cse"
           />
@@ -74,7 +74,7 @@ export default function AcademiaPage(props: PageProps) {
         <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uw}>
           <StaticImage
             style={{ marginBottom: 0, maxHeight: 45 }}
-            src="../images/uwcse.png"
+            src="../logos/uwcse.png"
             height={45}
             alt="cse"
           />
