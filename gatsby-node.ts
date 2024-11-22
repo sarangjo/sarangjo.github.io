@@ -7,24 +7,22 @@ async function createMdPages(createPage: Actions["createPage"], graphql) {
   const blogPost = path.resolve(`./src/templates/md-post.tsx`);
 
   // Query for all markdown pages, sorted ascending by date
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+  const result = await graphql(`
+    {
+      allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   if (result.errors) {
     throw result.errors;
@@ -34,21 +32,23 @@ async function createMdPages(createPage: Actions["createPage"], graphql) {
   const allPosts: { node: any }[] = result.data.allMarkdownRemark.edges;
 
   // Split up by category based on the folder: e.g. blog, poetry, etc.
-  const postMap = allPosts.reduce((acc, cur) => {
-    const key = cur.node.fields.slug.split("/")[1];
-    if (!(key in acc)) {
-      acc[key] = [];
-    }
-    acc[key].push(cur);
-    return acc;
-  }, {} as Record<string, { node: any }[]>);
+  const postMap = allPosts.reduce(
+    (acc, cur) => {
+      const key = cur.node.fields.slug.split("/")[1];
+      if (!(key in acc)) {
+        acc[key] = [];
+      }
+      acc[key].push(cur);
+      return acc;
+    },
+    {} as Record<string, { node: any }[]>
+  );
 
   // Go through all of our markdown objects and add links to previous/next to show in the footer
   Object.entries(postMap).forEach(([key, posts]) => {
     console.log("Generating", key);
     posts.forEach((post, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1].node;
+      const previous = index === posts.length - 1 ? null : posts[index + 1].node;
       const next = index === 0 ? null : posts[index - 1].node;
 
       createPage({
@@ -69,24 +69,22 @@ async function createTheaterPages(createPage, graphql) {
   const theaterPost = path.resolve(`./src/templates/fountain-post.tsx`);
 
   // Theater
-  const result = await graphql(
-    `
-      {
-        allFountain {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+  const result = await graphql(`
+    {
+      allFountain {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   if (result.errors) {
     throw result.errors;
@@ -112,8 +110,7 @@ async function createMdIndexPages(createPage) {
     {
       slug: "poetry",
       title: "Poetry",
-      description:
-        "No fancy description. Just poetry. This is serious business.",
+      description: "No fancy description. Just poetry. This is serious business.",
     },
     // {
     //   slug: "tech",
@@ -122,11 +119,11 @@ async function createMdIndexPages(createPage) {
     //     "A small contribution to the massive collection of information about the tech world.",
     //   seo: [`tech`, `gatsby`, `javascript`, `react`],
     // },
-    {
-      slug: "blog",
-      title: "Life Enthusiasm",
-      description: "The world is a beautiful place.",
-    },
+    // {
+    //   slug: "blog",
+    //   title: "Life Enthusiasm",
+    //   description: "The world is a beautiful place.",
+    // },
   ];
 
   indices.forEach((ind) =>
@@ -144,10 +141,7 @@ async function createMdIndexPages(createPage) {
 }
 
 // Create all of our dynamic pages (i.e. outside of `src/pages`)
-export const createPages: GatsbyNode["createPages"] = async ({
-  graphql,
-  actions,
-}) => {
+export const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   await createMdPages(createPage, graphql);
@@ -157,18 +151,11 @@ export const createPages: GatsbyNode["createPages"] = async ({
 
 // For markdown and fountain pages, extend the node's fields by appending the slug. This allows us
 // to use the slug in data queries on these objects
-export const onCreateNode: GatsbyNode["onCreateNode"] = ({
-  node,
-  actions,
-  getNode,
-}) => {
+export const onCreateNode: GatsbyNode["onCreateNode"] = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   // TODO make these shared constants
-  if (
-    node.internal.type === `MarkdownRemark` ||
-    node.internal.type === `Fountain`
-  ) {
+  if (node.internal.type === `MarkdownRemark` || node.internal.type === `Fountain`) {
     const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
