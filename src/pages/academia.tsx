@@ -93,6 +93,14 @@ export default function AcademiaPage(props: PageProps) {
           <b>Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform</b>, Willsey,
           Max et al. <i>April 2019</i>. (<L to={Links.puddle}>ACM Digital Library</L>)
         </li>
+        <li>
+          <b>Making the Invisible, Visible (Poster presentation)</b>, Magham K., Joshi S., & Rogel
+          J. <i>May 2017</i>. (
+          <L to="/static/marygatesposter.jpg">
+            Mary Gates Leadership Scholarship Poster Session, University of Washington
+          </L>
+          )
+        </li>
       </ul>
       <h3>Teaching</h3>
       <p>I had the privilege of being a TA for 10 of my 12 quarters at UW CSE:</p>
