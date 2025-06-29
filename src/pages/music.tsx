@@ -1,34 +1,8 @@
 import React, { CSSProperties } from "react";
-
 import Layout from "../components/layout";
 import { L } from "../utils";
-
-import "./projects.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
-
-/*
-interface LabelProps {
-  color?: CSSProperties["color"];
-  text: string;
-}
-
-function Label({ color, text }: LabelProps) {
-  return (
-    <span
-      style={{
-        borderRadius: "20px",
-        border: "1px solid",
-        borderColor: color,
-        padding: "2px 8px",
-        fontSize: "80%",
-      }}
-    >
-      {text}
-    </span>
-  );
-}
-*/
 
 const imageHeight = 30;
 const imageStyle: CSSProperties = { verticalAlign: "baseline", overflow: "visible" };
@@ -359,6 +333,54 @@ const AgainstTheFlow = () => (
   </>
 );
 
+const OriginalMusic = () => (
+  <>
+    <h2>
+      Boxes (Original Motion Picture Soundtrack){" "}
+      <L style={{ boxShadow: "none" }} to="https://open.spotify.com/album/04A6086SpZ4gceJGaz98C9">
+        <StaticImage style={imageStyle} src="../logos/spotify.png" alt="Spotify" height={30} />
+      </L>{" "}
+      <L
+        style={{ boxShadow: "none" }}
+        to="https://music.youtube.com/playlist?list=OLAK5uy_kI0RHHL3qJkXQhGTrfAqEVtQ77rKQGTXM"
+      >
+        <StaticImage
+          style={imageStyle}
+          src="../logos/ytmusic.png"
+          alt="YouTube Music"
+          height={30}
+        />
+      </L>{" "}
+      <L
+        style={{ boxShadow: "none" }}
+        to="https://music.apple.com/us/album/boxes-original-motion-picture-soundtrack/1780796007"
+      >
+        <StaticImage
+          style={imageStyle}
+          src="../logos/applemusic.png"
+          alt="Apple Music"
+          height={30}
+        />
+      </L>
+    </h2>
+    <p>
+      <i>Released November 19, 2024.</i> I'm beyond excited to share that the original soundtrack
+      for the short film "<L to="https://www.instagram.com/boxes.thefilm/">Boxes</L>" by{" "}
+      <L to="https://esha-more.com/filmmaker/">Esha More</L> is available on all streaming
+      platforms! I had the utmost privilege of composing, performing, and producing the soundtrack.
+      Thank you again to Esha for giving me this incredible opportunity!
+    </p>
+    <div style={{ display: "flex" }}>
+      <figure style={{ margin: "auto" }}>
+        <StaticImage src="../images/boxes.jpg" alt="Photo of Boxes crew at premiere" width={750} />
+        <figcaption style={{ textAlign: "center" }}>
+          A photo of the <i>Boxes</i> crew at the premiere, 7/27/24
+        </figcaption>
+      </figure>
+    </div>
+  </>
+);
+
 export default function MusicPage(props: PageProps) {
   return (
     <Layout
@@ -368,6 +390,7 @@ export default function MusicPage(props: PageProps) {
     >
       <Covers />
       <JoshiShow />
+      <OriginalMusic />
       <Awaaz />
       <AgainstTheFlow />
     </Layout>

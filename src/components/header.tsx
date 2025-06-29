@@ -77,8 +77,6 @@ export default function Header(props: Props) {
           <ListLink to="/blog/">Blog</ListLink>
           <ListLink to="/poetry/">Poetry</ListLink>
           <ListLink to="/music/">Music</ListLink>
-          <ListLink to="/originalmusic/">Original Music</ListLink>
-          {/* <ListLink to="/tech/">Tech</ListLink> */}
           <ListLink to="/theater/">Theater</ListLink>
           <ListLink to="/cv.pdf" useA>
             CV
