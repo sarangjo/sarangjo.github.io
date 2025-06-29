@@ -9,18 +9,18 @@ export default function MusicPage(props: PageProps) {
       title="Contact"
       description="Always happy to get in touch with my fans, of whom there are certainly many."
     >
-      <h2>Professional Email</h2>
-      <p>
-        Please reach out at <code>sarangj</code> at <code>uchicago.edu</code>.
-      </p>
-      <h2>Music Email</h2>
-      <p>
-        Please reach out at <code>music</code> at <code>sarangj.com</code>.
-      </p>
-      <h2>General Email</h2>
-      <p>
-        For anything else, please reach out at <code>mail</code> at <code>sarangj.com</code>.
-      </p>
+      <ul>
+        <li>
+          For any professional/academic communications, you can reach me at <code>sarangj</code> at{" "}
+          <code>uchicago.edu</code>.
+        </li>
+        <li>
+          For everything music, send me an email at <code>music</code> at <code>sarangj.com</code>.
+        </li>
+        <li>
+          For anything else, there's always <code>mail</code> at <code>sarangj.com</code>.
+        </li>
+      </ul>
     </Layout>
   );
 }

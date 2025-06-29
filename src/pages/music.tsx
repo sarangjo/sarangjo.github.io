@@ -19,12 +19,34 @@ const Covers = () => (
     </p>
     <ul>
       <li>
+        <L to="https://www.youtube.com/watch?v=mSkepszV1cM">Mind Over Matter</L>,{" "}
+        <b>Young the Giant</b>. June 2025. 🥁
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=OT1XhD7vTQs">
+          Happy Little Pill/Kanulanu Thaake (ft. Kavya)
+        </L>
+        , <b>Troye Sivan/Arijit Singh</b>. March 2025. 🎤📝🎛️🤝
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=2IhgEnV5P4k">Maps</L>, <b>Yeah Yeah Yeahs</b>.
+        February 2025. 🥁
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=6HsxFXTFgQU">Psycho (no sergeant version)</L>,{" "}
+        <b>Muse</b>. October 2024. 🥁
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=wTPBzeHWEIs">La Grange</L>, <b>ZZ Top</b>. May 2024.
+        🥁
+      </li>
+      <li>
         <L to="https://www.youtube.com/watch?v=t1hE3whHe0k">Cane Shuga</L>, <b>Glass Animals</b>.
         January 2024. 🎤🥁🎹🎛️
       </li>
       <li>
         <L to="https://www.youtube.com/watch?v=DmnnxQs1KFE">Californication</L>,{" "}
-        <b>Red Hot Chili Peppers</b>. November 2023. 🥁
+        <b>Red Hot Chili Peppers</b>. November 2023. 🥁🍿
       </li>
       <li>
         <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>, <b>Linkin Park</b>. July 2023.

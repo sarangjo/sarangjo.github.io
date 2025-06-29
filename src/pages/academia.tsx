@@ -13,6 +13,10 @@ const Links = {
   presentation:
     "https://docs.google.com/presentation/d/e/2PACX-1vRuce7h-qTiSWLqWiQV-dWiqu8P5Qqd48mvFM15-2wApVB8qFY9MM4blEn7iGN4xJm_u4DD4DEbJhl2/pub?start=false&loop=false&delayms=3000",
   puddle: "https://dl.acm.org/doi/abs/10.1145/3297858.3304027",
+  fred: "https://people.cs.uchicago.edu/~ftchong/",
+  diana: "https://people.cs.uchicago.edu/~dmfranklin/",
+  swiper: "https://doi.org/10.1145/3695053.3731022",
+  andrew: "https://people.cs.uchicago.edu/~aachien/lssg/people/andrew-chien/",
 };
 
 // TODO use this
@@ -40,6 +44,8 @@ const classNames = {
   452: "Distributed Systems",
 };
 
+const Me = () => <span style={{ backgroundColor: "skyblue" }}>Sarang Joshi</span>;
+
 export default function AcademiaPage(props: PageProps) {
   return (
     <Layout
@@ -60,10 +66,22 @@ export default function AcademiaPage(props: PageProps) {
       </h2>
       <h3>Research</h3>
       <p>
-        I'm currently working on a project in quantum error correction research with Profs. Yanjing
-        Li and Fred Chong. I previously worked on a project in sustainable computing research with
-        Prof. Andrew Chien as part of the LSSG group.
+        I'm currently doing research in quantum computer architecture and quantum computer education
+        with <L to={Links.fred}>Fred Chong</L> and <L to={Links.diana}>Diana Franklin</L>. I
+        previously worked on a small project in sustainable computing research with{" "}
+        <L to={Links.andrew}>Andrew Chien</L> as part of the LSSG group.
       </p>
+      <ul>
+        <li>
+          <b>
+            SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window
+            Decoding
+          </b>
+          . Joshua Viszlai, Jason D. Chadwick, <Me />, Gokul Subramanian Ravi, Yanjing Li, and
+          Frederic T. Chong. <i>June 2025</i>. (
+          <L to={Links.swiper}>ACM Digital Library, ISCA 2025</L>)
+        </li>
+      </ul>
       <h3>Teaching</h3>
       <p>I have TA'd for the following classes during my time at UChicago CS:</p>
       <ul>
@@ -90,12 +108,14 @@ export default function AcademiaPage(props: PageProps) {
       </p>
       <ul>
         <li>
-          <b>Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform</b>, Willsey,
-          Max et al. <i>April 2019</i>. (<L to={Links.puddle}>ACM Digital Library</L>)
+          <b>Puddle: A Dynamic, Error-Correcting, Full-Stack Microfluidics Platform</b>. Max
+          Willsey, Ashley P. Stephenson, Chris Takahashi, Pranav Vaid, Bichlien H. Nguyen, Michal
+          Piszczek, Christine Betts, Sharon Newman, <Me />, Karin Strauss, Luis Ceze.{" "}
+          <i>April 2019</i>. (<L to={Links.puddle}>ACM Digital Library, ASPLOS 2019</L>)
         </li>
         <li>
-          <b>Making the Invisible, Visible (Poster presentation)</b>, Magham K., Joshi S., & Rogel
-          J. <i>May 2017</i>. (
+          <b>Making the Invisible, Visible (Poster presentation)</b>. Kavya Magham, <Me />, Jeannine
+          Rogel. <i>May 2017</i>. (
           <L to="/static/marygatesposter.jpg">
             Mary Gates Leadership Scholarship Poster Session, University of Washington
           </L>

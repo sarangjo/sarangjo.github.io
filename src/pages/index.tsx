@@ -45,11 +45,10 @@ export default function Index(props: PageProps<any>) {
         campuses and across the country.
       </p>
       <p>
-        Outside of that, I like to <Link to="/music">make music</Link> (occasionally{" "}
-        <Link to="/originalmusic">composing my own</Link>), <Link to="/blog">write</Link>,{" "}
-        <L to={Links.games}>play video games</L>, <Link to="/projects">program even more</Link>, and
-        travel when I can. This website is intended to be a central place to keep track of all of my
-        work, so feel free to explore!
+        Outside of that, I like to <Link to="/music">make music</Link>,{" "}
+        <Link to="/blog">write</Link>, <L to={Links.games}>play video games</L>,{" "}
+        <Link to="/projects">program even more</Link>, and travel when I can. This website is
+        intended to be a central place to keep track of all of my work, so feel free to explore!
       </p>
     </Layout>
   );
