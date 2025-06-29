@@ -19,50 +19,14 @@ const Covers = () => (
     </p>
     <ul>
       <li>
-        <L to="https://www.youtube.com/watch?v=mSkepszV1cM">Mind Over Matter</L>,{" "}
-        <b>Young the Giant</b>. June 2025. 🥁
-      </li>
-      <li>
         <L to="https://www.youtube.com/watch?v=OT1XhD7vTQs">
           Happy Little Pill/Kanulanu Thaake (ft. Kavya)
         </L>
         , <b>Troye Sivan/Arijit Singh</b>. March 2025. 🎤📝🎛️🤝
       </li>
       <li>
-        <L to="https://www.youtube.com/watch?v=2IhgEnV5P4k">Maps</L>, <b>Yeah Yeah Yeahs</b>.
-        February 2025. 🥁
-      </li>
-      <li>
-        <L to="https://www.youtube.com/watch?v=6HsxFXTFgQU">Psycho (no sergeant version)</L>,{" "}
-        <b>Muse</b>. October 2024. 🥁
-      </li>
-      <li>
-        <L to="https://www.youtube.com/watch?v=wTPBzeHWEIs">La Grange</L>, <b>ZZ Top</b>. May 2024.
-        🥁
-      </li>
-      <li>
         <L to="https://www.youtube.com/watch?v=t1hE3whHe0k">Cane Shuga</L>, <b>Glass Animals</b>.
         January 2024. 🎤🥁🎹🎛️
-      </li>
-      <li>
-        <L to="https://www.youtube.com/watch?v=DmnnxQs1KFE">Californication</L>,{" "}
-        <b>Red Hot Chili Peppers</b>. November 2023. 🥁🍿
-      </li>
-      <li>
-        <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>, <b>Linkin Park</b>. July 2023.
-        🥁
-      </li>
-      <li>
-        <L to="https://www.youtube.com/watch?v=bL5LXOtVdQM">Back in Black</L>, <b>AC/DC</b>. June
-        2023. 🥁🍿
-      </li>
-      <li>
-        <L to="https://www.youtube.com/watch?v=GMvmfZ6w6Ws">Hymn for the Weekend</L>,{" "}
-        <b>Coldplay</b>. April 2023. 🥁
-      </li>
-      <li>
-        <L to="https://www.youtube.com/watch?v=M83aGZKBB9s">Fight for Your Right</L>,{" "}
-        <b>Beastie Boys</b>. February 2023. 🥁
       </li>
       <li>
         <L to="https://www.youtube.com/watch?v=gWxVCKkrMTs&list=PLB0785C00EA91F358">Chunar</L>,{" "}
@@ -138,6 +102,52 @@ const Covers = () => (
           Tya Phulanchya Gandhakoshi
         </L>
         , <b>Hridaynath Mangeshkar</b>. c. 2009-2011. 🎤🤝
+      </li>
+    </ul>
+  </>
+);
+
+const SamsLessons = () => (
+  <>
+    <h2>Drum Covers</h2>
+    <p>
+      These are songs I've learned as part of my lessons with Sam at{" "}
+      <L to="https://www.samslessons.com/">Sam's Lessons</L>.
+    </p>
+    <ul>
+      <li>
+        <L to="https://www.youtube.com/watch?v=mSkepszV1cM">Mind Over Matter</L>,{" "}
+        <b>Young the Giant</b>. June 2025.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=2IhgEnV5P4k">Maps</L>, <b>Yeah Yeah Yeahs</b>.
+        February 2025.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=6HsxFXTFgQU">Psycho (no sergeant version)</L>,{" "}
+        <b>Muse</b>. October 2024.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=wTPBzeHWEIs">La Grange</L>, <b>ZZ Top</b>. May 2024.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=DmnnxQs1KFE">Californication</L>,{" "}
+        <b>Red Hot Chili Peppers</b>. November 2023.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=G9hRoPi983k">Numb</L>, <b>Linkin Park</b>. July 2023.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=bL5LXOtVdQM">Back in Black</L>, <b>AC/DC</b>. June
+        2023.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=GMvmfZ6w6Ws">Hymn for the Weekend</L>,{" "}
+        <b>Coldplay</b>. April 2023.
+      </li>
+      <li>
+        <L to="https://www.youtube.com/watch?v=M83aGZKBB9s">Fight for Your Right</L>,{" "}
+        <b>Beastie Boys</b>. February 2023.
       </li>
     </ul>
   </>
@@ -411,6 +421,7 @@ export default function MusicPage(props: PageProps) {
       description="My earliest and longest-living passion."
     >
       <Covers />
+      <SamsLessons />
       <JoshiShow />
       <OriginalMusic />
       <Awaaz />
