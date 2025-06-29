@@ -1,13 +1,11 @@
 ---
-title: "All the Light We Cannot See" Review
+title: "\"All the Light We Cannot See\" Review"
 date: "2025-06-25"
 ---
 
-I wrote this review of the Pulitzer Prize Winning _All the Light We Cannot See_ from 3:08 AM to 4:23 AM, right after finishing the book. As you can understand, I was a little emotionally raw and overwhelmed by reading the last 150 pages, so the overall tone is definitely much more complimentary than balanced. Anyways, I'm think going to leave it in its raw form because usually I go in circles going over anything I've written to the point where I lose the essence of my voice when I first wrote it. This is probably not super interesting to most people, but I'm just going to leave this here for my own satisfaction. Enjoy!
+I wrote this review of the Pulitzer Prize Winning _All the Light We Cannot See_ from 3:08 AM to 4:23 AM, right after finishing the book. As you can understand, I was a little emotionally raw and overwhelmed by reading the last 150 pages, so the overall tone is definitely much more complimentary than balanced. I think I'm going to leave it in its raw form, because usually I go in circles going over anything I've written to the point where I lose the essence of my voice when I first wrote it. Either way, this is probably not super interesting to most people, but I'm just going to leave this here for my own satisfaction. Enjoy!
 
 **Important: Spoilers for _All the Light We Cannot See_ ahead! Proceed with caution.**
-
-One thought I wanted to add to the review below on the various interpretations of the "light that we cannot see" &mdash; you have the perhaps excessively poetic interpretation at the end of this review, you have the more scientific perception of the EM waves that are ubiquitous in today's world[^1], and you have an interpretation of the world from the perspective of a visually impaired or blind individual (Marie-Laure, in this case). Lots to think about.
 
 ---
 
@@ -44,3 +42,9 @@ Thinking of Jutta also takes me to thinking about the end of the book, after the
 In some ways, perhaps, the way that these characters' lives intersect in the final chapters of the story feels almost mystical, almost unbelievable, just like the throughline of the Sea of Flames and its purported curse on any who holds it. But the magic of Doerr's story is that this mysticality really doesn't feel forced, or stretched, or overplayed. You know, as do all of the characters in the book (save for von Rumpel in his poor, terminal state), that there is no "curse" on the stone. It's all just luck. But… is it? What control do we have over this world where entropy is growing relentlessly? Do the forces of good actually have influence in a way that actually make sure we never stop believing? How can you see the world erupt in flame and fire in World War II and not give up hope in humanity? But that's exactly what Doerr's story challenges. In a blind girl from Paris, in an orphaned boy from Zollverein, and in all of the people that these two lives touch, is something that is bigger than the sum of its individual parts. It's something intangible, something you can find in those Braille books, in that little grotto full of life, in the letters from Jutta, in the sound you hear in your headphones traveling through the air from an unknown source, in the seemingly blank and unseeing eyes of Frederick, in that notebook of innocent questions about the world, in the birds that take flight and seem to be the only things that have control over their lives, in that meticulously constructed little house that travels a continent. We may not always be able to see it, but it's a light that never be extinguished.
 
 Goodnight. 5/5 stars.
+
+---
+
+P.S. Something I reflected on after I had some time to sleep and calm my emotional state is the variety of interpretations of the "light that we cannot see" &mdash; you have the philosophical (perhaps a tad spiritual) interpretation at the end of this review, you have the more scientific perception of the EM waves that are ubiquitous in today's world[^1], and you have a description of the world from the perspective of a visually impaired or blind individual (Marie-Laure, in this case). Lots to think about.
+
+[^1]: I think this is what was on Doerr's mind when he coined the title, according to [this interview](https://youtu.be/IYBK3Lsx7aI).
