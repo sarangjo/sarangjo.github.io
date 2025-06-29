@@ -47,5 +47,5 @@ Goodnight. 5/5 stars.
 
 P.S. Something I reflected on after I had some time to sleep and calm my emotional state is the variety of interpretations of the "light that we cannot see" &mdash; you have the philosophical (perhaps a tad spiritual) interpretation at the end of this review, you have the more scientific perception of the EM waves that are ubiquitous in today's world[^2], and you have a description of the world from the perspective of a visually impaired or blind individual (Marie-Laure, in this case). Lots to think about.
 
-[^1]: And only draft!
+[^1]: And only!
 [^2]: I think this is what was on Doerr's mind when he coined the title, according to [this interview](https://youtu.be/IYBK3Lsx7aI).
