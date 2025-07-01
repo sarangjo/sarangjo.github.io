@@ -12,7 +12,7 @@ const imageStyle: CSSProperties = { verticalAlign: "baseline", overflow: "visibl
 
 const Covers = () => (
   <>
-    <h2>Covers</h2>
+    <h2 id="covers">Covers</h2>
     <p>
       <b>Key:</b> 🎤 sung, 🥁 drummed, 🎹 played piano/keys/harmonium, 📝 arranged, 🎛️
       produced/edited, 🤝 collaboration, 🍿 live performance, 🎭 theater performance.
@@ -109,7 +109,7 @@ const Covers = () => (
 
 const SamsLessons = () => (
   <>
-    <h2>Drum Covers</h2>
+    <h2 id="drumcovers">Drum Covers</h2>
     <p>
       These are songs I've learned as part of my lessons with Sam at{" "}
       <L to="https://www.samslessons.com/">Sam's Lessons</L>.
@@ -155,7 +155,7 @@ const SamsLessons = () => (
 
 const JoshiShow = () => (
   <>
-    <h2>
+    <h2 id="thejoshishow">
       The Joshi Show{" "}
       <L style={{ boxShadow: "none" }} to="https://instagram.com/thejoshishow">
         <StaticImage
@@ -201,7 +201,7 @@ const JoshiShow = () => (
 
 const Awaaz = () => (
   <>
-    <h2>
+    <h2 id="uwawaaz">
       UW Awaaz{" "}
       <L style={{ boxShadow: "none" }} to="https://instagram.com/uwawaaz">
         <StaticImage
@@ -346,7 +346,7 @@ const Awaaz = () => (
 
 const AgainstTheFlow = () => (
   <>
-    <h2>Against the Flow</h2>
+    <h2 id="againsttheflow">Against the Flow</h2>
     <p>
       <b>Against the Flow</b> was my band in 2011, comprised of myself on vocals, Siddharth Damle on
       piano, and Arjun Patel on guitar.
@@ -367,7 +367,7 @@ const AgainstTheFlow = () => (
 
 const OriginalMusic = () => (
   <>
-    <h2>
+    <h2 id="boxes">
       Boxes (Original Motion Picture Soundtrack){" "}
       <L style={{ boxShadow: "none" }} to="https://open.spotify.com/album/04A6086SpZ4gceJGaz98C9">
         <StaticImage style={imageStyle} src="../logos/spotify.png" alt="Spotify" height={30} />
@@ -404,9 +404,13 @@ const OriginalMusic = () => (
     </p>
     <div style={{ display: "flex" }}>
       <figure style={{ margin: "auto" }}>
-        <StaticImage src="../images/boxes.jpg" alt="Photo of Boxes crew at premiere" width={750} />
+        <StaticImage
+          src="../images/boxes.jpg"
+          alt="Photo of Boxes cast+crew at premiere"
+          width={750}
+        />
         <figcaption style={{ textAlign: "center" }}>
-          A photo of the <i>Boxes</i> crew at the premiere, 7/27/24
+          A photo of (some of) the <i>Boxes</i> cast and crew at the premiere, 7/27/24
         </figcaption>
       </figure>
     </div>
