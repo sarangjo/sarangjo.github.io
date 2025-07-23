@@ -17,16 +17,8 @@ const Links = {
 };
 
 export default function Index(props: PageProps<any>) {
-  const siteTitle = props?.data?.site?.siteMetadata?.title;
-  const siteDescription = props?.data?.site?.siteMetadata?.description;
-
   return (
-    <Layout
-      location={props.location}
-      title={siteTitle}
-      description={siteDescription}
-      showBio={true}
-    >
+    <Layout location={props.location} title="Home" showBio={true}>
       <p>
         Hi there! I&apos;m Sarang Joshi, a{" "}
         <Link to="/academia">second-year Computer Science PhD student</Link>

@@ -4,6 +4,7 @@ import Header from "./header";
 import { rhythm } from "../utils/typography";
 import "typeface-montserrat";
 import "typeface-merriweather";
+import { graphql, useStaticQuery } from "gatsby";
 
 interface Props {
   location: Window["location"];
@@ -27,6 +28,20 @@ export default function Layout(props: React.PropsWithChildren<Props>) {
     showBio,
   } = props;
 
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+        }
+      }
+    }
+  `);
+
+  const siteTitle = data?.site?.siteMetadata?.title;
+  const siteDescription = data?.site?.siteMetadata?.description;
+
   return (
     <div
       style={{
@@ -38,8 +53,10 @@ export default function Layout(props: React.PropsWithChildren<Props>) {
     >
       <Helmet
         htmlAttributes={{ lang: "en" }}
-        meta={[{ name: "description", content: helmetDescription || description }]}
-        title={helmetTitle || title}
+        meta={[
+          { name: "description", content: helmetDescription || description || siteDescription },
+        ]}
+        title={`${helmetTitle || title} | ${siteTitle}`}
       />
       <Header
         title={title}
