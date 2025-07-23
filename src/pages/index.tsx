@@ -13,6 +13,7 @@ const Links = {
   kinspire: "https://kinspire.org",
   asa: "https://desiacappella.org",
   ekta: "https://about.ekta.app",
+  awaaz: "https://uwawaaz.mystrikingly.com/",
 };
 
 export default function Index(props: PageProps<any>) {
@@ -27,8 +28,9 @@ export default function Index(props: PageProps<any>) {
       showBio={true}
     >
       <p>
-        Hi there! I&apos;m Sarang Joshi, a <Link to="/academia">computer scientist</Link>, singer,
-        and life enthusiast studying as a second-year Computer Science PhD student at the{" "}
+        Hi there! I&apos;m Sarang Joshi, a{" "}
+        <Link to="/academia">second-year Computer Science PhD student</Link>
+        studying quantum computer architecture at the{" "}
         <L to={Links.uchicago}>University of Chicago</L> in Chicago, IL. I graduated cum laude from
         the <L to={Links.uw}>University of Washington, Seattle</L> in 2018, with a B.S. in{" "}
         <L to={Links.cs}>Computer Science</L> with Honors, where I was a Teaching Assistant and
@@ -42,7 +44,8 @@ export default function Index(props: PageProps<any>) {
         unified platform for the collegiate South-Asian performing circuits. I formerly served as an
         Advisor and Director of <L to={Links.asa}>the Association of South-Asian A cappella</L>, a
         non-profit working to foster the growth of the South-Asian a cappella artform in college
-        campuses and across the country.
+        campuses and across the country, and as Musical Director of <L to={Links.awaaz}>UW Awaaz</L>
+        , the University of Washington's premiere South Asian fusion a cappella group.
       </p>
       <p>
         Outside of that, I like to <Link to="/music">make music</Link>,{" "}

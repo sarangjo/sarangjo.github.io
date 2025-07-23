@@ -109,9 +109,9 @@ const Covers = () => (
 
 const SamsLessons = () => (
   <>
-    <h2 id="drumcovers">Drum Covers</h2>
+    <h2 id="drumcovers">Sam's Lessons Drum Covers</h2>
     <p>
-      These are songs I've learned as part of my lessons with Sam at{" "}
+      These are songs I've learned as part of my lessons at{" "}
       <L to="https://www.samslessons.com/">Sam's Lessons</L>.
     </p>
     <ul>
@@ -426,8 +426,8 @@ export default function MusicPage(props: PageProps) {
     >
       <Covers />
       <SamsLessons />
-      <JoshiShow />
       <OriginalMusic />
+      <JoshiShow />
       <Awaaz />
       <AgainstTheFlow />
     </Layout>

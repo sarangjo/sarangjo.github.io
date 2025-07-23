@@ -107,5 +107,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-// (formatString: "MMMM DD, YYYY")
