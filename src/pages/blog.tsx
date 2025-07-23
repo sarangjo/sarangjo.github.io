@@ -1,27 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql, PageProps } from "gatsby";
-import PostExcerpt, { PostNode } from "../components/postExcerpt";
-
-const MONTHS = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-const simpleDateParser = (d: string) => {
-  const parts = d.split("-");
-  return parts.length === 3 ? `${MONTHS[+parts[1] - 1]} ${+parts[2]}, ${+parts[0]}` : d;
-};
+import PostExcerpt, { PostEdge } from "../components/postExcerpt";
+import { simpleDateParser } from "../utils/utils";
 
 // Must be sorted!
 const external: PostEdge[] = [
@@ -40,11 +21,6 @@ const external: PostEdge[] = [
     type: "external",
   },
 ];
-
-export interface PostEdge {
-  node: PostNode;
-  type?: string;
-}
 
 const title = "Life Enthusiasm";
 

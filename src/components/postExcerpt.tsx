@@ -10,6 +10,8 @@ const content = (node: PostNode, type?: string) =>
     <p>
       <i>{node.fields.note}</i>
     </p>
+  ) : type === "poetry" ? (
+    <p>{node.frontmatter.description}</p>
   ) : (
     <p dangerouslySetInnerHTML={{ __html: node.excerpt as TrustedHTML }} />
   );
@@ -19,6 +21,7 @@ export interface PostNode {
     title: string;
     date: string;
     source?: string;
+    description?: string;
   };
   fields: {
     slug: string;
@@ -52,4 +55,9 @@ export default function PostExcerpt({ node, type }: { node: PostNode; type?: str
       {content(node, type)}
     </div>
   );
+}
+
+export interface PostEdge {
+  node: PostNode;
+  type?: string;
 }

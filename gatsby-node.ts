@@ -105,40 +105,40 @@ async function createTheaterPages(createPage, graphql) {
 }
 
 // Helper function to build indices (blog, poetry, tech)
-async function createMdIndexPages(createPage) {
-  const indices = [
-    {
-      slug: "poetry",
-      title: "Poetry",
-      description: "No fancy description. Just poetry. This is serious business.",
-    },
-    // {
-    //   slug: "tech",
-    //   title: "Tech Notes",
-    //   description:
-    //     "A small contribution to the massive collection of information about the tech world.",
-    //   seo: [`tech`, `gatsby`, `javascript`, `react`],
-    // },
-    // {
-    //   slug: "blog",
-    //   title: "Life Enthusiasm",
-    //   description: "The world is a beautiful place.",
-    // },
-  ];
+// async function createMdIndexPages(createPage) {
+//   const indices = [
+//     // {
+//     //   slug: "poetry",
+//     //   title: "Poetry",
+//     //   description: "No fancy description. Just poetry. This is serious business.",
+//     // },
+//     // {
+//     //   slug: "tech",
+//     //   title: "Tech Notes",
+//     //   description:
+//     //     "A small contribution to the massive collection of information about the tech world.",
+//     //   seo: [`tech`, `gatsby`, `javascript`, `react`],
+//     // },
+//     // {
+//     //   slug: "blog",
+//     //   title: "Life Enthusiasm",
+//     //   description: "The world is a beautiful place.",
+//     // },
+//   ];
 
-  indices.forEach((ind) =>
-    createPage({
-      path: `/${ind.slug}/`,
-      matchPath: `/${ind.slug}`,
-      component: path.resolve(`./src/templates/md-index.tsx`),
-      context: {
-        myPath: `//${ind.slug}/.*/`,
-        title: ind.title,
-        description: ind.description,
-      },
-    })
-  );
-}
+//   indices.forEach((ind) =>
+//     createPage({
+//       path: `/${ind.slug}/`,
+//       matchPath: `/${ind.slug}`,
+//       component: path.resolve(`./src/templates/md-index.tsx`),
+//       context: {
+//         myPath: `//${ind.slug}/.*/`,
+//         title: ind.title,
+//         description: ind.description,
+//       },
+//     })
+//   );
+// }
 
 // Create all of our dynamic pages (i.e. outside of `src/pages`)
 export const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
@@ -146,7 +146,7 @@ export const createPages: GatsbyNode["createPages"] = async ({ graphql, actions 
 
   await createMdPages(createPage, graphql);
   await createTheaterPages(createPage, graphql);
-  await createMdIndexPages(createPage);
+  // await createMdIndexPages(createPage);
 };
 
 // For markdown and fountain pages, extend the node's fields by appending the slug. This allows us

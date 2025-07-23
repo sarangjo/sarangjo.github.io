@@ -1,6 +1,8 @@
 ---
 title: Caught in the Rain
 date: "2009-09-04"
+type: poetry
+description: "An homage to the monsoons in Pune."
 ---
 
 It was a sunny afternoon,\

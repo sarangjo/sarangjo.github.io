@@ -1,6 +1,7 @@
 ---
 title: Fiction
 date: "2010-09-25"
+type: poetry
 ---
 
 Some years ago when I was in my prime,\

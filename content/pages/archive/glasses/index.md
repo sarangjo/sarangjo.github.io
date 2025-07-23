@@ -1,6 +1,7 @@
 ---
 title: Glasses
 date: "2012-06-28"
+type: poetry
 ---
 
 _Dedicated to all those lucky (?) ones who can relate to this poem._

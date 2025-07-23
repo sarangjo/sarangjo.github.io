@@ -76,11 +76,10 @@ export default function Header(props: Props) {
           <ListLink to="/projects/">Projects</ListLink>
           <ListLink to="/blog/">Blog</ListLink>
           <ListLink to="/music/">Music</ListLink>
-          <ListLink to="/poetry/">Poetry</ListLink>
-          <ListLink to="/theater/">Archive</ListLink>
           <ListLink to="/cv.pdf" useA>
             CV
           </ListLink>
+          <ListLink to="/archive/">Archive</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
         </div>
         <div style={{ display: "inline-block" }}>{pageLineage}</div>

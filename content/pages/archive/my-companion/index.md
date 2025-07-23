@@ -1,6 +1,7 @@
 ---
 title: My Companion
 date: "2010-04-11"
+type: poetry
 ---
 
 One day I was walking through\
