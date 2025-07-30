@@ -21,12 +21,12 @@ export default function Index(props: PageProps<any>) {
     <Layout location={props.location} title="Home" showBio={true}>
       <p>
         Hi there! I&apos;m Sarang Joshi, a{" "}
-        <Link to="/academia">second-year Computer Science PhD student</Link>
-        studying quantum computer architecture at the{" "}
-        <L to={Links.uchicago}>University of Chicago</L> in Chicago, IL. I graduated cum laude from
-        the <L to={Links.uw}>University of Washington, Seattle</L> in 2018, with a B.S. in{" "}
-        <L to={Links.cs}>Computer Science</L> with Honors, where I was a Teaching Assistant and
-        Research Assistant, and worked at <L to={Links.illumio}>Illumio</L> for 5 years before
+        <Link to="/academia">second-year Computer Science PhD student</Link> studying quantum
+        computer architecture at the <L to={Links.uchicago}>University of Chicago</L> in Chicago,
+        IL. I graduated cum laude from the <L to={Links.uw}>University of Washington, Seattle</L> in
+        2018 with a B.S. in <L to={Links.cs}>Computer Science</L> with Honors, where I was a
+        Teaching Assistant and Research Assistant. After UW, I worked at{" "}
+        <L to={Links.illumio}>Illumio</L> as a software development engineer for 5 years before
         starting my PhD in 2023.
       </p>
       <p>
