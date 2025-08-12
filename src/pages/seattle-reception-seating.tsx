@@ -11,6 +11,7 @@ export default function SeattleReceptionSeating(props: PageProps) {
       location={props.location}
       title="Kavya & Sarang's Reception Tables"
       description={`We're so excited to celebrate with you!`}
+      hideNavigation
     >
       <p>
         Enter your name to find your table:{" "}

@@ -14,6 +14,7 @@ interface Props {
   helmetTitle?: string;
   helmetDescription?: string;
   showBio?: boolean;
+  hideNavigation?: boolean;
 }
 
 export default function Layout(props: React.PropsWithChildren<Props>) {
@@ -26,6 +27,7 @@ export default function Layout(props: React.PropsWithChildren<Props>) {
     helmetDescription,
     children,
     showBio,
+    hideNavigation,
   } = props;
 
   const data = useStaticQuery(graphql`
@@ -64,6 +66,7 @@ export default function Layout(props: React.PropsWithChildren<Props>) {
         description={description}
         location={location}
         showBio={showBio}
+        hideNavigation={hideNavigation}
       />
       {children}
     </div>

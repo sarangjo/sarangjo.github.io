@@ -22,6 +22,7 @@ interface Props {
   description?: string;
   showBio?: boolean;
   titleIcon?: ReactElement;
+  hideNavigation?: boolean;
 }
 
 const getParentParts = (fullPath: string) => {
@@ -30,7 +31,7 @@ const getParentParts = (fullPath: string) => {
 };
 
 export default function Header(props: Props) {
-  const { location, title, description, showBio, titleIcon } = props;
+  const { location, title, description, showBio, titleIcon, hideNavigation } = props;
 
   // Evaluate the "parent" page
   const parentParts = getParentParts(location.pathname);
@@ -61,30 +62,32 @@ export default function Header(props: Props) {
         marginBottom: rhythm(0.4),
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          margin: "-8px 0px 1.05rem -8px",
-          flexWrap: "wrap",
-        }}
-      >
-        <div style={{ display: "inline-block" }}>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/academia">Academia</ListLink>
-          <ListLink to="/projects/">Projects</ListLink>
-          <ListLink to="/blog/">Blog</ListLink>
-          <ListLink to="/music/">Music</ListLink>
-          <ListLink to="/poetry/">Poetry</ListLink>
-          <ListLink to="/theater/">Theater</ListLink>
-          <ListLink to="/cv.pdf" useA>
-            CV
-          </ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
+      {!hideNavigation && (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            margin: "-8px 0px 1.05rem -8px",
+            flexWrap: "wrap",
+          }}
+        >
+          <div style={{ display: "inline-block" }}>
+            <ListLink to="/">Home</ListLink>
+            <ListLink to="/academia">Academia</ListLink>
+            <ListLink to="/projects/">Projects</ListLink>
+            <ListLink to="/blog/">Blog</ListLink>
+            <ListLink to="/music/">Music</ListLink>
+            <ListLink to="/poetry/">Poetry</ListLink>
+            <ListLink to="/theater/">Theater</ListLink>
+            <ListLink to="/cv.pdf" useA>
+              CV
+            </ListLink>
+            <ListLink to="/contact/">Contact</ListLink>
+          </div>
+          <div style={{ display: "inline-block" }}>{pageLineage}</div>
         </div>
-        <div style={{ display: "inline-block" }}>{pageLineage}</div>
-      </div>
+      )}
       <h1 style={{ ...scale(1.5), marginTop: 0, marginBottom: rhythm(0.75) }}>
         {title} {titleIcon}
       </h1>
