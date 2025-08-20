@@ -64,8 +64,8 @@ export default function ProjectsPage(props: PageProps) {
       <h2>Scripts</h2>
       <ul>
         <li>
-          <code>rot.rs</code> (
-          <L to="https://gist.github.com/sarangjo/723dd150f931d752a6b76a505f6f5cb9">source code</L>)
+          <code>rot.rs</code>: create fun rotated word/phrase squares (
+          <L to="https://github.com/sarangjo/rot">source code</L>)
         </li>
         <li>
           Transposer for UW Awaaz sheet music (
