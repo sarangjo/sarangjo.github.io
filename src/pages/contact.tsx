@@ -15,10 +15,11 @@ export default function MusicPage(props: PageProps) {
           <code>uchicago.edu</code>.
         </li>
         <li>
-          For everything music, send me an email at <code>music</code> at <code>sarangj.com</code>.
+          For everything music, send me an email at <code>music</code> at{" "}
+          <code>sarangjoshi.com</code>.
         </li>
         <li>
-          For anything else, there's always <code>mail</code> at <code>sarangj.com</code>.
+          For anything else, there's always <code>mail</code> at <code>sarangjoshi.com</code>.
         </li>
       </ul>
     </Layout>

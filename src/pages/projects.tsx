@@ -7,7 +7,7 @@ import { L } from "../utils";
 import "./projects.css";
 import { PageProps } from "gatsby";
 
-const labelToTitle = (type) => {
+const labelToTitle = (type: string) => {
   switch (type) {
     case "uw":
       return "UW";
@@ -38,8 +38,8 @@ export default function ProjectsPage(props: PageProps) {
           <Label type="uw" />
         </li>
         <li>
-          <L to="https://sarangj.com/rlesports">Rocket League eSports visualization</L>,{" "}
-          <i>work in progress</i> (<L to="https://github.com/sarangjo/rlesports">source code</L>)
+          <L to="/rlesports">Rocket League eSports visualization</L>, <i>work in progress</i> (
+          <L to="https://github.com/sarangjo/rlesports">source code</L>)
         </li>
         <li>
           ASA Score Checker and Reporter (
