@@ -13,7 +13,9 @@ const Links = {
   presentation: "/uw-presentation.pdf",
   puddle: "https://doi.org/10.1145/3297858.3304027",
   fred: "https://people.cs.uchicago.edu/~ftchong/",
+  epiqc: "https://www.epiqc.cs.uchicago.edu/",
   diana: "https://people.cs.uchicago.edu/~dmfranklin/",
+  canon: "https://www.canonlab.org/",
   swiper: "https://doi.org/10.1145/3695053.3731022",
   andrew: "https://people.cs.uchicago.edu/~aachien/lssg/people/andrew-chien/",
 };
@@ -66,8 +68,9 @@ export default function AcademiaPage(props: PageProps) {
       <h3>Research</h3>
       <p>
         I'm currently doing research in quantum computer architecture and quantum computer education
-        with <L to={Links.fred}>Fred Chong</L> and <L to={Links.diana}>Diana Franklin</L>. I
-        previously worked on a small project in sustainable computing research with{" "}
+        with <L to={Links.fred}>Fred Chong</L> (<L to={Links.epiqc}>EPIQC</L>) and{" "}
+        <L to={Links.diana}>Diana Franklin</L> (<L to={Links.canon}>CANON Lab</L>). I previously
+        worked on a small project in sustainable computing research with{" "}
         <L to={Links.andrew}>Andrew Chien</L>, as part of the LSSG group, on modeling data center
         cooling systems.
       </p>
