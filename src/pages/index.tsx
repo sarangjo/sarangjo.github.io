@@ -21,7 +21,7 @@ export default function Index(props: PageProps<any>) {
     <Layout location={props.location} title="Home" showBio={true}>
       <p>
         Hi there! I&apos;m Sarang Joshi, a{" "}
-        <Link to="/academia">second-year Computer Science PhD student</Link> studying quantum
+        <Link to="/academia">third-year Computer Science PhD student</Link> studying quantum
         computer architecture at the <L to={Links.uchicago}>University of Chicago</L> in Chicago,
         IL. I graduated cum laude from the <L to={Links.uw}>University of Washington, Seattle</L> in
         2018 with a B.S. in <L to={Links.cs}>Computer Science</L> with Honors, where I was a
@@ -30,14 +30,15 @@ export default function Index(props: PageProps<any>) {
         starting my PhD in 2023.
       </p>
       <p>
-        I currently serve as an Executive Director of Programs at{" "}
+        I currently serve as CTO of <L to={Links.ekta}>Ekta</L>, a unified platform for the
+        collegiate South-Asian performing circuits, and as an Executive Director of Programs at{" "}
         <L to={Links.kinspire}>Kinspire</L>, a 501(c)(3) dedicated to the revitalization of
-        education for children in orphanages in India, and CTO of <L to={Links.ekta}>Ekta</L>, a
-        unified platform for the collegiate South-Asian performing circuits. I formerly served as an
-        Advisor and Director of <L to={Links.asa}>the Association of South-Asian A cappella</L>, a
-        non-profit working to foster the growth of the South-Asian a cappella artform in college
-        campuses and across the country, and as Musical Director of <L to={Links.awaaz}>UW Awaaz</L>
-        , the University of Washington's premiere South Asian fusion a cappella group.
+        education for children in orphanages in India. I formerly served as an Advisor
+        (2021&ndash;2023) and Director (2019&ndash;2021) of{" "}
+        <L to={Links.asa}>the Association of South-Asian A cappella</L>, a non-profit working to
+        foster the growth of the South-Asian a cappella artform in college campuses and across the
+        country, and as Musical Director (2016&ndash;2018) of <L to={Links.awaaz}>UW Awaaz</L>, the
+        University of Washington's premiere South Asian fusion a cappella group.
       </p>
       <p>
         Outside of that, I like to <Link to="/music">make music</Link>,{" "}
