@@ -112,6 +112,11 @@ async function createMdIndexPages(createPage) {
       title: "Poetry",
       description: "No fancy description. Just poetry. This is serious business.",
     },
+    {
+      slug: "lists",
+      title: "Lists",
+      description: "Cataloguing a lifelong obsession with listmaking.",
+    },
     // {
     //   slug: "tech",
     //   title: "Tech Notes",
