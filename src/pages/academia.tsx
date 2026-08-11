@@ -20,7 +20,7 @@ const Links = {
   andrew: "https://people.cs.uchicago.edu/~aachien/lssg/people/andrew-chien/",
 };
 
-// TODO use this
+// UW TAing
 const Taing = [
   // freshman year
   143,
@@ -86,9 +86,21 @@ export default function AcademiaPage(props: PageProps) {
         </li>
       </ul>
       <h3>Teaching</h3>
-      <p>I have TA'd for the following classes during my time at UChicago CS:</p>
+      <p>I was the Teacher of Record for the following classes during my time at UChicago CS:</p>
       <ul>
-        <li>Fall 2023: CMSC 144, Systems Programming II</li>
+        <li>
+          Summer Session 2026: CMSC 19928-30, <b>Quantum Computing: An Introduction</b>{" "}
+          <i>(pre-college course)</i>
+        </li>
+      </ul>
+      <p>I have also TA'd for the following classes during my time at UChicago CS:</p>
+      <ul>
+        <li>
+          Winter 2026: CMSC 22880, <b>Introduction to Quantum Computing</b>
+        </li>
+        <li>
+          Fall 2023: CMSC 14400, <b>Systems Programming II</b>
+        </li>
       </ul>
       <h2>
         University of Washington (2014-18){" "}
