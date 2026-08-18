@@ -49,3 +49,4 @@ At the beginning of 2025, Kavya got me a record player as an incredibly sweet we
 | Bob Moses                | The Silence in Between          | Oct 18, 2025 | Bob Moses Shop                            |
 | Daft Punk                | Random Access Memories          | Dec 21, 2025 | Reckless Records, Chicago                 |
 | Cannons                  | Fever Dream                     | Apr 22, 2026 | The Salt Shed                             |
+| Michael Jackson          | Dangerous                       | Aug 18, 2026 | Amazon                                    |
