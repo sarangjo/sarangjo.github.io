@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
-import { L } from "../utils";
+import { L } from "../components/link";
 
 import "./projects.css";
 import { PageProps } from "gatsby";

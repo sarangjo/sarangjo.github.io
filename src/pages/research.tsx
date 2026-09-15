@@ -2,7 +2,7 @@ import { PageProps } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/layout";
-import { L } from "../utils";
+import { L } from "../components/link";
 
 const Links = {
   uw: "https://cs.uw.edu",
@@ -20,39 +20,14 @@ const Links = {
   andrew: "https://people.cs.uchicago.edu/~aachien/lssg/people/andrew-chien/",
 };
 
-// UW TAing
-const Taing = [
-  // freshman year
-  143,
-  // sophomore year
-  143, 351, 351,
-  // junior year
-  311, 351, 451,
-  // senior year
-  451, 451, 452,
-];
-const quarterMap = {
-  wi: "Winter",
-  sp: "Spring",
-  au: "Fall",
-};
-const start = { q: 1, y: 15 };
-const classNames = {
-  143: "Intro to Computer Science II",
-  311: "Foundations of Computing I",
-  351: "Hardware/Software Interface",
-  451: "Operating Systems",
-  452: "Distributed Systems",
-};
-
 const Me = () => <span style={{ backgroundColor: "skyblue" }}>Sarang Joshi</span>;
 
-export default function AcademiaPage(props: PageProps) {
+export default function ResearchPage(props: PageProps) {
   return (
     <Layout
       location={props.location}
-      title="Academia"
-      description={`"No brain, no gain. Stay in school." - Michael Jordan`}
+      title="Research"
+      description="More than doing a Google search (mostly...)."
     >
       <h2>
         University of Chicago (2023-?){" "}
@@ -65,16 +40,17 @@ export default function AcademiaPage(props: PageProps) {
           />
         </L>
       </h2>
-      <h3>Research</h3>
       <p>
         I'm currently doing research in quantum computer architecture and quantum computer education
         with <L to={Links.fred}>Fred Chong</L> (<L to={Links.epiqc}>EPIQC</L>) and{" "}
-        <L to={Links.diana}>Diana Franklin</L> (<L to={Links.canon}>CANON Lab</L>). I previously
-        worked on a small project in sustainable computing research with{" "}
-        <L to={Links.andrew}>Andrew Chien</L>, as part of the LSSG group, on modeling data center
-        cooling systems.
+        <L to={Links.diana}>Diana Franklin</L> (<L to={Links.canon}>CANON Lab</L>) since 2025. In
+        particular, I am interested in exploring and improving the design of quantum control
+        systems, and their codesign with specific architectures and error correction schemes.
       </p>
       <ul>
+        <li>
+          <b>Q4Bio</b>. (<i>In submission</i>)
+        </li>
         <li>
           <b>
             SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window
@@ -85,23 +61,11 @@ export default function AcademiaPage(props: PageProps) {
           <L to={Links.swiper}>ACM Digital Library, ISCA 2025</L>)
         </li>
       </ul>
-      <h3>Teaching</h3>
-      <p>I was the Teacher of Record for the following classes during my time at UChicago CS:</p>
-      <ul>
-        <li>
-          Summer Session 2026: CMSC 19928-30, <b>Quantum Computing: An Introduction</b>{" "}
-          <i>(pre-college course)</i>
-        </li>
-      </ul>
-      <p>I have also TA'd for the following classes during my time at UChicago CS:</p>
-      <ul>
-        <li>
-          Winter 2026: CMSC 22880, <b>Introduction to Quantum Computing</b>
-        </li>
-        <li>
-          Fall 2023: CMSC 14400, <b>Systems Programming II</b>
-        </li>
-      </ul>
+      <p>
+        I previously worked on a small project in sustainable computing research with{" "}
+        <L to={Links.andrew}>Andrew Chien</L>, as part of the LSSG group, on modeling data center
+        cooling systems.
+      </p>
       <h2>
         University of Washington (2014-18){" "}
         <L style={{ boxShadow: "none", lineHeight: "45px" }} to={Links.uw}>
@@ -113,7 +77,6 @@ export default function AcademiaPage(props: PageProps) {
           />
         </L>
       </h2>
-      <h3>Research</h3>
       <p>
         In my senior year at UW, for my CSE Departmental Honors, I conducted research for the{" "}
         <L to={Links.misl}>Molecular Information Systems Lab</L>, on the{" "}
@@ -136,36 +99,6 @@ export default function AcademiaPage(props: PageProps) {
           </L>
           )
         </li>
-      </ul>
-      <h3>Teaching</h3>
-      <p>I had the privilege of being a TA for 10 of my 12 quarters at UW CSE:</p>
-      <ul>
-        {Taing.map((classNumber, idx) => {
-          // Calculate the current quarter
-          const thisIndex = idx + start.q;
-
-          // How much have we overflowed?
-          const overflowYears = Math.floor(thisIndex / 3);
-
-          // That gives us the current year
-          const thisYear = start.y + overflowYears;
-
-          // Finally we get the quarter
-          const thisQuarter = thisIndex % 3;
-          const quarterShort = Object.keys(quarterMap)[thisQuarter];
-          const quarterName = quarterMap[quarterShort];
-
-          return (
-            <li>
-              {quarterName} 20{thisYear}:{" "}
-              <a
-                href={`https://courses.cs.washington.edu/courses/cse${classNumber}/${thisYear}${quarterShort}`}
-              >
-                CSE {classNumber}, {classNames[classNumber]}
-              </a>
-            </li>
-          );
-        })}
       </ul>
     </Layout>
   );

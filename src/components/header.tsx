@@ -74,7 +74,8 @@ export default function Header(props: Props) {
         >
           <div style={{ display: "inline-block" }}>
             <ListLink to="/">Home</ListLink>
-            <ListLink to="/academia">Academia</ListLink>
+            <ListLink to="/research">Research</ListLink>
+            <ListLink to="/teaching">Teaching</ListLink>
             <ListLink to="/projects/">Projects</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
             <ListLink to="/music/">Music</ListLink>

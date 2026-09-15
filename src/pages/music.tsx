@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import Layout from "../components/layout";
-import { L } from "../utils";
+import { L } from "../components/link";
 import { StaticImage } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
 

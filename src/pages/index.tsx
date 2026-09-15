@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link, PageProps } from "gatsby";
-import { L } from "../utils";
+import { L } from "../components/link";
 
 import Layout from "../components/layout";
 

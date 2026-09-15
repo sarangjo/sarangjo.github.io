@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { rhythm } from "../utils/typography";
-import { L } from "../utils";
+import { L } from "../components/link";
 
 const content = (node: PostNode, type?: string) =>
   type === "theater" ? (

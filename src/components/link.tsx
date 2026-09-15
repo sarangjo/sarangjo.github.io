@@ -1,6 +1,6 @@
 import * as React from "react";
 
-// Helper component for a link out of the home page in a new tab
+// Helper component for an external link out of the home page in a new tab
 export const L = ({
   to,
   style,
