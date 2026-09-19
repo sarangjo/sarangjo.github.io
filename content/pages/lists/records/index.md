@@ -16,7 +16,7 @@ At the beginning of 2025, Kavya got me a record player as an incredibly sweet we
 | Glass Animals            | How to be a Human Being         | Jan 18, 2025 | Village Vinyl & Hi Fi, Boston             |
 | Glass Animals            | Dreamland                       | Jan 18, 2025 | Village Vinyl & Hi Fi, Boston             |
 | Tame Impala              | The Slow Rush                   | Jan 18, 2025 | Village Vinyl & Hi Fi, Boston             |
-| Linkin Park              | A Thousand Suns                 | Jan 21, 2025 | Amazon (from Siddhesh)                    |
+| Linkin Park              | A Thousand Suns                 | Jan 21, 2025 | (from Siddhesh)                           |
 | Boney M                  | Nightflight to Venus            | Jan 26, 2025 | Hyde Park Records, Chicago                |
 | Tame Impala              | Currents                        | Jan 26, 2025 | Hyde Park Records, Chicago                |
 | Coldplay                 | Viva la Vida                    | Jan 27, 2025 | Amazon                                    |
@@ -42,11 +42,12 @@ At the beginning of 2025, Kavya got me a record player as an incredibly sweet we
 | Radiohead                | OK Computer                     | Apr 7, 2025  | Reckless Records, Chicago                 |
 | Soundtrack               | Stranger Things                 | Apr 7, 2025  | Reckless Records, Chicago                 |
 | Queen                    | Greatest Hits                   | Apr 7, 2025  | Reckless Records, Chicago                 |
-| Soundtrack               | Arcane: Season 2                | Apr 17, 2025 | Boston (from Abhi)                        |
-| Michael Jackson          | Thriller                        | Jul 10, 2025 | Amazon (from Sujatha Atha and Vijay Mama) |
+| Soundtrack               | Arcane: Season 2                | Apr 17, 2025 | (from Abhi)                               |
+| Michael Jackson          | Thriller                        | Jul 10, 2025 | (from Sujatha Atha and Vijay Mama)        |
 | Elliott Carter           | Sonatas                         | Aug 3, 2025  | Chicago Logan Square Farmer's Market      |
 | Lauryn Hill              | The Miseducation of Lauryn Hill | Aug 3, 2025  | (from Palash)                             |
 | Bob Moses                | The Silence in Between          | Oct 18, 2025 | Bob Moses Shop                            |
 | Daft Punk                | Random Access Memories          | Dec 21, 2025 | Reckless Records, Chicago                 |
 | Cannons                  | Fever Dream                     | Apr 22, 2026 | The Salt Shed                             |
 | Michael Jackson          | Dangerous                       | Aug 18, 2026 | Amazon                                    |
+| Lorde                    | Melodrama                       | Sep 12, 2026 | (from Siddhesh)                           |
